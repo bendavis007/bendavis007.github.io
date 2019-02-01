@@ -12,6 +12,10 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
 		
+	    <!-- Demo CSS -->
+	  	
+	  	<link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css" media="screen" />
+		
 		<!---  realfavicongenerator.net --->
 		
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -68,6 +72,75 @@
 									<header class="main">
 										<h1>Research</h1>
 									</header>
+									
+								  	<div id="main" role="main">
+								        <section class="slider">
+								          <div class="flexslider">
+								            <ul class="slides">
+								              <li>
+								    	    	    <img src="images/UGC_448.png" />
+								    	    		</li>
+								    	    		<li>
+								    	    	    <img src="images/UGC_1081.png" />
+								    	    		</li>
+								    	    		<li>
+								    	    	    <img src="images/UGC_1087.png" />
+								    	    		</li>
+								    	    		<li>
+								    	    	    <img src="images/UGC_1635.png" />
+								    	    		</li>
+								    	    		<li>
+								    	    	    <img src="images/UGC_1862.png" />
+								    	    		</li>
+								    	    		<li>
+								    	    	    <img src="images/UGC_3091.png" />
+								    	    		</li>
+								    	    		<li>
+								    	    	    <img src="images/UGC_3140.png" />
+								    	    		</li>
+								    	    		<li>
+								    	    	    <img src="images/UGC_3701.png" />
+								    	    		</li>
+								    	    		<li>
+								    	    	    <img src="images/UGC_12391.png" />
+								    	    		</li>
+								            </ul>
+								          </div>
+								        </section>
+										
+										<p>Images of face-on spiral galaxies, taken during the nights of November 8-10, 2013, on the <a href="https://www.noao.edu/wiyn/" target="_blank">3.5m WIYN telescope.</a></p>
+
+								    <!-- jQuery -->
+								    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+								    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+								    <!-- FlexSlider -->
+								    <script defer src="FlexSlider/jquery.flexslider.js"></script>
+
+								    <script type="text/javascript">
+								      $(function(){
+								        SyntaxHighlighter.all();
+								      });
+								      $(window).load(function(){
+								        $('.flexslider').flexslider({
+								          animation: "slide",
+								          start: function(slider){
+								            $('body').removeClass('loading');
+								          }
+								        });
+								      });
+								    </script>
+
+
+								    <!-- Syntax Highlighter -->
+								    <script type="text/javascript" src="FlexSlider/demo/js/shCore.js"></script>
+								    <script type="text/javascript" src="FlexSlider/demo/js/shBrushXml.js"></script>
+								    <script type="text/javascript" src="FlexSlider/demo/js/shBrushJScript.js"></script>
+
+								    <!-- Optional FlexSlider Additions -->
+								    <script src="FlexSlider/demo/js/jquery.easing.js"></script>
+								    <script src="FlexSlider/demo/js/jquery.mousewheel.js"></script>
+								    <script defer src="FlexSlider/demo/js/demo.js"></script>
 									
 									<span class="image main"><img src="images/BlackHole.jpg" alt="" /></span>
 									<p>Image by <a href="http://astronomy.swin.edu.au/staff/jjosephides.html" target="_blank">James Josephides.</a></p>
