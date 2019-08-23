@@ -57,7 +57,7 @@
 											<!--<li><a class="icon" href="http://astronomy.swin.edu.au/staff/benjamindavis.html" target="_blank"><i class="fas fa-school"></i><span class="label">CAS</span></a></li>-->
 											<!--<li><a class="icon" href="http://orcid.org/0000-0002-4306-5950" target="_blank"><i class="fas fa-id-card"></i><span class="label">ORCID</span></a></li>-->
 											<!--<li><a href="https://myspace.com/441470901" target="_blank" class="icon fa-users"><span class="label">MySpace</span></a></li>-->
-											<!--<li><a href="https://www.mendeley.com/profiles/benjamin-davis15/" target="_blank" class="icon fab fa-mendeley"><span class="label">Mendeley</span></a></li>-->
+											<li><a href="https://www.mendeley.com/profiles/benjamin-davis15/" target="_blank" class="icon fab fa-mendeley"><span class="label">Mendeley</span></a></li>
 											<!--<li><a class="icon" href="https://arxiv.org/a/davis_b_2.html" target="_blank"><i class="fas fa-book-reader"></i><span class="label">ArXiv</span></a></li>-->
 											<!--<li><a href="https://www.flickr.com/photos/138873172@N05/" target="_blank" class="icon fa-flickr"><span class="label">Flickr</span></a></li>-->
 											<!--<li><a href="https://www.pinterest.com.au/benjaminldavis/" target="_blank" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>-->
@@ -65,7 +65,7 @@
 											<!--<li><a href="https://medium.com/@bendavis007" target="_blank" class="icon fa-medium fa-xs"><span class="label">Medium</span></a></li>-->
 											<li><a href="https://www.meetup.com/members/217537207/" target="_blank" class="icon fa-meetup"><span class="label">Meetup</span></a></li>
 											<!--<li><a class="icon" href="https://www.patreon.com/user/creators?u=6228855" target="_blank"><i class="fab fa-patreon fa-xs"></i><span class="label">Patreon</span></a></li>-->
-											<li><a href="https://theconversation.com/profiles/benjamin-davis-800441" target="_blank" class="icon far fa-comment"><span class="label">The Conversation</span></a></li>
+											<!--<li><a href="https://theconversation.com/profiles/benjamin-davis-800441" target="_blank" class="icon far fa-comment"><span class="label">The Conversation</span></a></li>-->
 									    </ul>
 								</header>
 
@@ -78,32 +78,50 @@
 									<h2>Contents</h2>
 									
 									<ul>
-										<li><a href="#Fourier_Analysis">Fourier Analysis</a></li>
-										<li><a href="#PCA">Principal Component Analysis</a></li>
-										<li><a href="#MC1">Monte Carlo Method – Using Probability Theory and Computer Simulations to Model Real-world Problems (Part I)</a></li>
 										<li><a href="#MC2">Monte Carlo Method – Using Probability Theory and Computer Simulations to Model Real-world Problems (Part II)</a></li>
+										<li><a href="#MC1">Monte Carlo Method – Using Probability Theory and Computer Simulations to Model Real-world Problems (Part I)</a></li>
+										<li><a href="#PCA">Principal Component Analysis</a></li>
+										<li><a href="#Fourier_Analysis">Fourier Analysis</a></li>
 									</ul>
 									
-									<hr class="major" id="Fourier_Analysis"/>
+									<hr class="major" id="MC2"/>
 									<a href="blog.html" class="button small"><i class="fas fa-arrow-up"></i> BACK TO TOP <i class="fas fa-arrow-up"></i></a><br />
 									<br />
 									
-									<h2>Fourier Analysis</h2>
-									<p>July 4, 2015</p>
+									<h2>Monte Carlo Method – Using Probability Theory and Computer Simulations to Model Real-world Problems (Part II)</h2>
+									<p>August 1, 2015</p>
 									
-									<p>Fourier analysis is the namesake branch of mathematics first formulated by French mathematician/physicist, Joseph Fourier (1768 – 1830). With the advent of computers, Fourier analysis has become increasingly powerful by using Fast Fourier Transform (FFT) algorithms. Simply put, Fourier analysis looks at time series data and identifies any underlying periods of repetition therein. It does so by transforming the time domain of a signal into a frequency domain by decomposing the function into sums of simpler (e.g., trigonometric) functions.</p>
+									<p>To leverage the power of the Monte Carlo Method, I will next discuss the concept of Probability Density Functions (PDFs) and how they can be used alongside Monte Carlo Methods to predict outcomes of multiple input events.</p>
 									
-									<p>A notable example of this is the discovery of an 11-year solar cycle. Astronomers have kept detailed records of solar sunspot counts since the time of Galileo and the invention of the telescope just over 400 years ago. By inspection of the data, it is easy to see that number of sunspots on the Sun appears to fluctuate with time in a very periodic manner of maximum and minimum years of activity (see Figure 1).</p>
+									<p>PDFs are probably recognizable in the most general usage as the Bell Curve. You might recall a teacher grading your class on a "curve," this meant that there would be a distribution of grades in the class, with most of the students earning a "C." In this scenario, the curve is a Bell Curve; mathematically speaking, this is referred to as a normal Gaussian distribution (the most general case of PDF). This distribution is such that the most probable result is at the center point. This center point is also equivalent to the mean, median, and mode. Additionally, the distribution is symmetric on both sides of its center. This is the most basic PDF, but PDFs can appear in any shape (see Figure 1). In contrast, the rolling of a die is a uniform probability distribution where every outcome is equally likely, and any result other than a value on the die is impossible.</p>
 									
-									<span class="image main"><img src="images/sunspots_01.png" alt="" /></span>
-									<p><strong>Figure 1 - </strong>Zurich sunspot relative number, tabulated over nearly 300 years.</p>
+									<span class="image main"><img src="images/Plots.pdf" alt="" /></span>
+									<p><strong>Figure 1 - </strong>Sampling of PDFs with different amounts of skew across the columns (left column = negative skew, middle column = normal, right column = positive skew) and kurtosis across the rows (top row = high kurtosis, middle row = normal, and bottom row = low kurtosis). The traditional Bell Curve (normal Gaussian distribution) is in the middle row, middle column panel.</p>
 									
-									<p>By inspecting Figure 1, it is easy to notice that sunspot activity is very cyclical. It is clear that the period between successive peaks (or troughs) is roughly a decade. Fourier analysis, specifically an FFT algorithm implicated with computer software, will help us elucidate the exact period of repetition for this approximately decade long cycle (see Figure 2).</p>
+									<p>Four factors affect how a PDF is shaped: the mean, standard deviation, skewness, and kurtosis. The mean is the average of the distribution, the standard deviation governs the width of the distribution, the skewness governs whether the distribution is skewed towards the left or right, and the kurtosis governs how sharp (or rounded) the peak of the distribution is. Based on these four parameters, a PDF can be used to represent most any distribution of data. For example, the lower left PDF from Figure 1 might be describing the cost that the same make, model, and year of a car has been sold for at a particular auto dealership. This would be logical if the price the vehicle sold for were represented increasing to the right across the x-axis because the steep vertical drop on the right side must be the sticker price. Because no one would voluntarily pay more than the sticker price, there is a sharp cutoff point there, and most buyers have negotiated for a cost somewhat lower than the sticker price (towards the left).</p>
 									
-									<span class="image main"><img src="images/sunspots_07.png" alt="" /></span>
-									<p><strong>Figure 2 - </strong>Output graph of the results of the FFT analysis of the data in Figure 1. This reveals several prominent periods of repetition in the data, but the most robust cycle found is the 11.0385-year cycle.</p>
+									<p>PDFs are potent tools because once you have modeled the shape of your distribution; you can use the resulting form to predict future occurrences. This is where Monte Carlo Methods come in. Figure 1 is representing nine separate variables, each described by their single PDF, Monte Carlo Methods can aid in performing simulated random draws from all of these distributions to access what is the total likelihood of these separate events combining in a favorable (or unfavorable) result.</p>
 									
-									<p>As can be seen, Fourier analysis is a powerful tool for discovering quantifiable cycles in time series data. For business analytics, one merely needs to replace the astronomical sunspot data with any metric of your business over time. From the sunspot data (Figure 1), it is clear that there is a cycle. However, cycles are not always as apparent. An FFT can help discover cycles you didn't know about in your business. Once recognized, you will have gained a marked advantage in forecasting and accounting for aspects of your business that will predictably repeat themselves.</p>
+									<p>For your business, if the various metrics of your business are analyzed and modeled each with their own PDF distribution, and these metrics are known to correlate to revenue predictably, then by simulating random each parameter with Monte Carlo samples, you can ultimately predict expected income with error margins. Moreover, this makes it possible to identify the metrics of your business that are performing with potential negative skews, allowing work to be focused on removing the skew and potentially turning them into positive skews.</p>
+									
+									<hr class="major" id="MC1"/>
+									<a href="blog.html" class="button small"><i class="fas fa-arrow-up"></i> BACK TO TOP <i class="fas fa-arrow-up"></i></a><br />
+									<br />
+									
+									<h2>Monte Carlo Method – Using Probability Theory and Computer Simulations to Model Real-world Problems (Part I)</h2>
+									<p>July 30, 2015</p>
+									
+									<p>Some mathematical problems are describable by an analytical method, i.e., it is possible to represent them as a solvable equation. However, it is difficult (if not impossible) to describe many real-world problems as simple equations. Instead, numerical methods are necessary to arrive at an answer. One such method is named the Monte Carlo Method, named after the famed Monte Carlo Casino in Monaco.</p>
+									
+									<p>The Monte Carlo Method was initially developed at the Los Alamos Scientific Laboratory for use on the Manhattan Project. Monte Carlo Methods are a general name for computer algorithms that repeat random experiments numerous times to reveal the underlying trend. For example, let's consider the probability of drawing a Royal Flush from a standard deck of 52 cards. One may use the mathematics of combinations to arrive at the correct answer by recognizing that there are four types of Royal Flushes (spades, hearts, diamonds, or clubs), and 2,598,960 different hands in a standard deck of 52 cards. Therefore, the probability of drawing a Royal Flush at random is 4 / 2,598,960 = 1 / 649,740.</p>
+									
+									<p>Another way of discovering this probability is by actually doing the experiment, i.e., drawing 5 cards from a shuffled deck of 52 cards over and over again and record the frequency at which a Royal Flush is drawn. Obviously, this experiment would be very tedious and would need to be repeated millions of times before any sort of trend emerged. This task would not be practical for a human to perform; however, a computer is ideally suited to conduct this experiment.</p>
+									
+									<p>As we discovered, the exact probability of drawing a Royal Flush is 1 / 649,740. Theoretically, if the experiment was performed infinitely many times by the computer, the ratio of successful Royal Flush draws to failed Royal Flush draws would indeed be 1 / 649,740. However, repeating an experiment infinitely many times (even for a computer) is impossible, the correct answer may only be approximated. Therefore, the more times the analysis is conducted, the smaller the error will be. Because a computer can easily repeat this experiment millions or billions of times in rapid time, the error for this result can be reduced to a negligible amount.</p>
+									
+									<p>For example, I conducted this experiment on my personal computer (a 2008 iMac with a 2.66 GHz Intel Core 2 Duo and 4 GB of RAM) by simulating 10 billion random draws of 5 cards from a deck of 52 cards. The result I obtained was that on average, a Royal Flush was drawn once every 652,401 hands. This result is only 0.41% different from the correct answer of theoretically drawing a Royal Flush once every 649,740 hands. Even on my 7-year old computer, this experiment took only about 4.5 minutes. Newer, faster computers could potentially perform even more random draws in less time, yielding increased accuracy. In actuality, computations of this nature can reduce the error by half by quadrupling the number of samples.</p>
+									
+									<p><strong>Look for part II of my discussion of the Monte Carlo Method coming soon, where I will discuss using probability density functions and applying them in coordination with Monte Carlo simulations to predict outcomes for more significant, more complex problems.</strong></p>
 									
 									<hr class="major" id="PCA"/>
 									<a href="blog.html" class="button small"><i class="fas fa-arrow-up"></i> BACK TO TOP <i class="fas fa-arrow-up"></i></a><br />
@@ -143,44 +161,26 @@
 									
 									<p>Additionally, if outside factors are also modeled alongside your company's performance categories, it could be determined what environmental factors (i.e., outside of your control, but potentially anticipatable) are positively or negatively influencing your business. It is important to know thyself, especially in industry. PCA allows you to truly analyze your business as a machine and how everything is connected. Most importantly, it will enable you to identify potential "Butterfly Effects," where small actions can lead to significant, seemingly unrelated results down the road. PCA helps discover those seemingly unrelated consequences and link them to their culprit causes.</p>
 									
-									<hr class="major" id="MC1"/>
+									<hr class="major" id="Fourier_Analysis"/>
 									<a href="blog.html" class="button small"><i class="fas fa-arrow-up"></i> BACK TO TOP <i class="fas fa-arrow-up"></i></a><br />
 									<br />
 									
-									<h2>Monte Carlo Method – Using Probability Theory and Computer Simulations to Model Real-world Problems (Part I)</h2>
-									<p>July 30, 2015</p>
+									<h2>Fourier Analysis</h2>
+									<p>July 4, 2015</p>
 									
-									<p>Some mathematical problems are describable by an analytical method, i.e., it is possible to represent them as a solvable equation. However, it is difficult (if not impossible) to describe many real-world problems as simple equations. Instead, numerical methods are necessary to arrive at an answer. One such method is named the Monte Carlo Method, named after the famed Monte Carlo Casino in Monaco.</p>
+									<p>Fourier analysis is the namesake branch of mathematics first formulated by French mathematician/physicist, Joseph Fourier (1768 – 1830). With the advent of computers, Fourier analysis has become increasingly powerful by using Fast Fourier Transform (FFT) algorithms. Simply put, Fourier analysis looks at time series data and identifies any underlying periods of repetition therein. It does so by transforming the time domain of a signal into a frequency domain by decomposing the function into sums of simpler (e.g., trigonometric) functions.</p>
 									
-									<p>The Monte Carlo Method was initially developed at the Los Alamos Scientific Laboratory for use on the Manhattan Project. Monte Carlo Methods are a general name for computer algorithms that repeat random experiments numerous times to reveal the underlying trend. For example, let's consider the probability of drawing a Royal Flush from a standard deck of 52 cards. One may use the mathematics of combinations to arrive at the correct answer by recognizing that there are four types of Royal Flushes (spades, hearts, diamonds, or clubs), and 2,598,960 different hands in a standard deck of 52 cards. Therefore, the probability of drawing a Royal Flush at random is 4 / 2,598,960 = 1 / 649,740.</p>
+									<p>A notable example of this is the discovery of an 11-year solar cycle. Astronomers have kept detailed records of solar sunspot counts since the time of Galileo and the invention of the telescope just over 400 years ago. By inspection of the data, it is easy to see that number of sunspots on the Sun appears to fluctuate with time in a very periodic manner of maximum and minimum years of activity (see Figure 1).</p>
 									
-									<p>Another way of discovering this probability is by actually doing the experiment, i.e., drawing 5 cards from a shuffled deck of 52 cards over and over again and record the frequency at which a Royal Flush is drawn. Obviously, this experiment would be very tedious and would need to be repeated millions of times before any sort of trend emerged. This task would not be practical for a human to perform; however, a computer is ideally suited to conduct this experiment.</p>
+									<span class="image main"><img src="images/sunspots_01.png" alt="" /></span>
+									<p><strong>Figure 1 - </strong>Zurich sunspot relative number, tabulated over nearly 300 years.</p>
 									
-									<p>As we discovered, the exact probability of drawing a Royal Flush is 1 / 649,740. Theoretically, if the experiment was performed infinitely many times by the computer, the ratio of successful Royal Flush draws to failed Royal Flush draws would indeed be 1 / 649,740. However, repeating an experiment infinitely many times (even for a computer) is impossible, the correct answer may only be approximated. Therefore, the more times the analysis is conducted, the smaller the error will be. Because a computer can easily repeat this experiment millions or billions of times in rapid time, the error for this result can be reduced to a negligible amount.</p>
+									<p>By inspecting Figure 1, it is easy to notice that sunspot activity is very cyclical. It is clear that the period between successive peaks (or troughs) is roughly a decade. Fourier analysis, specifically an FFT algorithm implicated with computer software, will help us elucidate the exact period of repetition for this approximately decade long cycle (see Figure 2).</p>
 									
-									<p>For example, I conducted this experiment on my personal computer (a 2008 iMac with a 2.66 GHz Intel Core 2 Duo and 4 GB of RAM) by simulating 10 billion random draws of 5 cards from a deck of 52 cards. The result I obtained was that on average, a Royal Flush was drawn once every 652,401 hands. This result is only 0.41% different from the correct answer of theoretically drawing a Royal Flush once every 649,740 hands. Even on my 7-year old computer, this experiment took only about 4.5 minutes. Newer, faster computers could potentially perform even more random draws in less time, yielding increased accuracy. In actuality, computations of this nature can reduce the error by half by quadrupling the number of samples.</p>
+									<span class="image main"><img src="images/sunspots_07.png" alt="" /></span>
+									<p><strong>Figure 2 - </strong>Output graph of the results of the FFT analysis of the data in Figure 1. This reveals several prominent periods of repetition in the data, but the most robust cycle found is the 11.0385-year cycle.</p>
 									
-									<p><strong>Look for part II of my discussion of the Monte Carlo Method coming soon, where I will discuss using probability density functions and applying them in coordination with Monte Carlo simulations to predict outcomes for more significant, more complex problems.</strong></p>
-									
-									<hr class="major" id="MC2"/>
-									<a href="blog.html" class="button small"><i class="fas fa-arrow-up"></i> BACK TO TOP <i class="fas fa-arrow-up"></i></a><br />
-									<br />
-									
-									<h2>Monte Carlo Method – Using Probability Theory and Computer Simulations to Model Real-world Problems (Part II)</h2>
-									<p>August 1, 2015</p>
-									
-									<p>To leverage the power of the Monte Carlo Method, I will next discuss the concept of Probability Density Functions (PDFs) and how they can be used alongside Monte Carlo Methods to predict outcomes of multiple input events.</p>
-									
-									<p>PDFs are probably recognizable in the most general usage as the Bell Curve. You might recall a teacher grading your class on a "curve," this meant that there would be a distribution of grades in the class, with most of the students earning a "C." In this scenario, the curve is a Bell Curve; mathematically speaking, this is referred to as a normal Gaussian distribution (the most general case of PDF). This distribution is such that the most probable result is at the center point. This center point is also equivalent to the mean, median, and mode. Additionally, the distribution is symmetric on both sides of its center. This is the most basic PDF, but PDFs can appear in any shape (see Figure 1). In contrast, the rolling of a die is a uniform probability distribution where every outcome is equally likely, and any result other than a value on the die is impossible.</p>
-									
-									<span class="image main"><img src="images/Plots.pdf" alt="" /></span>
-									<p><strong>Figure 1 - </strong>Sampling of PDFs with different amounts of skew across the columns (left column = negative skew, middle column = normal, right column = positive skew) and kurtosis across the rows (top row = high kurtosis, middle row = normal, and bottom row = low kurtosis). The traditional Bell Curve (normal Gaussian distribution) is in the middle row, middle column panel.</p>
-									
-									<p>Four factors affect how a PDF is shaped: the mean, standard deviation, skewness, and kurtosis. The mean is the average of the distribution, the standard deviation governs the width of the distribution, the skewness governs whether the distribution is skewed towards the left or right, and the kurtosis governs how sharp (or rounded) the peak of the distribution is. Based on these four parameters, a PDF can be used to represent most any distribution of data. For example, the lower left PDF from Figure 1 might be describing the cost that the same make, model, and year of a car has been sold for at a particular auto dealership. This would be logical if the price the vehicle sold for were represented increasing to the right across the x-axis because the steep vertical drop on the right side must be the sticker price. Because no one would voluntarily pay more than the sticker price, there is a sharp cutoff point there, and most buyers have negotiated for a cost somewhat lower than the sticker price (towards the left).</p>
-									
-									<p>PDFs are potent tools because once you have modeled the shape of your distribution; you can use the resulting form to predict future occurrences. This is where Monte Carlo Methods come in. Figure 1 is representing nine separate variables, each described by their single PDF, Monte Carlo Methods can aid in performing simulated random draws from all of these distributions to access what is the total likelihood of these separate events combining in a favorable (or unfavorable) result.</p>
-									
-									<p>For your business, if the various metrics of your business are analyzed and modeled each with their own PDF distribution, and these metrics are known to correlate to revenue predictably, then by simulating random each parameter with Monte Carlo samples, you can ultimately predict expected income with error margins. Moreover, this makes it possible to identify the metrics of your business that are performing with potential negative skews, allowing work to be focused on removing the skew and potentially turning them into positive skews.</p>
+									<p>As can be seen, Fourier analysis is a powerful tool for discovering quantifiable cycles in time series data. For business analytics, one merely needs to replace the astronomical sunspot data with any metric of your business over time. From the sunspot data (Figure 1), it is clear that there is a cycle. However, cycles are not always as apparent. An FFT can help discover cycles you didn't know about in your business. Once recognized, you will have gained a marked advantage in forecasting and accounting for aspects of your business that will predictably repeat themselves.</p>
 									
 									<a href="blog.html" class="button small"><i class="fas fa-arrow-up"></i> BACK TO TOP <i class="fas fa-arrow-up"></i></a><br />
 									<br />
