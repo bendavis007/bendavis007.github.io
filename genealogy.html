@@ -90,14 +90,14 @@ a:hover {text-decoration:underline;}
 		var staticMode=true;
 		var hideSidebar=false;
 		var noCentering=false;
-		var defaultZoom=0.75;
+		var defaultZoom=0.5;
 		var defaultDetail=null;
 		var defaultBirthName=0;
 		var defaultMiddleName=0;
 		var defaultShowPhoto=0;
-		var defaultCousins=15;
-		var defaultChildren=15;
-		var defaultParents=8;
+		var defaultCousins=2;
+		var defaultChildren=8;
+		var defaultParents=5;
 		var nameColors={
 			living : '#000',
 			deceased : '#777'
@@ -3364,7 +3364,7 @@ iKGRSE	^XI1X9	mV5WDR	fXI1X9	pBrenda	lDale	qGreen	gf	sM4VFL
 iM4VFL	^KGRSE	gm	sKGRSE	lDale	pBrad
 iO1XDZ	^F18L9	gm	lNelson	sO6V61	pAndrew Gustav	qNelson	z1	b18581003	d19511031	vMelissa, Orebro, Sweden	yChanute, Kansas	mWLUJO	fI9FXW	r744592052 84 120
 iO6V61	^F18L9	gf	sO1XDZ	lNelson	pKarin (Carrie) Andersson	qDanielson	b18660403	z1	d19510621	vVastannor, Keksand, Kopparberg, Sweden	yChanute, Kansas
-iI9FXW	^O1XDZ	gm	lNelson	z1	sWLUJO	pAndrew (Anders Nilsson)	qNelson	b18201221	d18960603	vButtinge, Stora Mellosa, Sweden	yChanute, Kansas	mEEYIF	fE100W	r498755694 96 120
+iI9FXW	^O1XDZ	gm	lNelson	z1	sWLUJO	pAndrew (Anders Nilsson)	qNilsson	b18201226	d18960603	vButtinge, Stora Mellosa, Sweden	yChanute, Kansas	mEEYIF	fE100W	r498755694 96 120
 iWLUJO	^O1XDZ	gf	sI9FXW	lNelson	z1	pAnna Maria	qOlsson AKA Olafson	b18290227	d19040629	vAnkersta, Orebo, Sweden	yChanute, Kansas
 iE100W	^I9FXW	gm	lPerhson	z1	sEEYIF	pNils Leoson	qPerhson	b17901003	d00000000	vLovan, Orebro, Sweden	mZAAAF	fOG8PF
 iEEYIF	^I9FXW	gf	sE100W	lPehrson	z1	pBritta Johnson	qJonsdotter	b17831003	vBondvrak, Oreboro, Sweden	mNQQ7Y	fF1T7O
@@ -4495,7 +4495,7 @@ pVOOAB Z6WCU	gm	m20020914
 			<TR HEIGHT="8">
 				<TD STYLE="border-top:solid #666666 1px; padding:8px;" VALIGN="middle">
 					<DIV STYLE="float:left;">
-Read-only HTML downloaded by Benjamin Davis on 25 Jul 2019.					</DIV>
+Read-only HTML downloaded by Benjamin Davis on 29 Sep 2019.					</DIV>
 					<DIV STYLE="float:right;">
 <A HREF="http://www.familyecho.com/" TITLE="Family Echo - Free Online Family Tree Maker"><IMG SRC="data:;base64,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" WIDTH="80" HEIGHT="16" BORDER="0" ALT="Family Echo" ALIGN="ABSBOTTOM"></A> &copy; Familiality 2019 - All rights reserved					</DIV>
 				</TD>
