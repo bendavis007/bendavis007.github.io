@@ -17,6 +17,7 @@ item4.EMAIL;type=INTERNET:ben@fromwithinmedia.com
 item4.X-ABLabel:_$!<Other>!$_
 item5.EMAIL;type=INTERNET:bendavis007@iinet.net.au
 item5.X-ABLabel:_$!<Other>!$_
+EMAIL;type=INTERNET;type=WORK:ben.davis@nyu.edu
 TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:+61 420 690 906
 TEL;type=WORK;type=VOICE:+61 3 9214 5536
 TEL;type=IPHONE;type=CELL;type=VOICE:+1 (417) 396-5252
