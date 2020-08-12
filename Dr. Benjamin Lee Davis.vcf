@@ -3,9 +3,9 @@ VERSION:3.0
 PRODID:-//Apple Inc.//Mac OS X 10.13.6//EN
 N:Davis;Benjamin;Lee;Dr.;
 FN:Dr. Benjamin Lee Davis
-ORG:Swinburne University of Technology;Centre for Astrophysics and Supercomputing
-TITLE:Postdoctoral Researcher
-EMAIL;type=INTERNET;type=WORK;type=pref:benjamindavis@swin.edu.au
+ORG:New York University Abu Dhabi;Center for Astro\, Particle\, and Planetary Physics
+TITLE:Research Associate
+EMAIL;type=INTERNET;type=WORK;type=pref:benjamindavis@astro.swin.edu.au
 EMAIL;type=INTERNET;type=HOME:bendavis007@hotmail.com
 item1.EMAIL;type=INTERNET:benjaminleedavis007@gmail.com
 item1.X-ABLabel:_$!<Other>!$_
