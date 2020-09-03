@@ -18,8 +18,8 @@ item4.X-ABLabel:_$!<Other>!$_
 EMAIL;type=INTERNET;type=WORK:ben.davis@nyu.edu
 TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:+1 (6202151547
 TEL;type=HOME;type=VOICE:+1 (620) 848-3981
-ADR;type=HOME;type=pref:;;6970 SE Kiwi Lane;Riverton;KS;66770;USA
-ADR;type=WORK:;;509 1/2 S Main Street;Galena;KS;66739;USA
+ADR;type=HOME;type=pref:;;6970 SE Kiwi Lane;Riverton;KS;66770-4157;USA
+ADR;type=WORK:;;509 1/2 S Main Street;Galena;KS;66739-1219;USA
 X-SOCIALPROFILE;type=twitter:http://twitter.com/bendavis007
 X-SOCIALPROFILE;type=facebook:http://facebook.com/benjamin.davis.12
 X-SOCIALPROFILE;type=flickr:http://www.flickr.com/photos/bendavis007
