@@ -13,22 +13,25 @@ item2.EMAIL;type=INTERNET:benjamin.lee.davis@icloud.com
 item2.X-ABLabel:_$!<Other>!$_
 item3.EMAIL;type=INTERNET:bendavis007@yahoo.com
 item3.X-ABLabel:_$!<Other>!$_
-item4.EMAIL;type=INTERNET:ben@fromwithinmedia.com
-item4.X-ABLabel:_$!<Other>!$_
+EMAIL;type=INTERNET;type=WORK:ben@fromwithinmedia.com
 EMAIL;type=INTERNET;type=WORK:ben.davis@nyu.edu
+EMAIL;type=INTERNET;type=WORK:bld5865@nyu.edu
 TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:+1 (6202151547
 TEL;type=HOME;type=VOICE:+1 (620) 848-3981
 ADR;type=HOME;type=pref:;;6970 SE Kiwi Lane;Riverton;KS;66770-4157;USA
 ADR;type=WORK:;;509 1/2 S Main Street;Galena;KS;66739-1219;USA
-X-SOCIALPROFILE;type=twitter:http://twitter.com/bendavis007
-X-SOCIALPROFILE;type=facebook:http://facebook.com/benjamin.davis.12
-X-SOCIALPROFILE;type=flickr:http://www.flickr.com/photos/bendavis007
-X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/bendavis007
 X-SOCIALPROFILE;type=myspace:http://www.myspace.com/bendavis007
-item5.URL;type=pref:bendavis007.github.io
-item5.X-ABLabel:_$!<HomePage>!$_
+X-SOCIALPROFILE;type=flickr:http://www.flickr.com/photos/bendavis007
+X-SOCIALPROFILE;type=facebook:http://facebook.com/benjamin.davis.12
+X-SOCIALPROFILE;type=myspace:http://www.myspace.com/bendavis007
+X-SOCIALPROFILE;type=twitter:http://twitter.com/bendavis007
+X-SOCIALPROFILE;type=linkedin:https://linkedin.com/in/bendavis007
+item4.URL;type=pref:https://bendavis007.github.io
+item4.X-ABLabel:_$!<HomePage>!$_
 URL;type=WORK:http://astronomy.swin.edu.au/staff/benjamindavis.html
-URL;type=WORK:https://nyuad.nyu.edu/en/research/centers-labs-and-projects/center-for-astro--particle-and-planetary-physics.html#tab-1-cap3-fellows
+URL;type=WORK:https://nyuad.nyu.edu/en/research/centers-labs-and-projects/center-for-astro--particle-and-planetary-physics/benjamin-davis.html
+item5.URL:https://nyu.zoom.us/my/ben.davis
+item5.X-ABLabel:Zoom
 BDAY:1984-06-09
 IMPP;X-SERVICE-TYPE=Skype;type=HOME;type=pref:skype:bendavis007
 IMPP;X-SERVICE-TYPE=Facebook;type=HOME:xmpp:benjamin.davis.12
