@@ -1,0 +1,115 @@
+<HTML>
+	<HEAD>
+
+<!--
+	This Family Echo file is Copyright (c) Familiality Ltd.
+
+	This file may be distributed only in whole and unmodified, as part of a
+	family downloaded from Family Echo. You may make this file available on the
+	World Wide Web without modification, only if used to display a family
+	downloaded from Family Echo. You may make copies of this file for personal
+	archiving purposes, only as part of a family downloaded from Family Echo.
+
+	This file may not be distributed or copied for any other purpose. You are
+	not permitted to modify, merge, publish, sublicense, rent, sell, lease,
+	loan, decompile, reverse engineer or create derivative works from this file.
+
+	This copyright and license notice must be kept in all copies of this file.
+-->
+
+		<LINK REL="stylesheet" TYPE="text/css" HREF="styles.css?190128">
+
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+
+		<script src="common.js?190128" type="text/javascript"></script>	
+		<script src="navigation.js?190128" type="text/javascript"></script>	
+	</HEAD>
+	
+	<BODY CLASS="rbody" onLoad="PL();"><TABLE WIDTH="100%" HEIGHT="100%">
+		<TR VALIGN="middle"><TD ALIGN="center">
+			<SPAN ID="printbutton">
+				<A HREF="#" onClick="parent.ESM('print'); return false;"><IMG SRC="print.gif" WIDTH="22" HEIGHT="22" ALIGN="ABSMIDDLE" TITLE="Print version" BORDER="0" STYLE="margin-right:4px;">Print</A>
+				&nbsp;-&nbsp;
+			</SPAN>
+			<A HREF="#" onClick="parent.ETI(); return false;"><SPAN ID="sidelinktext">Hide</SPAN> sidebar</A>
+			&nbsp;-&nbsp;
+			<A HREF="#" onClick="parent.ETK(); return false;"><SPAN ID="keylinktext">Show</SPAN> key</A>
+			&nbsp;-&nbsp;
+			<A HREF="#" onClick="parent.EBS(); return false;">Back to <SPAN ID="backtotext">start</SPAN></A>
+			&nbsp;-&nbsp;
+			<A HREF="#" onClick="NJM(); return false" ID="jumplink">Find person</A>
+			<SELECT ID="personjump" CLASS="sselect" onChange="SJS(this.options[this.selectedIndex].value);" STYLE="display:none;"></SELECT>
+			&nbsp;-&nbsp;
+			<IMG SRC="zoomout.gif" WIDTH="22" HEIGHT="22" ALIGN="ABSMIDDLE" TITLE="Zoom out" onClick="parent.ECZ(false);" STYLE="cursor:pointer;">
+			&nbsp;
+			<IMG SRC="zoomin.gif" WIDTH="22" HEIGHT="22" ALIGN="ABSMIDDLE" TITLE="Zoom in" onClick="parent.ECZ(true);" STYLE="cursor:pointer;">
+		</TD></TR>
+		<TR VALIGN="middle"><TD ALIGN="center">
+			Show:
+			<SELECT ID="showdetail" onChange="NCD();" TITLE="Information to show on tree">
+				<OPTION VALUE="">Name only</OPTION>
+				<OPTION VALUE="bds">Life dates</OPTION>
+				<OPTION VALUE="bd">Life years</OPTION>
+				<OPTION VALUE="bv">Birth</OPTION>
+				<OPTION VALUE="dy">Death</OPTION>
+				<OPTION VALUE="e">Email</OPTION>
+				<OPTION VALUE="a">Address</OPTION>
+				<OPTION VALUE="tku">Telephone</OPTION>
+				<OPTION VALUE="j">Profession</OPTION>
+				<OPTION VALUE="E">Company</OPTION>
+				<OPTION VALUE="I">Interests</OPTION>
+				<OPTION VALUE="A">Activities</OPTION>
+				<OPTION VALUE="_"></OPTION>
+				<OPTION VALUE="_r0">No photos</OPTION>
+				<OPTION VALUE="_r1">Show photos</OPTION>
+				<OPTION VALUE="_m0">No middle names</OPTION>
+				<OPTION VALUE="_m1">Middle names</OPTION>
+				<OPTION VALUE="_pl">Surname now</OPTION>
+				<OPTION VALUE="_pq">Surname at birth</OPTION>
+			</SELECT>
+			&nbsp;
+			Parents:
+			<SELECT ID="showparents" onChange="parent.ECP();" TITLE="Generations of ancestors to display">
+				<OPTION VALUE="1">1 gen</OPTION>
+				<OPTION VALUE="2">2 gen</OPTION>
+				<OPTION VALUE="3">3 gen</OPTION>
+				<OPTION VALUE="4">4 gen</OPTION>
+				<OPTION VALUE="5">5 gen</OPTION>
+				<OPTION VALUE="6">6 gen</OPTION>
+				<OPTION VALUE="8">8 gen</OPTION>
+				<OPTION VALUE="10">10 gen</OPTION>
+				<OPTION VALUE="12">12 gen</OPTION>
+				<OPTION VALUE="15">15 gen</OPTION>
+			</SELECT>
+			&nbsp;
+			Children:
+			<SELECT ID="showchildren" onChange="parent.ECH();" TITLE="Generations of descendants to display">
+				<OPTION VALUE="1">1 gen</OPTION>
+				<OPTION VALUE="2">2 gen</OPTION>
+				<OPTION VALUE="3">3 gen</OPTION>
+				<OPTION VALUE="4">4 gen</OPTION>
+				<OPTION VALUE="5">5 gen</OPTION>
+				<OPTION VALUE="6">6 gen</OPTION>
+				<OPTION VALUE="8">8 gen</OPTION>
+				<OPTION VALUE="10">10 gen</OPTION>
+				<OPTION VALUE="12">12 gen</OPTION>
+				<OPTION VALUE="15">15 gen</OPTION>
+			</SELECT>
+			&nbsp;
+			Others:
+			<SELECT ID="showcousins" onChange="parent.ECO();" TITLE="Generations of aunts, uncles, cousins, nephews and nieces">
+				<OPTION VALUE="0">None</OPTION>
+				<OPTION VALUE="1">1 gen</OPTION>
+				<OPTION VALUE="2">2 gen</OPTION>
+				<OPTION VALUE="3">3 gen</OPTION>
+				<OPTION VALUE="4">4 gen</OPTION>
+				<OPTION VALUE="5">5 gen</OPTION>
+				<OPTION VALUE="6">6 gen</OPTION>
+				<OPTION VALUE="8">8 gen</OPTION>
+				<OPTION VALUE="10">10 gen</OPTION>
+				<OPTION VALUE="12">12 gen</OPTION>
+				<OPTION VALUE="15">15 gen</OPTION>
+			</SELECT>
+		</TD></TR>
+	</TABLE></BODY>
+</HTML>

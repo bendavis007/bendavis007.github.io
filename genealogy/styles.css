@@ -1,0 +1,72 @@
+/*
+	This Family Echo file is Copyright (c) Familiality Ltd.
+
+	This file may be distributed only in whole and unmodified, as part of a
+	family downloaded from Family Echo. You may make this file available on the
+	World Wide Web without modification, only if used to display a family
+	downloaded from Family Echo. You may make copies of this file for personal
+	archiving purposes, only as part of a family downloaded from Family Echo.
+
+	This file may not be distributed or copied for any other purpose. You are
+	not permitted to modify, merge, publish, sublicense, rent, sell, lease,
+	loan, decompile, reverse engineer or create derivative works from this file.
+
+	This copyright and license notice must be kept in all copies of this file.
+*/
+
+body {margin:0px;}
+body,td,select {font-family:arial; font-size:12px;}
+a:link,a:active,a:visited {text-decoration:none; color:#000099;}
+a:hover {text-decoration:underline;}
+
+.lbody {background-color:#e1e1e1;}
+.rbody {background-color:#ffffff;}
+.mbody {background-color:#d6ddff; border:outset #666666 2px; padding:8px;}
+.fullsize {width:100%; height:100%;}
+
+.tm {margin-top:12px; margin-bottom:0px;}
+.td {margin-top:24px; margin-bottom:0px;}
+.pt {margin-top:12px; margin-bottom:24px; text-align:center; font-weight:bold; font-size:20px;}
+
+.hiderows {display: none;}
+.showrows {display: block; display:table-row-group;}
+
+.ibutton {font-family:arial; font-size:12px; border:outset 1px; vertical-align:middle; background-color:#eeeeee; padding:2px; color:#222222;}
+
+.dline {background:#444444; position:absolute; font-size:0px; line-height:0%;}
+.ddotted {position:absolute; font-size:0px; line-height:0%; border:1px #444444 dotted;}
+.dcella {text-align:center; color:#000000; overflow:hidden;}
+.dcelld {text-align:center; color:#777777; overflow:hidden;}
+.db,.db1,.db2,.db3,.db4 {display:block; overflow:hidden; font-size:1px;}
+.db1,.db2,.db3,.db4 {height:1px;}
+.db2,.db3,.db4 {border-left:1px solid #000; border-right:1px solid #000;}
+.db1 {margin:0 5px; background:#000;}
+.db2 {margin:0 3px; border-width:0 2px;}
+.db3 {margin:0 2px;}
+.db4 {margin:0 1px;}
+.dc {display:block; border:0 solid #000; border-width:0 1px;}
+.di {position:absolute; cursor:pointer; overflow:hidden;}
+
+.sname {font-size:18px; font-weight:bold; color:#000000; text-align:center;}
+.sdefname {font-size:18px; color:#666666; text-align:center;}
+.simage {border:1px #666666 solid;}
+.snormal {padding:2px 4px 2px 4px;}
+.sleft {color:#222222; padding:2px 2px 2px 4px; text-align:right;}
+.sright {width:176px; padding:2px 6px 2px 2px;}
+.sboth {padding:2px 4px 2px 4px; text-align:center;}
+.sfield {width:176px; font-family:arial; font-size:12px;}
+.syear {width:3.5em;}
+.sselect {font-family:arial; font-size:12px;}
+.sbutton {font-family:arial; font-size:12px; width:240px; border:outset 2px; background-color:#ffffff; padding:0px; color:#000000;}
+.sbutton2 {font-family:arial; font-size:12px; width:112px; border:outset 2px; background-color:#ffffff; padding:0px; color:#000000;}
+.spanel {border-left:solid #666666 1px; border-right:solid #666666 1px; border-bottom:solid #666666 1px;}
+.sswitch {padding-bottom:4px; border-bottom:solid #666666 1px; padding-left:5px; padding-top:5px; padding-right:5px;}
+.sswitched {padding:4px; padding-bottom:5px; border-left:solid #666666 1px; border-top:solid #666666 1px; border-right:solid #666666 1px;}
+.sswitchedlink {color:#222222;}
+.sswitchedlink:hover {text-decoration:none;}
+
+.marginon {left:0px; top:0px; height:100%; margin-left:320px; margin-right:0px;}
+.marginoff {left:0px; top:0px; height:100%; margin-left:0px; margin-right:0px;}
+.dright {position:absolute; left:0px; width:100%}
+.dleft {position:absolute; left:0px; top:0px; width:320px; border-right:solid #666666 1px; height:100%;}
+

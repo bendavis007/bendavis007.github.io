@@ -1,0 +1,37 @@
+a,
+a:visited,
+.nav a:hover,
+.heading .view-all a:hover,
+.widget a:hover,
+#wp-calendar a,
+.copyright a:hover,
+.entry-title a:hover,
+.widget_tj_twitter li a,
+.widget_tj_twitter li a:visited,
+.social-icons li a:hover,
+#tabber li a:hover,
+#breadcrumbs a:hover {
+	color: #418CD1;
+}
+
+.color1 { background: #418cd1; color: #fff;  }
+.color2 { background: #84736c; color: #fff;  }
+.color3 { background: #d24747; color: #fff; }
+
+.submit-button:hover,
+#commentform .form-submit input:hover { background-color: #418CD1; }
+
+
+#primary-nav .nav li a:hover,
+#primary-nav .nav li.first a,
+#primary-nav .nav li li a,
+#primary-nav .nav li.sfHover a,
+#primary-nav .current_page_item a,
+#content-loop .read-more a:hover,
+.tagcloud a:hover,
+.pagination a:hover,
+.pagination .current  { background: #418CD1; }
+
+
+#primary-nav .nav li li a:hover { background: #107FC9; }
+

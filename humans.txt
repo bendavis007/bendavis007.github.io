@@ -1,0 +1,17 @@
+/* TEAM */
+
+Web designer: Benjamin Davis
+Contact: bendavis007@hotmail.com
+Twitter: @bendavis007
+From: Hawthorn, Australia
+
+/* THANKS */
+
+abatten.github.io
+
+/* SITE */
+
+Last update: 2019/08/29
+Language: English
+Doctype: HTML5
+Software: Adobe Dreamweaver 2019

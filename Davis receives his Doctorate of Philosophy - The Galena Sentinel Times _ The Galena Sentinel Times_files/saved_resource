@@ -1,0 +1,1 @@
+(function(window, undefined){var AdButler = window.AdButler;if(AdButler.emptyResponse){  AdButler.emptyResponse('placement_319704_0');}}(window))
