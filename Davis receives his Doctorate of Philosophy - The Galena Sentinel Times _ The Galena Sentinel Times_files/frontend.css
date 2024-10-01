@@ -1,0 +1,22 @@
+.epaper-thumbail-container{
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.epaper-body-container *{
+  clear: none;
+}
+.epaper-meta-container dl dt{
+  float: left;
+  margin-right: 0.3em;
+}
+
+#content .epaper-meta-container dl dd, .epaper-meta-container dl dd{
+  margin-bottom: 0.5em;
+}
+.refferer-is-search{
+  background-color: #EEEEEE;
+  border: 1px solid #555555;
+  padding: 3px;
+  margin: 2em 1em;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /games.html
+
+Sitemap: https://bendavis.github.io/sitemap.xml

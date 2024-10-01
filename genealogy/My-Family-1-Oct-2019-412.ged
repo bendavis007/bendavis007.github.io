@@ -1,0 +1,5777 @@
+0 HEAD
+1 SOUR Family Echo
+2 WWW http://www.familyecho.com/
+1 FILE My Family
+1 DATE 1 OCT 2019
+1 DEST ANSTFILE
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 SUBM @I1@
+2 NAME Benjamin Davis
+1 SUBN
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Benjamin Lee /Davis/
+2 GIVN Benjamin Lee
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 9 JUN 1984
+2 PLAC Joplin, MO
+1 OCCU Astrophysicist
+2 PLAC Swinburne University of Technology
+1 RESI
+2 ADDR 106/77 Riversdale Road
+3 CONT Hawthorn, VIC 3122
+3 CONT Australia
+2 PHON +61420690906
+2 EMAIL bendavis007@hotmail.com
+2 WWW https://bendavis007.github.io
+1 NOTE Skype: bendavis007
+1 FAMS @F1@
+1 FAMC @F2@
+0 @I2@ INDI
+1 NAME Nicolette Le Ellen /Ogle/
+2 GIVN Nicolette Le Ellen
+2 SURN Ogle
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 10 JUL 1983
+1 FAMS @F1@
+1 FAMC @F3@
+0 @I3@ INDI
+1 NAME Jeffrey Lee /Davis/
+2 GIVN Jeffrey Lee
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 23 MAY 1952
+1 FAMS @F2@
+1 FAMC @F4@
+0 @I4@ INDI
+1 NAME Sara Ellen /Nelson/
+2 GIVN Sara Ellen
+2 SURN Nelson
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 28 JAN 1955
+1 FAMS @F2@
+1 FAMC @F5@
+0 @I5@ INDI
+1 NAME Bethany Ellen /Davis/
+2 GIVN Bethany Ellen
+2 SURN Davis
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 3 MAY 1989
+2 PLAC Joplin, Missouri
+1 FAMS @F6@
+1 FAMC @F2@
+0 @I6@ INDI
+1 NAME Kevin /Nelson/
+2 GIVN Kevin
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 9 MAY 1986
+1 FAMS @F6@
+1 FAMC @F7@
+0 @I7@ INDI
+1 NAME Forrest Rudolph /Nelson/
+2 GIVN Forrest Rudolph
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 5 SEP 1922
+2 PLAC Chanute, Kansas
+1 RESI
+2 ADDR P.O. Box 86
+3 CONT Riverton, KS 66770
+2 PHON 620-848-3417
+2 EMAIL Frnelson@mymailstation.com
+1 FAMS @F5@
+1 FAMC @F8@
+0 @I8@ INDI
+1 NAME Naomi June /Loughmiller/
+2 GIVN Naomi June
+2 SURN Loughmiller
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 23 JUN 1925
+2 PLAC Denison, Texas
+1 DEAT Y
+2 DATE 4 NOV 2015
+2 PLAC Joplin, Missouri
+1 BURI
+2 DATE 7 NOV 2015
+2 PLAC Hillcrest Cemetery, Galena, Kansas
+1 NOTE Bio notes: Naomi “June” Loughmiller Nelson, age 90 of Riverton, Kansas went to be with the Lord on Wednesday, November 4, 2015 at Freeman Hospital. June was born June 23, 1925 in Denison, Texas, the fourth of seven children born to Sam Houston Loughmiller, Sr. and Clara Ellen Clement Loughmiller. Her childhood home was in Parsons, Kansas. She married Forrest R. Nelson on July 1, 1951 in Parsons.
+2 CONT June is survived by her husband Forrest R. Nelson; and their children; David F. Nelson (Barbara); Sara Davis (Jeff); Scott Nelson, of Riverton; Steven Nelson (Pam), Tulsa, OK; Jennifer Schenker (Kent), Oswego, KS. Grandchildren Benjamin Davis (Nicolette); Bethany Davis; Anthony Nelson; Ryan, Travis and Rachel Schenker; and Alex Nelson.
+2 CONT Additional survivors, sisters Algene Hackett of Apple Valley, California; Clara “Patty” Jordan (Richard) of Holly Springs, Mississippi; and Kay Ranjbar (Manucher) of Indianapolis, Indiana. She had 51 nieces and nephews. She was preceded in death by her brothers Sam H. Loughmiller, Jr., Dr. Owen Loughmiller, Isabel Eisler and her parents.
+2 CONT Services for June will be held on Saturday, Nov. 7th at 2:00 p.m. at the Spring River Assembly of God, Riverton, Kansas. Final resting place, Hillcrest Cemetery, Galena, KS. Visitation will be Friday, Nov. 6th from 6:00 to 8:00 P.M. at Thornhill-Dillon Mortuary 602 S. Byers Ave., Joplin, MO. The family will be receiving friends at the home of Sara and Jeff Davis in Riverton, KS.
+2 CONT Arrangements are under the direction of Thornhill-Dillion Mortuary, Joplin, MO. 417-623-4567
+1 FAMS @F5@
+1 FAMC @F9@
+0 @I9@ INDI
+1 NAME Russell /Davis/
+2 GIVN Russell
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 22 FEB 1914
+1 DEAT Y
+2 DATE 16 JUL 1979
+1 FAMS @F4@
+1 FAMC @F10@
+0 @I10@ INDI
+1 NAME Jacqueline /Laws/
+2 GIVN Jacqueline
+2 SURN Laws
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 25 AUG 1922
+1 DEAT Y
+2 DATE 5 MAY 2009
+1 FAMS @F4@
+1 FAMC @F11@
+0 @I11@ INDI
+1 NAME David Forrest /Nelson/
+2 GIVN David Forrest
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 31 OCT 1952
+1 RESI
+2 ADDR P.O. Box 246
+3 CONT Riverton, KS 66770
+2 PHON 620-848-3055
+2 EMAIL Dnelson@kans.com
+1 FAMS @F12@
+1 FAMC @F5@
+0 @I12@ INDI
+1 NAME Janet Rae /Davis/
+2 GIVN Janet Rae
+2 SURN Davis
+2 _MARNM Green
+1 SEX F
+1 BIRT
+2 DATE 11 AUG 1949
+1 DEAT Y
+2 DATE 3 JUN 2014
+1 FAMS @F13@
+1 FAMS @F14@
+1 FAMC @F4@
+0 @I13@ INDI
+1 NAME Jill Ann /Davis/
+2 GIVN Jill Ann
+2 SURN Davis
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 2 JUL 1957
+1 FAMC @F4@
+0 @I14@ INDI
+1 NAME Steven /Nelson/
+2 GIVN Steven
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 3705 E. 48th Place
+3 CONT Tulsa, OK 74135
+2 PHON 918-747-3837
+2 EMAIL Steven.C.Nelson@us.pwcGlobal.com
+1 FAMS @F15@
+1 FAMS @F16@
+1 FAMC @F5@
+0 @I15@ INDI
+1 NAME Scott Houston /Nelson/
+2 GIVN Scott Houston
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 21 JUL 1960
+1 RESI
+2 ADDR P.O. Box 86
+3 CONT Riverton, KS 66770
+2 PHON 620-848-3414
+1 FAMC @F5@
+0 @I16@ INDI
+1 NAME Jennifer /Nelson/
+2 GIVN Jennifer
+2 SURN Nelson
+2 _MARNM Schenker
+1 SEX F
+1 RESI
+2 ADDR 21 Ohio
+3 CONT Oswego, KS 67356
+2 PHON 620-795-4523
+2 EMAIL Jschenker @usd504.k12.ks.us
+1 FAMS @F17@
+1 FAMC @F5@
+0 @I17@ INDI
+1 NAME Barbara /Bendure/
+2 GIVN Barbara
+2 SURN Bendure
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 14 DEC 1950
+2 PLAC Waco, Missouri
+1 OCCU Teacher
+1 RESI
+2 ADDR P.O. Box 246
+3 CONT Riverton, KS 66770
+2 PHON 620-848-3055
+2 PHON +1 417-438-5834
+1 FAMS @F12@
+0 @I18@ INDI
+1 NAME Pam /Peet/
+2 GIVN Pam
+2 SURN Peet
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 3705 E. 48th Place
+3 CONT Tulsa, OK 74135
+2 PHON 918-747-3837
+1 FAMS @F15@
+0 @I19@ INDI
+1 NAME Angie /Nelson/
+2 GIVN Angie
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 DEAT Y
+1 FAMS @F16@
+0 @I20@ INDI
+1 NAME Kent /Schenker/
+2 GIVN Kent
+2 SURN Schenker
+2 _MARNM Schenker
+1 SEX M
+1 RESI
+2 ADDR 21 Ohio
+3 CONT Oswego, KS 67356
+2 PHON 620-795-4523
+1 FAMS @F17@
+0 @I21@ INDI
+1 NAME Leo /Green/
+2 GIVN Leo
+2 SURN Green
+2 _MARNM Green
+1 SEX M
+1 DEAT Y
+1 FAMS @F13@
+1 FAMS @F76@
+0 @I22@ INDI
+1 NAME Donald /Graham/
+2 GIVN Donald
+2 SURN Graham
+2 _MARNM Graham
+1 SEX M
+1 FAMS @F14@
+0 @I23@ INDI
+1 NAME Chester H. /Laws/
+2 GIVN Chester H.
+2 SURN Laws
+2 _MARNM Laws
+1 SEX M
+1 DEAT Y
+2 DATE NOV 1978
+1 FAMS @F11@
+1 FAMC @F18@
+0 @I24@ INDI
+1 NAME Frances Evelyn /Rogers/
+2 GIVN Frances Evelyn
+2 SURN Rogers
+2 _MARNM Laws
+1 SEX F
+1 DEAT Y
+2 DATE APR 1996
+1 FAMS @F11@
+1 FAMC @F19@
+0 @I25@ INDI
+1 NAME Sam Houston /Loughmiller/
+2 GIVN Sam Houston
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 BIRT
+2 DATE 20 OCT 1893
+1 DEAT Y
+2 DATE MAY 1958
+1 FAMS @F9@
+0 @I26@ INDI
+1 NAME Clara /Clement/
+2 GIVN Clara
+2 SURN Clement
+2 _MARNM Loughmiller
+1 SEX F
+1 BIRT
+2 DATE 12 OCT 1891
+1 DEAT Y
+2 DATE 5 OCT 1984
+1 FAMS @F9@
+0 @I27@ INDI
+1 NAME Justin /Graham/
+2 GIVN Justin
+2 SURN Graham
+2 _MARNM Graham
+1 SEX M
+1 FAMS @F20@
+1 FAMC @F14@
+0 @I28@ INDI
+1 NAME Cindy /Graham/
+2 GIVN Cindy
+2 SURN Graham
+2 _MARNM Graham
+1 SEX F
+1 FAMS @F21@
+1 FAMC @F14@
+0 @I29@ INDI
+1 NAME Anthony David /Nelson/
+2 GIVN Anthony David
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 5 DEC 1990
+2 PLAC Joplin, Missouri
+1 FAMC @F12@
+0 @I30@ INDI
+1 NAME Alexander /Nelson/
+2 GIVN Alexander
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 1 JAN 2004
+2 PLAC Tulsa, Oklahoma
+1 RESI
+2 ADDR 3705 E. 48th Place
+3 CONT Tulsa, OK 74135
+2 PHON 918-747-3837
+1 FAMC @F15@
+0 @I31@ INDI
+1 NAME Ryan Kent /Schenker/
+2 GIVN Ryan Kent
+2 SURN Schenker
+2 _MARNM Schenker
+1 SEX M
+1 BIRT
+2 DATE 16 JUN 1992
+2 PLAC Joplin, Missouri
+1 FAMS @F22@
+1 FAMC @F17@
+0 @I32@ INDI
+1 NAME Travis Daniel /Schenker/
+2 GIVN Travis Daniel
+2 SURN Schenker
+2 _MARNM Schenker
+1 SEX M
+1 BIRT
+2 DATE 23 APR 1995
+2 PLAC Joplin, Missouri
+1 FAMC @F17@
+0 @I33@ INDI
+1 NAME Rachel /Schenker/
+2 GIVN Rachel
+2 SURN Schenker
+2 _MARNM Schenker
+1 SEX F
+1 BIRT
+2 DATE 20 JUN 1999
+2 PLAC Joplin, Missouri
+1 FAMC @F17@
+0 @I34@ INDI
+1 NAME Katelyn /Staggs/
+2 GIVN Katelyn
+2 SURN Staggs
+2 _MARNM Schenker
+1 SEX F
+1 BIRT
+2 DATE 9 FEB 1994
+1 FAMS @F22@
+0 @I35@ INDI
+1 NAME Chester Gaylor "Bud" /Laws/
+2 GIVN Chester Gaylor "Bud"
+2 SURN Laws
+2 _MARNM Laws
+1 SEX M
+1 DEAT Y
+1 FAMS @F23@
+1 FAMC @F11@
+0 @I36@ INDI
+1 NAME John Burtress /Rogers/
+2 GIVN John Burtress
+2 SURN Rogers
+2 _MARNM Rogers
+1 SEX M
+1 DEAT Y
+1 FAMS @F19@
+0 @I37@ INDI
+1 NAME Marylou /McConnell/
+2 GIVN Marylou
+2 SURN McConnell
+2 _MARNM Roger
+1 SEX F
+1 DEAT Y
+1 FAMS @F19@
+1 FAMC @F24@
+0 @I38@ INDI
+1 NAME Nadine /Rogers/
+2 GIVN Nadine
+2 SURN Rogers
+2 _MARNM Lowe
+1 SEX F
+1 DEAT Y
+1 FAMS @F25@
+1 FAMC @F19@
+0 @I39@ INDI
+1 NAME Sam /Loughmiller/
+2 GIVN Sam
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 DEAT Y
+1 FAMS @F26@
+1 FAMC @F9@
+0 @I40@ INDI
+1 NAME Owen /Loughmiller/
+2 GIVN Owen
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 DEAT Y
+1 FAMC @F9@
+0 @I41@ INDI
+1 NAME Clara Patty /Loughmiller/
+2 GIVN Clara Patty
+2 SURN Loughmiller
+2 _MARNM Jordan
+1 SEX F
+1 BIRT
+2 DATE 28 JUL 1931
+1 RESI
+2 PHON +1 901-351-7805
+1 FAMS @F27@
+1 FAMC @F9@
+0 @I42@ INDI
+1 NAME Oscar Daniel /Nelson/
+2 GIVN Oscar Daniel
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 27 JAN 1889
+1 DEAT Y
+2 DATE 13 MAY 1976
+1 FAMS @F8@
+1 FAMC @F28@
+0 @I43@ INDI
+1 NAME Eunice /Gray/
+2 GIVN Eunice
+2 SURN Gray
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 15 MAY 1894
+1 DEAT Y
+2 DATE 16 MAY 1982
+1 FAMS @F8@
+0 @I44@ INDI
+1 NAME Allan F. /Nelson/
+2 GIVN Allan F.
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 22 MAY 1924
+2 PLAC Chanute, Kansas
+1 DEAT Y
+2 DATE 6 APR 2016
+2 PLAC Chanute, Kansas
+1 BURI
+2 PLAC Chanute, Kansas
+1 FAMS @F29@
+1 FAMC @F8@
+0 @I45@ INDI
+1 NAME Julie /Graham/
+2 GIVN Julie
+2 SURN Graham
+2 _MARNM Graham
+1 SEX F
+1 FAMS @F20@
+0 @I46@ INDI
+1 NAME Zachary Jordan /Graham/
+2 GIVN Zachary Jordan
+2 SURN Graham
+2 _MARNM Graham
+1 SEX M
+1 FAMC @F20@
+0 @I47@ INDI
+1 NAME Turner /Graham/
+2 GIVN Turner
+2 SURN Graham
+2 _MARNM Graham
+1 SEX M
+1 FAMC @F20@
+0 @I48@ INDI
+1 NAME Algene /Loughmiller/
+2 GIVN Algene
+2 SURN Loughmiller
+2 _MARNM Hackett
+1 SEX F
+1 DEAT Y
+1 FAMS @F30@
+1 FAMC @F9@
+0 @I49@ INDI
+1 NAME Isabel /Loughmiller/
+2 GIVN Isabel
+2 SURN Loughmiller
+2 _MARNM Eisler
+1 SEX F
+1 DEAT Y
+1 FAMS @F31@
+1 FAMC @F9@
+0 @I50@ INDI
+1 NAME Kay /Loughmiller/
+2 GIVN Kay
+2 SURN Loughmiller
+2 _MARNM Ranjbar
+1 SEX F
+1 FAMS @F32@
+1 FAMC @F9@
+0 @I51@ INDI
+1 NAME Ruth M. /Nelson/
+2 GIVN Ruth M.
+2 SURN Nelson
+2 _MARNM Elliott
+1 SEX F
+1 DEAT Y
+1 FAMS @F33@
+1 FAMC @F8@
+0 @I52@ INDI
+1 NAME Ellis W. /Nelson/
+2 GIVN Ellis W.
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 DEAT Y
+1 FAMS @F34@
+1 FAMC @F8@
+0 @I53@ INDI
+1 NAME Louis D. /Nelson/
+2 GIVN Louis D.
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 DEAT Y
+1 FAMS @F35@
+1 FAMC @F8@
+0 @I54@ INDI
+1 NAME Helen /Nelson/
+2 GIVN Helen
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 DEAT Y
+2 DATE 1931
+1 FAMC @F8@
+0 @I55@ INDI
+1 NAME Martha Ann /Nelson/
+2 GIVN Martha Ann
+2 SURN Nelson
+2 _MARNM Moody
+1 SEX F
+1 BIRT
+2 DATE 24 OCT 1931
+1 DEAT Y
+2 DATE 7 MAR 2004
+1 FAMS @F151@
+1 FAMC @F8@
+0 @I56@ INDI
+1 NAME Betty Agnes /Graham/
+2 GIVN Betty Agnes
+2 SURN Graham
+2 _MARNM Nelson
+1 SEX F
+1 DEAT Y
+2 DATE 17 OCT 2012
+1 FAMS @F29@
+0 @I57@ INDI
+1 NAME John A. /Elliott/
+2 GIVN John A.
+2 SURN Elliott
+2 _MARNM Elliott
+1 SEX M
+1 DEAT Y
+1 FAMS @F33@
+0 @I58@ INDI
+1 NAME Richard /Jordan/
+2 GIVN Richard
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 BIRT
+2 DATE 31 AUG 1929
+1 DEAT Y
+1 FAMS @F27@
+0 @I59@ INDI
+1 NAME Elisabeth /Howey/
+2 GIVN Elisabeth
+2 SURN Howey
+2 _MARNM Loughmiller
+1 SEX F
+1 DEAT Y
+1 FAMS @F26@
+0 @I60@ INDI
+1 NAME Joe /Eisler/
+2 GIVN Joe
+2 SURN Eisler
+2 _MARNM Eisler
+1 SEX M
+1 DEAT Y
+1 FAMS @F31@
+0 @I61@ INDI
+1 NAME /Hackett/
+2 SURN Hackett
+2 _MARNM Hackett
+1 SEX M
+1 DEAT Y
+1 FAMS @F30@
+0 @I62@ INDI
+1 NAME Manuchar /Ranjbar/
+2 GIVN Manuchar
+2 SURN Ranjbar
+2 _MARNM Ranjbar
+1 SEX M
+1 BIRT
+2 PLAC Tehran, Iran
+1 FAMS @F32@
+0 @I63@ INDI
+1 NAME James Chip /Eisler/
+2 GIVN James Chip
+2 SURN Eisler
+2 _MARNM Eisler
+1 SEX M
+1 FAMS @F36@
+1 FAMC @F31@
+0 @I64@ INDI
+1 NAME Andy /Eisler/
+2 GIVN Andy
+2 SURN Eisler
+2 _MARNM Eisler
+1 SEX M
+1 FAMS @F37@
+1 FAMC @F31@
+0 @I65@ INDI
+1 NAME Joyce /Eisler/
+2 GIVN Joyce
+2 SURN Eisler
+2 _MARNM Eisler
+1 SEX F
+1 FAMS @F36@
+0 @I66@ INDI
+1 NAME /Eisler/
+2 SURN Eisler
+2 _MARNM Eisler
+1 SEX F
+1 FAMS @F37@
+0 @I67@ INDI
+1 NAME Omid /Stojanovic/
+2 GIVN Omid
+2 SURN Stojanovic
+2 _MARNM Ranjbar
+1 SEX M
+1 BIRT
+2 DATE 7 AUG 1958
+1 FAMS @F38@
+1 FAMC @F32@
+0 @I68@ INDI
+1 NAME Cindy /Ranjbar/
+2 GIVN Cindy
+2 SURN Ranjbar
+1 SEX F
+1 FAMC @F32@
+0 @I69@ INDI
+1 NAME Daniel /Ranjbar/
+2 GIVN Daniel
+2 SURN Ranjbar
+2 _MARNM Ranjbar
+1 SEX M
+1 FAMC @F32@
+0 @I70@ INDI
+1 NAME Michael Rabia /Ranjbar/
+2 GIVN Michael Rabia
+2 SURN Ranjbar
+2 _MARNM Ranjbar
+1 SEX M
+1 BIRT
+2 DATE 29 JUL 1971
+1 FAMS @F39@
+1 FAMC @F32@
+0 @I71@ INDI
+1 NAME Vahid Houston /Ranjbar/
+2 GIVN Vahid Houston
+2 SURN Ranjbar
+2 _MARNM Ranjbar
+1 SEX M
+1 BIRT
+2 DATE 21 JUN 1968
+1 FAMS @F40@
+1 FAMC @F32@
+0 @I72@ INDI
+1 NAME Snezana /Stojanovic/
+2 GIVN Snezana
+2 SURN Stojanovic
+2 _MARNM Ranjbar
+1 SEX F
+1 FAMS @F40@
+0 @I73@ INDI
+1 NAME Kay /Ranjbar/
+2 GIVN Kay
+2 SURN Ranjbar
+2 _MARNM Ranjbar
+1 SEX F
+1 FAMC @F40@
+0 @I74@ INDI
+1 NAME Randy /Hackett/
+2 GIVN Randy
+2 SURN Hackett
+2 _MARNM Hackett
+1 SEX M
+1 FAMS @F41@
+1 FAMC @F30@
+0 @I75@ INDI
+1 NAME /Hackett/
+2 SURN Hackett
+2 _MARNM Hackett
+1 SEX F
+1 FAMS @F41@
+0 @I76@ INDI
+1 NAME Adam /Hackett/
+2 GIVN Adam
+2 SURN Hackett
+2 _MARNM Hackett
+1 SEX M
+1 BIRT
+2 DATE 15 DEC 1983
+1 FAMS @F42@
+1 FAMC @F41@
+0 @I77@ INDI
+1 NAME /Hackett/
+2 SURN Hackett
+2 _MARNM Hackett
+1 SEX F
+1 FAMC @F41@
+0 @I78@ INDI
+1 NAME Linda Algene /Hackett/
+2 GIVN Linda Algene
+2 SURN Hackett
+2 _MARNM Parker
+1 SEX F
+1 FAMS @F43@
+1 FAMC @F30@
+0 @I79@ INDI
+1 NAME Doug /Parker/
+2 GIVN Doug
+2 SURN Parker
+2 _MARNM Parker
+1 SEX M
+1 FAMS @F43@
+0 @I80@ INDI
+1 NAME Richard M /Jordan/
+2 GIVN Richard M
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 BIRT
+2 DATE 6 JUN 1960
+1 RESI
+2 ADDR 8958 Jenna Rd
+3 CONT Germantown, TN 38138
+2 PHON 901-756-5874
+1 FAMS @F44@
+1 FAMC @F27@
+0 @I81@ INDI
+1 NAME Clara Ellen Malacha /Jordan/
+2 GIVN Clara Ellen Malacha
+2 SURN Jordan
+2 _MARNM Simmons
+1 SEX F
+1 BIRT
+2 DATE 14 DEC 1955
+1 RESI
+2 ADDR 635 Houston Street
+3 CONT Memphis, TN 38111
+2 PHON +1 901-598-6797
+1 FAMS @F45@
+1 FAMC @F27@
+0 @I82@ INDI
+1 NAME Rebekah /Jordan/
+2 GIVN Rebekah
+2 SURN Jordan
+2 _MARNM Bruce
+1 SEX F
+1 BIRT
+2 DATE 3 JUL 1958
+1 RESI
+2 ADDR 3159 Rustleaf Cove
+3 CONT Germantown, TN 38138
+2 PHON 901-755-4605
+1 FAMS @F46@
+1 FAMC @F27@
+0 @I83@ INDI
+1 NAME Nancy Patricia /Jordan/
+2 GIVN Nancy Patricia
+2 SURN Jordan
+2 _MARNM Money
+1 SEX F
+1 BIRT
+2 DATE 27 DEC 1956
+1 RESI
+2 ADDR 2221 Ridgepointe Ct
+3 CONT Walnut Creek, CA 94596
+2 PHON 925-300-3493
+1 FAMS @F47@
+1 FAMC @F27@
+0 @I84@ INDI
+1 NAME Matthew /Jordan/
+2 GIVN Matthew
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 FAMS @F48@
+1 FAMC @F27@
+0 @I85@ INDI
+1 NAME Jeffrey /Jordan/
+2 GIVN Jeffrey
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 FAMS @F49@
+1 FAMC @F27@
+0 @I86@ INDI
+1 NAME Rachel /Jordan/
+2 GIVN Rachel
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX F
+1 RESI
+2 ADDR 2161 Lochlevin Dr
+3 CONT Memphis, TN 38119
+2 PHON 901-683-3123
+1 FAMS @F50@
+1 FAMC @F27@
+0 @I87@ INDI
+1 NAME Sam /Loughmiller/
+2 GIVN Sam
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMC @F26@
+0 @I88@ INDI
+1 NAME Quinby /Loughmiller/
+2 GIVN Quinby
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 DEAT Y
+1 FAMC @F26@
+0 @I89@ INDI
+1 NAME Tom /Loughmiller/
+2 GIVN Tom
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 BIRT
+2 DATE 23 APR 1951
+2 PLAC Parsons, Kansas
+1 OCCU Automotive Sales
+2 PLAC Loughmiller Motors
+1 FAMS @F51@
+1 FAMC @F26@
+0 @I90@ INDI
+1 NAME Jerry /Loughmiller/
+2 GIVN Jerry
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMS @F52@
+1 FAMC @F26@
+0 @I91@ INDI
+1 NAME Tommy /Bruce/
+2 GIVN Tommy
+2 SURN Bruce
+2 _MARNM Bruce
+1 SEX M
+1 RESI
+2 ADDR 3159 Rustleaf Cove
+3 CONT Germantown, TN 38138
+2 PHON 901-755-4605
+1 FAMS @F46@
+0 @I92@ INDI
+1 NAME Wesley /Bruce/
+2 GIVN Wesley
+2 SURN Bruce
+2 _MARNM Bruce
+1 SEX M
+1 FAMC @F46@
+0 @I93@ INDI
+1 NAME Patricia /Bruce/
+2 GIVN Patricia
+2 SURN Bruce
+2 _MARNM Freese
+1 SEX F
+1 FAMS @F53@
+1 FAMC @F46@
+0 @I94@ INDI
+1 NAME Jordan /Bruce/
+2 GIVN Jordan
+2 SURN Bruce
+2 _MARNM Bruce
+1 SEX M
+1 BIRT
+2 DATE 16 OCT 1991
+1 FAMC @F46@
+0 @I95@ INDI
+1 NAME Theodore /Lowe/
+2 GIVN Theodore
+2 SURN Lowe
+2 _MARNM Lowe
+1 SEX M
+1 DEAT Y
+1 FAMS @F25@
+0 @I96@ INDI
+1 NAME Betty /Laws/
+2 GIVN Betty
+2 SURN Laws
+2 _MARNM Laws
+1 SEX F
+1 FAMS @F23@
+0 @I97@ INDI
+1 NAME Barbara /Lowe/
+2 GIVN Barbara
+2 SURN Lowe
+2 _MARNM Mitchell
+1 SEX F
+1 DEAT Y
+1 FAMS @F54@
+1 FAMC @F25@
+0 @I98@ INDI
+1 NAME Peter /Mitchell/
+2 GIVN Peter
+2 SURN Mitchell
+2 _MARNM Mitchell
+1 SEX M
+1 DEAT Y
+1 FAMS @F54@
+0 @I99@ INDI
+1 NAME Leland /Ogle/
+2 GIVN Leland
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMS @F3@
+1 FAMC @F55@
+0 @I100@ INDI
+1 NAME Charla /Button/
+2 GIVN Charla
+2 SURN Button
+2 _MARNM Button
+1 SEX F
+1 BIRT
+2 DATE 21 SEP 1957
+1 RESI
+2 PHON +1 918-352-2895
+1 FAMS @F3@
+1 FAMC @F56@
+0 @I101@ INDI
+1 NAME Kyle /Ogle/
+2 GIVN Kyle
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMS @F57@
+1 FAMC @F3@
+0 @I102@ INDI
+1 NAME Andrea /Martin/
+2 GIVN Andrea
+2 SURN Martin
+2 _MARNM Ogle
+1 SEX F
+1 FAMS @F57@
+1 FAMC @F58@
+0 @I103@ INDI
+1 NAME Pete /Money/
+2 GIVN Pete
+2 SURN Money
+2 _MARNM Money
+1 SEX M
+1 RESI
+2 ADDR 2221 Ridgepointe Ct
+3 CONT Walnut Creek, CA 94596
+2 PHON 925-300-3493
+1 FAMS @F47@
+0 @I104@ INDI
+1 NAME Christopher /Money/
+2 GIVN Christopher
+2 SURN Money
+2 _MARNM Money
+1 SEX M
+1 FAMC @F47@
+0 @I105@ INDI
+1 NAME Elise /Jordan/
+2 GIVN Elise
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX F
+1 RESI
+2 ADDR 8958 Jenna Rd
+3 CONT Germantown, TN 38138
+2 PHON 901-756-5874
+1 FAMS @F44@
+0 @I106@ INDI
+1 NAME Samantha /Jordan/
+2 GIVN Samantha
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX F
+1 FAMC @F44@
+0 @I107@ INDI
+1 NAME Hannah /Jordan/
+2 GIVN Hannah
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX F
+1 FAMC @F44@
+0 @I108@ INDI
+1 NAME /Cromer/
+2 SURN Cromer
+2 _MARNM Cromer
+1 SEX M
+1 DEAT Y
+1 FAMS @F45@
+0 @I109@ INDI
+1 NAME Hal /Cromer/
+2 GIVN Hal
+2 SURN Cromer
+2 _MARNM Cromer
+1 SEX M
+1 BIRT
+2 DATE 27 OCT 1977
+1 FAMC @F45@
+0 @I110@ INDI
+1 NAME Patrick /Cromer/
+2 GIVN Patrick
+2 SURN Cromer
+2 _MARNM Cromer
+1 SEX M
+1 FAMS @F59@
+1 FAMC @F45@
+0 @I111@ INDI
+1 NAME Lisa /Ah Hess/
+2 GIVN Lisa
+2 SURN Ah Hess
+2 _MARNM Cromer
+1 SEX F
+1 BIRT
+2 PLAC Little Rock, Arkansas
+1 OCCU Sales Engineer
+2 PLAC Jordan/Marlar/Hale, Inc.
+1 RESI
+2 PHON +1 901-493-0859
+1 FAMS @F59@
+0 @I112@ INDI
+1 NAME Levi /Cromer/
+2 GIVN Levi
+2 SURN Cromer
+2 _MARNM Cromer
+1 SEX M
+1 FAMC @F59@
+0 @I113@ INDI
+1 NAME Casey /Cromer/
+2 GIVN Casey
+2 SURN Cromer
+2 _MARNM Stewart
+1 SEX F
+1 FAMS @F60@
+1 FAMC @F45@
+0 @I114@ INDI
+1 NAME
+1 SEX M
+1 FAMS @F60@
+0 @I115@ INDI
+1 NAME Otto Foster /Davis/
+2 GIVN Otto Foster
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 12 OCT 1887
+2 PLAC Columbus, Kansas
+1 DEAT Y
+2 DATE 23 DEC 1956
+1 FAMS @F10@
+1 FAMC @F61@
+0 @I116@ INDI
+1 NAME Naomi /Russell/
+2 GIVN Naomi
+2 SURN Russell
+2 _MARNM Davis
+1 SEX F
+1 DEAT Y
+1 FAMS @F10@
+1 FAMC @F62@
+0 @I117@ INDI
+1 NAME Curtis
+2 GIVN Curtis
+1 SEX M
+1 FAMS @F21@
+0 @I118@ INDI
+1 NAME Miles /Graham/
+2 GIVN Miles
+2 SURN Graham
+2 _MARNM Leo
+1 SEX M
+1 FAMC @F21@
+0 @I119@ INDI
+1 NAME Aurora Irene /Ogle/
+2 GIVN Aurora Irene
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX F
+1 FAMC @F57@
+0 @I120@ INDI
+1 NAME Charles /Button/
+2 GIVN Charles
+2 SURN Button
+2 _MARNM Button
+1 SEX M
+1 FAMS @F56@
+0 @I121@ INDI
+1 NAME Charlene /Button/
+2 GIVN Charlene
+2 SURN Button
+2 _MARNM Button
+1 SEX F
+1 FAMS @F56@
+0 @I122@ INDI
+1 NAME Mike /Martin/
+2 GIVN Mike
+2 SURN Martin
+2 _MARNM Martin
+1 SEX M
+1 FAMS @F58@
+0 @I123@ INDI
+1 NAME Melinda /Carey/
+2 GIVN Melinda
+2 SURN Carey
+2 _MARNM Martin
+1 SEX F
+1 FAMS @F58@
+1 FAMC @F63@
+0 @I124@ INDI
+1 NAME Colin /Martin/
+2 GIVN Colin
+2 SURN Martin
+2 _MARNM Martin
+1 SEX M
+1 FAMC @F58@
+0 @I125@ INDI
+1 NAME Johnny /Carey/
+2 GIVN Johnny
+2 SURN Carey
+2 _MARNM Carey
+1 SEX M
+1 FAMS @F63@
+0 @I126@ INDI
+1 NAME /Carey/
+2 SURN Carey
+2 _MARNM Carey
+1 SEX F
+1 DEAT Y
+1 FAMS @F63@
+0 @I127@ INDI
+1 NAME Leland /Ogle/
+2 GIVN Leland
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 DEAT Y
+1 FAMS @F55@
+0 @I128@ INDI
+1 NAME Peggy /Ogle/
+2 GIVN Peggy
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX F
+1 DEAT Y
+1 FAMS @F55@
+0 @I129@ INDI
+1 NAME Tyler /Ogle/
+2 GIVN Tyler
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 DEAT Y
+1 FAMS @F96@
+1 FAMC @F55@
+0 @I130@ INDI
+1 NAME Perry /Ogle/
+2 GIVN Perry
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMS @F165@
+1 FAMC @F55@
+0 @I131@ INDI
+1 NAME Ellen /Ogle/
+2 GIVN Ellen
+2 SURN Ogle
+2 _MARNM Cummings
+1 SEX F
+1 FAMS @F64@
+1 FAMC @F55@
+0 @I132@ INDI
+1 NAME Jack /Cummings/
+2 GIVN Jack
+2 SURN Cummings
+2 _MARNM Cummings
+1 SEX M
+1 FAMS @F64@
+0 @I133@ INDI
+1 NAME Emily /Cummings/
+2 GIVN Emily
+2 SURN Cummings
+2 _MARNM Cummings
+1 SEX F
+1 FAMC @F64@
+0 @I134@ INDI
+1 NAME Lily /Cummings/
+2 GIVN Lily
+2 SURN Cummings
+2 _MARNM Cummings
+1 SEX F
+1 FAMC @F64@
+0 @I135@ INDI
+1 NAME Carolyn /Button/
+2 GIVN Carolyn
+2 SURN Button
+2 _MARNM Nott
+1 SEX F
+1 BIRT
+2 DATE 19 FEB 1956
+1 FAMS @F65@
+1 FAMS @F66@
+1 FAMC @F56@
+0 @I136@ INDI
+1 NAME Charles /Button/
+2 GIVN Charles
+2 SURN Button
+2 _MARNM Button
+1 SEX M
+1 FAMS @F67@
+1 FAMC @F56@
+0 @I137@ INDI
+1 NAME Cherita /Button/
+2 GIVN Cherita
+2 SURN Button
+2 _MARNM Graber
+1 SEX F
+1 FAMS @F68@
+1 FAMS @F69@
+1 FAMC @F56@
+0 @I138@ INDI
+1 NAME Vicky /Button/
+2 GIVN Vicky
+2 SURN Button
+2 _MARNM Button
+1 SEX F
+1 FAMS @F67@
+0 @I139@ INDI
+1 NAME Josh /Button/
+2 GIVN Josh
+2 SURN Button
+2 _MARNM Button
+1 SEX M
+1 BIRT
+2 DATE 23 OCT 1989
+1 FAMS @F70@
+1 FAMC @F67@
+0 @I140@ INDI
+1 NAME Jessica /Chandlee/
+2 GIVN Jessica
+2 SURN Chandlee
+2 _MARNM Button
+1 SEX F
+1 BIRT
+2 DATE 4 MAR 1990
+1 FAMS @F70@
+0 @I141@ INDI
+1 NAME Jane /Loughmiller/
+2 GIVN Jane
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX F
+1 BIRT
+2 DATE 22 DEC 1958
+1 FAMS @F71@
+1 FAMC @F26@
+0 @I142@ INDI
+1 NAME Joan /Muirhead/
+2 GIVN Joan
+2 SURN Muirhead
+2 _MARNM Loughmiller
+1 SEX F
+1 FAMS @F52@
+0 @I143@ INDI
+1 NAME Sam /Loughmiller/
+2 GIVN Sam
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMC @F52@
+0 @I144@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 DEAT Y
+1 FAMC @F52@
+0 @I145@ INDI
+1 NAME Christopher Bubba /Loughmiller/
+2 GIVN Christopher Bubba
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMC @F52@
+0 @I146@ INDI
+1 NAME /Hackett/
+2 SURN Hackett
+2 _MARNM Hackett
+1 SEX F
+1 FAMS @F42@
+0 @I147@ INDI
+1 NAME /Hackett/
+2 SURN Hackett
+2 _MARNM Hackett
+1 FAMC @F42@
+0 @I148@ INDI
+1 NAME /Hackett/
+2 SURN Hackett
+2 _MARNM Hackett
+1 FAMC @F42@
+0 @I149@ INDI
+1 NAME /Hackett/
+2 SURN Hackett
+2 _MARNM Hackett
+1 FAMC @F42@
+0 @I150@ INDI
+1 NAME /Hackett/
+2 SURN Hackett
+2 _MARNM Hackett
+1 FAMC @F42@
+0 @I151@ INDI
+1 NAME Kirk /Nelson/
+2 GIVN Kirk
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 15562 Glenwood Road SW
+3 CONT Port Orchard, WA 98367
+2 PHON 360-874-8691
+2 PHON +1 360-620-0705
+2 EMAIL kirknelson@charter.net
+1 FAMS @F72@
+1 FAMS @F134@
+1 FAMC @F29@
+0 @I152@ INDI
+1 NAME Nancy /Nelson/
+2 GIVN Nancy
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 25 SEP 1961
+1 RESI
+2 ADDR 15562 Glenwood Road SW
+3 CONT Port Orchard, WA 98367
+2 PHON 360-874-8691
+1 FAMS @F72@
+1 FAMS @F132@
+0 @I153@ INDI
+1 NAME /Ranjbar/
+2 SURN Ranjbar
+2 _MARNM Ranjbar
+1 SEX F
+1 FAMS @F38@
+0 @I154@ INDI
+1 NAME Deanna Kimrey /Loughmiller/
+2 GIVN Deanna Kimrey
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX F
+1 FAMS @F51@
+0 @I155@ INDI
+1 NAME /Ranjbar/
+2 SURN Ranjbar
+2 _MARNM Ranjbar
+1 SEX F
+1 FAMS @F39@
+0 @I156@ INDI
+1 NAME Judith /Loughmiller/
+2 GIVN Judith
+2 SURN Loughmiller
+2 _MARNM Monroe
+1 SEX F
+1 BIRT
+2 DATE 12 JAN 1947
+1 FAMS @F73@
+1 FAMC @F26@
+0 @I157@ INDI
+1 NAME /Monroe/
+2 SURN Monroe
+2 _MARNM Monroe
+1 SEX M
+1 FAMS @F73@
+0 @I158@ INDI
+1 NAME Leo Christian /Cromer/
+2 GIVN Leo Christian
+2 SURN Cromer
+2 _MARNM Cromer
+1 SEX M
+1 BIRT
+2 DATE 12 OCT 2018
+1 FAMC @F59@
+0 @I159@ INDI
+1 NAME Helen /Nelson/
+2 GIVN Helen
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 DEAT Y
+1 FAMS @F34@
+0 @I160@ INDI
+1 NAME Robert /Nelson/
+2 GIVN Robert
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 PLAC Denver, Colorado
+1 RESI
+2 ADDR 6725 S. Poplar Ct.
+3 CONT Centennial, CO 80112
+2 PHON 720-493-1032
+2 PHON +1 720-917-9546
+2 EMAIL nelsonabob@aol.com
+1 FAMS @F74@
+1 FAMC @F34@
+0 @I161@ INDI
+1 NAME Rhonda /Nelson/
+2 GIVN Rhonda
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 6725 S. Poplar Ct.
+3 CONT Centennial, CO 80112
+2 PHON 720-493-1032
+1 FAMS @F74@
+0 @I162@ INDI
+1 NAME Danny /Green/
+2 GIVN Danny
+2 SURN Green
+2 _MARNM Green
+1 SEX M
+1 FAMS @F75@
+1 FAMC @F76@
+0 @I163@ INDI
+1 NAME
+1 SEX F
+1 FAMS @F76@
+0 @I164@ INDI
+1 NAME Teresa /Green/
+2 GIVN Teresa
+2 SURN Green
+2 _MARNM Green
+1 SEX F
+1 FAMS @F75@
+0 @I165@ INDI
+1 NAME Kathy /Green/
+2 GIVN Kathy
+2 SURN Green
+2 _MARNM Sibley
+1 SEX F
+1 FAMS @F77@
+1 FAMC @F76@
+0 @I166@ INDI
+1 NAME Kent /Sibley/
+2 GIVN Kent
+2 SURN Sibley
+2 _MARNM Sibley
+1 SEX M
+1 FAMS @F77@
+0 @I167@ INDI
+1 NAME Brenda /Green/
+2 GIVN Brenda
+2 SURN Green
+2 _MARNM Dale
+1 SEX F
+1 FAMS @F78@
+1 FAMC @F76@
+0 @I168@ INDI
+1 NAME Brad /Dale/
+2 GIVN Brad
+2 SURN Dale
+2 _MARNM Dale
+1 SEX M
+1 FAMS @F78@
+0 @I169@ INDI
+1 NAME Andrew Gustav /Nelson/
+2 GIVN Andrew Gustav
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 3 OCT 1858
+2 PLAC Melissa, Orebro, Sweden
+1 DEAT Y
+2 DATE 31 OCT 1951
+2 PLAC Chanute, Kansas
+1 FAMS @F28@
+1 FAMC @F79@
+0 @I170@ INDI
+1 NAME Karin (Carrie) Andersson /Danielson/
+2 GIVN Karin (Carrie) Andersson
+2 SURN Danielson
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 3 APR 1866
+2 PLAC Vastannor, Keksand, Kopparberg, Sweden
+1 DEAT Y
+2 DATE 21 JUN 1951
+2 PLAC Chanute, Kansas
+1 FAMS @F28@
+0 @I171@ INDI
+1 NAME Andrew (Anders Nilsson) /Nilsson/
+2 GIVN Andrew (Anders Nilsson)
+2 SURN Nilsson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 26 DEC 1820
+2 PLAC Buttinge, Stora Mellosa, Sweden
+1 DEAT Y
+2 DATE 3 JUN 1896
+2 PLAC Chanute, Kansas
+1 FAMS @F79@
+1 FAMS @F80@
+1 FAMC @F81@
+0 @I172@ INDI
+1 NAME Anna Maria /Olsson AKA Olafson/
+2 GIVN Anna Maria
+2 SURN Olsson AKA Olafson
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 27 FEB 1829
+2 PLAC Ankersta, Orebo, Sweden
+1 DEAT Y
+2 DATE 29 JUN 1904
+2 PLAC Chanute, Kansas
+1 FAMS @F79@
+0 @I173@ INDI
+1 NAME Nils Leoson /Perhson/
+2 GIVN Nils Leoson
+2 SURN Perhson
+2 _MARNM Perhson
+1 SEX M
+1 BIRT
+2 DATE 3 OCT 1790
+2 PLAC Lovan, Orebro, Sweden
+1 DEAT Y
+1 FAMS @F81@
+1 FAMC @F82@
+0 @I174@ INDI
+1 NAME Britta Johnson /Jonsdotter/
+2 GIVN Britta Johnson
+2 SURN Jonsdotter
+2 _MARNM Pehrson
+1 SEX F
+1 BIRT
+2 DATE 3 OCT 1783
+2 PLAC Bondvrak, Oreboro, Sweden
+1 DEAT Y
+1 FAMS @F81@
+1 FAMC @F83@
+0 @I175@ INDI
+1 NAME Jons /Anderson/
+2 GIVN Jons
+2 SURN Anderson
+2 _MARNM Anderson
+1 SEX M
+1 BIRT
+2 DATE 1 NOV 1724
+2 PLAC Bondvrak, Oreboro, Sweden
+1 DEAT Y
+1 FAMS @F83@
+1 FAMC @F84@
+0 @I176@ INDI
+1 NAME Lisa /Jonsdotter/
+2 GIVN Lisa
+2 SURN Jonsdotter
+2 _MARNM Jonsdotter
+1 SEX F
+1 BIRT
+2 DATE 2 FEB 1741
+2 PLAC Ekeby, Orebro, Sweden
+1 DEAT Y
+1 FAMS @F83@
+0 @I177@ INDI
+1 NAME Anders /Anderson/
+2 GIVN Anders
+2 SURN Anderson
+2 _MARNM Anderson
+1 SEX M
+1 BIRT
+2 DATE 14 JUL 1666
+2 PLAC Hummelsta, Sweden
+1 DEAT Y
+2 DATE 22 JUL 1773
+1 FAMS @F84@
+0 @I178@ INDI
+1 NAME /Anderson/
+2 SURN Anderson
+2 _MARNM Anderson
+1 SEX F
+1 DEAT Y
+1 FAMS @F84@
+0 @I179@ INDI
+1 NAME Pehr /Nilsson/
+2 GIVN Pehr
+2 SURN Nilsson
+2 _MARNM Nilsson
+1 SEX M
+1 BIRT
+2 DATE 4 SEP 1763
+2 PLAC Asker, Orebro, Sweden
+1 DEAT Y
+1 FAMS @F82@
+1 FAMC @F85@
+0 @I180@ INDI
+1 NAME Caija /Andersdotter/
+2 GIVN Caija
+2 SURN Andersdotter
+2 _MARNM Nilsson
+1 SEX F
+1 BIRT
+2 DATE 4 OCT 1760
+2 PLAC Morby, Orebro, Sweden
+1 DEAT Y
+2 DATE 30 JUL 1804
+2 PLAC Lovan, Orebro, Sweden
+1 FAMS @F82@
+1 FAMC @F86@
+0 @I181@ INDI
+1 NAME Anders /Nilson/
+2 GIVN Anders
+2 SURN Nilson
+2 _MARNM Nilson
+1 SEX M
+1 BIRT
+2 DATE 24 OCT 1723
+2 PLAC Morby, Orebro, Sweden
+1 DEAT Y
+1 FAMS @F86@
+0 @I182@ INDI
+1 NAME Karin /Nilsdotter/
+2 GIVN Karin
+2 SURN Nilsdotter
+2 _MARNM Nilson
+1 SEX F
+1 BIRT
+2 DATE 6 JAN 1727
+2 PLAC Morby, Orebro, Sweden
+1 DEAT Y
+1 FAMS @F86@
+0 @I183@ INDI
+1 NAME Nils /Olson/
+2 GIVN Nils
+2 SURN Olson
+2 _MARNM Olson
+1 SEX M
+1 BIRT
+2 DATE 1724
+2 PLAC Skollersta, Orebro, Sweden
+1 DEAT Y
+1 FAMS @F85@
+0 @I184@ INDI
+1 NAME Kerstin /Pehrsdotter/
+2 GIVN Kerstin
+2 SURN Pehrsdotter
+2 _MARNM Olson
+1 SEX F
+1 BIRT
+2 DATE 1733
+2 PLAC Asker, Orebro, Sweden
+1 DEAT Y
+1 FAMS @F85@
+0 @I185@ INDI
+1 NAME Catharina /Nilsdotter/
+2 GIVN Catharina
+2 SURN Nilsdotter
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 23 OCT 1845
+1 DEAT Y
+2 DATE 19 JUN 1851
+1 FAMS @F80@
+0 @I186@ INDI
+1 NAME Britta Stina /Nilsdotter/
+2 GIVN Britta Stina
+2 SURN Nilsdotter
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 23 OCT 1845
+1 DEAT Y
+2 DATE 1884
+1 FAMC @F80@
+0 @I187@ INDI
+1 NAME Nels /Nelson/
+2 GIVN Nels
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 9 AUG 1847
+1 DEAT Y
+2 DATE 21 OCT 1929
+1 FAMC @F80@
+0 @I188@ INDI
+1 NAME Lars John /Nelson/
+2 GIVN Lars John
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 5 DEC 1862
+1 DEAT Y
+2 DATE 3 DEC 1919
+1 FAMC @F79@
+0 @I189@ INDI
+1 NAME Eric Alfred /Nelson/
+2 GIVN Eric Alfred
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 17 DEC 1862
+1 DEAT Y
+2 DATE 16 JUN 1939
+1 FAMS @F87@
+1 FAMC @F79@
+0 @I190@ INDI
+1 NAME Ida /Lundberg/
+2 GIVN Ida
+2 SURN Lundberg
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 13 DEC 1869
+1 DEAT Y
+2 DATE 18 APR 1954
+1 FAMS @F87@
+0 @I191@ INDI
+1 NAME Charles Oscar /Nelson/
+2 GIVN Charles Oscar
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 25 MAY 1868
+1 DEAT Y
+2 DATE 22 SEP 1954
+1 FAMS @F88@
+1 FAMC @F79@
+0 @I192@ INDI
+1 NAME Mary /Lundine/
+2 GIVN Mary
+2 SURN Lundine
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 1872
+1 DEAT Y
+2 DATE 1939
+1 FAMS @F88@
+0 @I193@ INDI
+1 NAME Adla Matilda /Nelson/
+2 GIVN Adla Matilda
+2 SURN Nelson
+2 _MARNM Wingquist
+1 SEX F
+1 BIRT
+2 DATE 21 SEP 1874
+1 DEAT Y
+2 DATE 14 AUG 1955
+1 FAMS @F89@
+1 FAMC @F79@
+0 @I194@ INDI
+1 NAME Charles /Wingquist/
+2 GIVN Charles
+2 SURN Wingquist
+2 _MARNM Wingquist
+1 SEX M
+1 BIRT
+2 DATE 1870
+1 DEAT Y
+2 DATE 1956
+1 FAMS @F89@
+0 @I195@ INDI
+1 NAME Leif Rudolph /Nelson/
+2 GIVN Leif Rudolph
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 30 MAY 1893
+2 PLAC Chanute, Kansas
+1 DEAT Y
+2 DATE 27 NOV 1987
+2 PLAC Chanute, Kansas
+1 FAMS @F90@
+1 FAMC @F28@
+0 @I196@ INDI
+1 NAME Fern May /Ditmars/
+2 GIVN Fern May
+2 SURN Ditmars
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 11 FEB 1903
+2 PLAC Chanute, Kansas
+1 DEAT Y
+2 DATE 12 NOV 1999
+2 PLAC Chanute, Kansas
+1 FAMS @F90@
+0 @I197@ INDI
+1 NAME Jesse Vincent /Nelson/
+2 GIVN Jesse Vincent
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 25 JAN 1891
+1 DEAT Y
+2 DATE 29 JAN 1971
+1 FAMS @F91@
+1 FAMC @F28@
+0 @I198@ INDI
+1 NAME Esther Cristine /Nyland/
+2 GIVN Esther Cristine
+2 SURN Nyland
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 21 SEP 1894
+1 DEAT Y
+2 DATE 29 JUN 1969
+1 FAMS @F91@
+0 @I199@ INDI
+1 NAME Carl Andrew /Nelson/
+2 GIVN Carl Andrew
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 15 MAY 1896
+1 DEAT Y
+2 DATE 31 MAY 1978
+1 FAMS @F92@
+1 FAMC @F28@
+0 @I200@ INDI
+1 NAME Clara Agnes /Cox/
+2 GIVN Clara Agnes
+2 SURN Cox
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 15 MAR 1906
+1 DEAT Y
+2 DATE 1994
+1 FAMS @F92@
+0 @I201@ INDI
+1 NAME Signe Olivia /Nelson/
+2 GIVN Signe Olivia
+2 SURN Nelson
+2 _MARNM Wright
+1 SEX F
+1 BIRT
+2 DATE 8 JUL 1898
+1 DEAT Y
+2 DATE 24 APR 1984
+1 FAMS @F93@
+1 FAMC @F28@
+0 @I202@ INDI
+1 NAME Kenneth Walsh /Wright/
+2 GIVN Kenneth Walsh
+2 SURN Wright
+2 _MARNM Wright
+1 SEX M
+1 BIRT
+2 DATE 30 AUG 1894
+1 DEAT Y
+2 DATE 29 JUL 1959
+1 FAMS @F93@
+0 @I203@ INDI
+1 NAME Andrew Gustave /Nelson/
+2 GIVN Andrew Gustave
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 28 JUL 1903
+1 DEAT Y
+2 DATE 1 MAR 1981
+1 FAMS @F94@
+1 FAMC @F28@
+0 @I204@ INDI
+1 NAME Ruth Ellen /Montague/
+2 GIVN Ruth Ellen
+2 SURN Montague
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 16 MAY 1907
+1 DEAT Y
+2 DATE 8 MAR 2000
+1 FAMS @F94@
+0 @I205@ INDI
+1 NAME Homer Bryan /Nelson/
+2 GIVN Homer Bryan
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 9 SEP 1907
+1 DEAT Y
+2 DATE 3 JUL 1981
+1 FAMS @F95@
+1 FAMC @F28@
+0 @I206@ INDI
+1 NAME Christine /Lance/
+2 GIVN Christine
+2 SURN Lance
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 12 JUN 1917
+1 DEAT Y
+2 DATE 17 FEB 2002
+1 FAMS @F95@
+0 @I207@ INDI
+1 NAME Kristen /Ogle/
+2 GIVN Kristen
+2 SURN Ogle
+1 SEX F
+1 FAMS @F163@
+1 FAMC @F96@
+0 @I208@ INDI
+1 NAME
+1 SEX F
+1 FAMS @F96@
+0 @I209@ INDI
+1 NAME /Kauffman/
+2 SURN Kauffman
+2 _MARNM Kauffman
+1 SEX M
+1 FAMS @F66@
+0 @I210@ INDI
+1 NAME Bill /Nott/
+2 GIVN Bill
+2 SURN Nott
+2 _MARNM Nott
+1 SEX M
+1 FAMS @F65@
+0 @I211@ INDI
+1 NAME Allyn /Kaufmann/
+2 GIVN Allyn
+2 SURN Kaufmann
+2 _MARNM Kaufmann
+1 SEX M
+1 FAMS @F97@
+1 FAMC @F66@
+0 @I212@ INDI
+1 NAME Heather /Kaufmann/
+2 GIVN Heather
+2 SURN Kaufmann
+2 _MARNM Kaufmann
+1 SEX F
+1 BIRT
+2 DATE 28 MAR 1983
+1 FAMS @F97@
+0 @I213@ INDI
+1 NAME Laura /Kaufmann/
+2 GIVN Laura
+2 SURN Kaufmann
+2 _MARNM Rawlins
+1 SEX F
+1 FAMS @F98@
+1 FAMS @F162@
+1 FAMC @F66@
+0 @I214@ INDI
+1 NAME Keven /Rawlins/
+2 GIVN Keven
+2 SURN Rawlins
+2 _MARNM Rawlins
+1 SEX M
+1 FAMS @F98@
+0 @I215@ INDI
+1 NAME Steven /Graber/
+2 GIVN Steven
+2 SURN Graber
+2 _MARNM Graber
+1 SEX M
+1 FAMS @F68@
+0 @I216@ INDI
+1 NAME Lawrence Lee /Nelson/
+2 GIVN Lawrence Lee
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 9 MAR 1931
+2 PLAC Chanute, Kansas
+1 FAMS @F99@
+1 FAMC @F90@
+0 @I217@ INDI
+1 NAME LeAnn Roberta /Lindbeck/
+2 GIVN LeAnn Roberta
+2 SURN Lindbeck
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 27 JAN 1937
+2 PLAC McCook, Nebraska
+1 FAMS @F99@
+0 @I218@ INDI
+1 NAME Glen Lindbeck /Nelson/
+2 GIVN Glen Lindbeck
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 25 JUN 1961
+2 PLAC Yuma, Arizona
+1 FAMC @F99@
+0 @I219@ INDI
+1 NAME Todd Alan /Nelson/
+2 GIVN Todd Alan
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 6 MAY 1964
+2 PLAC Tempe, Arizona
+1 FAMS @F100@
+1 FAMS @F101@
+1 FAMC @F99@
+0 @I220@ INDI
+1 NAME Ronda Rae /Brown/
+2 GIVN Ronda Rae
+2 SURN Brown
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 22 MAR 1967
+2 PLAC Grand Forks, North Dakota
+1 FAMS @F101@
+0 @I221@ INDI
+1 NAME Kira Linn /Nelson/
+2 GIVN Kira Linn
+2 SURN Nelson
+2 _MARNM McShane
+1 SEX F
+1 BIRT
+2 DATE 22 SEP 1987
+2 PLAC Littleton, Colorado
+1 FAMS @F102@
+1 FAMC @F101@
+0 @I222@ INDI
+1 NAME Andrew /McShane/
+2 GIVN Andrew
+2 SURN McShane
+2 _MARNM McShane
+1 SEX M
+1 BIRT
+2 DATE 22 SEP 1987
+1 FAMS @F102@
+0 @I223@ INDI
+1 NAME Shylar Reese /McShane/
+2 GIVN Shylar Reese
+2 SURN McShane
+2 _MARNM McShane
+1 SEX M
+1 BIRT
+2 DATE 17 JUL 2011
+2 PLAC Battlefield, Missouri
+1 FAMC @F102@
+0 @I224@ INDI
+1 NAME Mollie Elizabeth /Nelson/
+2 GIVN Mollie Elizabeth
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 17 AUG 1994
+2 PLAC Littleton, Colorado
+1 FAMC @F101@
+0 @I225@ INDI
+1 NAME Josiah Todd /Nelson/
+2 GIVN Josiah Todd
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 28 JAN 2004
+2 PLAC Littleton, Colorado
+1 FAMC @F101@
+0 @I226@ INDI
+1 NAME Lynda Susan /Wheeler/
+2 GIVN Lynda Susan
+2 SURN Wheeler
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 26 JUN 1977
+2 PLAC Germany
+1 FAMS @F100@
+0 @I227@ INDI
+1 NAME Lily Emerson /Nelson/
+2 GIVN Lily Emerson
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 6 FEB 2013
+2 PLAC Highlands Ranch, Colorado
+1 FAMC @F100@
+0 @I228@ INDI
+1 NAME Carole Ann /Goodburn/
+2 GIVN Carole Ann
+2 SURN Goodburn
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 28 JUN 1935
+1 FAMS @F103@
+1 FAMC @F90@
+0 @I229@ INDI
+1 NAME James /Goodburn/
+2 GIVN James
+2 SURN Goodburn
+2 _MARNM Goodburn
+1 SEX M
+1 BIRT
+2 DATE 6 NOV 1932
+2 PLAC Yankton, South Dakota
+1 DEAT Y
+2 DATE 20 JUN 1988
+2 PLAC Middletown, Rhode Island
+1 FAMS @F103@
+0 @I230@ INDI
+1 NAME Cynthia /Goodburn/
+2 GIVN Cynthia
+2 SURN Goodburn
+2 _MARNM Dube
+1 SEX F
+1 BIRT
+2 DATE 26 SEP 1961
+1 FAMS @F104@
+1 FAMC @F103@
+0 @I231@ INDI
+1 NAME Robert Wayne /Dube/
+2 GIVN Robert Wayne
+2 SURN Dube
+2 _MARNM Dube
+1 SEX M
+1 FAMS @F104@
+0 @I232@ INDI
+1 NAME Brian James /Dube/
+2 GIVN Brian James
+2 SURN Dube
+2 _MARNM Dube
+1 SEX M
+1 BIRT
+2 DATE 8 OCT 1989
+1 FAMC @F104@
+0 @I233@ INDI
+1 NAME Daneille Marie /Dube/
+2 GIVN Daneille Marie
+2 SURN Dube
+2 _MARNM Dube
+1 SEX F
+1 BIRT
+2 DATE 6 JAN 1992
+1 FAMC @F104@
+0 @I234@ INDI
+1 NAME Linda /Goodburn/
+2 GIVN Linda
+2 SURN Goodburn
+2 _MARNM Taylor
+1 SEX F
+1 BIRT
+2 DATE 13 JUL 1964
+1 FAMS @F105@
+1 FAMS @F106@
+1 FAMC @F103@
+0 @I235@ INDI
+1 NAME Patrick Alan /Floody/
+2 GIVN Patrick Alan
+2 SURN Floody
+2 _MARNM Floody
+1 SEX M
+1 BIRT
+2 DATE 27 AUG 1963
+1 FAMS @F106@
+0 @I236@ INDI
+1 NAME Justin Alan /Floody/
+2 GIVN Justin Alan
+2 SURN Floody
+2 _MARNM Floody
+1 SEX M
+1 BIRT
+2 DATE 30 AUG 1990
+1 FAMC @F106@
+0 @I237@ INDI
+1 NAME Matthew James /Floody/
+2 GIVN Matthew James
+2 SURN Floody
+2 _MARNM Floody
+1 SEX M
+1 BIRT
+2 DATE 12 SEP 1994
+1 FAMC @F106@
+0 @I238@ INDI
+1 NAME Jefferson /Taylor/
+2 GIVN Jefferson
+2 SURN Taylor
+2 _MARNM Taylor
+1 SEX M
+1 BIRT
+2 DATE 22 NOV 1967
+1 FAMS @F105@
+0 @I239@ INDI
+1 NAME David Stamford /Goodburn/
+2 GIVN David Stamford
+2 SURN Goodburn
+2 _MARNM Goodburn
+1 SEX M
+1 BIRT
+2 DATE 30 APR 1966
+1 FAMS @F107@
+1 FAMC @F103@
+0 @I240@ INDI
+1 NAME Jannelle Marie /Jarret/
+2 GIVN Jannelle Marie
+2 SURN Jarret
+2 _MARNM Goodburn
+1 SEX F
+1 BIRT
+2 DATE 13 APR 2003
+1 FAMS @F107@
+0 @I241@ INDI
+1 NAME Andrew Victor /Goodburn/
+2 GIVN Andrew Victor
+2 SURN Goodburn
+2 _MARNM Goodburn
+1 SEX M
+1 BIRT
+2 DATE 28 JUN 2005
+2 PLAC Newport, Rhode Island
+1 FAMC @F107@
+0 @I242@ INDI
+1 NAME Ryan David /Goodburn/
+2 GIVN Ryan David
+2 SURN Goodburn
+2 _MARNM Goodburn
+1 SEX M
+1 BIRT
+2 DATE 4 DEC 2006
+2 PLAC Newport East, Newport, Rhode Island
+1 FAMC @F107@
+0 @I243@ INDI
+1 NAME Matthew Jarret /Goodburn/
+2 GIVN Matthew Jarret
+2 SURN Goodburn
+2 _MARNM Goodburn
+1 SEX M
+1 BIRT
+2 DATE 4 JUN 2011
+2 PLAC Jamestown, Rhode Island
+1 FAMC @F107@
+0 @I244@ INDI
+1 NAME Nancy Sue /Nelson/
+2 GIVN Nancy Sue
+2 SURN Nelson
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 23 FEB 1938
+2 PLAC Chanute, Kansas
+1 FAMS @F108@
+1 FAMC @F90@
+0 @I245@ INDI
+1 NAME Mike J. /Fletcher/
+2 GIVN Mike J.
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX M
+1 BIRT
+2 DATE 16 OCT 1936
+2 PLAC Chanute, Kansas
+1 FAMS @F108@
+0 @I246@ INDI
+1 NAME Keith Nelson /Fletcher/
+2 GIVN Keith Nelson
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX M
+1 BIRT
+2 DATE 28 FEB 1964
+2 PLAC Overland Park, Kansas
+1 FAMS @F109@
+1 FAMC @F108@
+0 @I247@ INDI
+1 NAME Diane /Kaufman/
+2 GIVN Diane
+2 SURN Kaufman
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 15 MAY 1965
+1 FAMS @F109@
+0 @I248@ INDI
+1 NAME Rachel Elizabeth /Fletcher/
+2 GIVN Rachel Elizabeth
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 27 JAN 1996
+1 FAMC @F109@
+0 @I249@ INDI
+1 NAME Kate Marie /Fletcher/
+2 GIVN Kate Marie
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 15 APR 2000
+1 FAMC @F109@
+0 @I250@ INDI
+1 NAME Grace Caroline /Fletcher/
+2 GIVN Grace Caroline
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 15 APR 2000
+1 FAMC @F109@
+0 @I251@ INDI
+1 NAME David Charles /Fletcher/
+2 GIVN David Charles
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX M
+1 BIRT
+2 DATE 28 DEC 1965
+2 PLAC Overland Park, Kansas
+1 FAMS @F110@
+1 FAMS @F111@
+1 FAMC @F108@
+0 @I252@ INDI
+1 NAME Georgette /Bauman/
+2 GIVN Georgette
+2 SURN Bauman
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 6 DEC 1966
+1 FAMS @F111@
+0 @I253@ INDI
+1 NAME David Matthew /Fletcher/
+2 GIVN David Matthew
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX M
+1 BIRT
+2 DATE 26 JUN 1987
+1 FAMC @F111@
+0 @I254@ INDI
+1 NAME Brandon Michael /Fletcher/
+2 GIVN Brandon Michael
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX M
+1 BIRT
+2 DATE 31 MAY 1990
+1 FAMC @F111@
+0 @I255@ INDI
+1 NAME Karen /Fletcher/
+2 GIVN Karen
+2 SURN Fletcher
+2 _MARNM Jimenez
+1 SEX F
+1 BIRT
+2 DATE 11 OCT 1970
+2 PLAC Overland Park, Kansas
+1 FAMS @F112@
+1 FAMC @F108@
+0 @I256@ INDI
+1 NAME Richard /Jimenez/
+2 GIVN Richard
+2 SURN Jimenez
+2 _MARNM Jimenez
+1 SEX M
+1 BIRT
+2 DATE 25 SEP 1970
+1 FAMS @F112@
+0 @I257@ INDI
+1 NAME Laura /London/
+2 GIVN Laura
+2 SURN London
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 8 SEP 1966
+1 FAMS @F110@
+0 @I258@ INDI
+1 NAME Emily Shea /Fletcher/
+2 GIVN Emily Shea
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 28 MAY 1998
+1 FAMC @F110@
+0 @I259@ INDI
+1 NAME Alea London /Fletcher/
+2 GIVN Alea London
+2 SURN Fletcher
+2 _MARNM Fletcher
+1 SEX F
+1 BIRT
+2 DATE 16 AUG 2000
+1 FAMC @F110@
+0 @I260@ INDI
+1 NAME Ivy /Nelson/
+2 GIVN Ivy
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 FAMS @F35@
+0 @I261@ INDI
+1 NAME Gregory /Nelson/
+2 GIVN Gregory
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 7066 NW Lois Lane
+3 CONT Bremerton, WA 98311
+2 PHON 360-692-1898
+2 EMAIL gregor@nwinet.com
+1 FAMC @F29@
+0 @I262@ INDI
+1 NAME Karin /Elliott/
+2 GIVN Karin
+2 SURN Elliott
+2 _MARNM Tierney
+1 SEX F
+1 BIRT
+2 DATE 7 JUL 1941
+1 RESI
+2 ADDR 5400 W. 100th Street
+3 CONT Overland Park, KS 66207
+2 PHON 913-341-7872
+1 FAMS @F113@
+1 FAMC @F33@
+0 @I263@ INDI
+1 NAME Tim /Tierney/
+2 GIVN Tim
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX M
+1 RESI
+2 ADDR 5400 W. 100th Street
+3 CONT Overland Park, KS 66207
+2 PHON 913-341-7872
+2 EMAIL tjtierney@kc.rr.com
+1 FAMS @F113@
+0 @I264@ INDI
+1 NAME Tim /Tierney/
+2 GIVN Tim
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX M
+1 RESI
+2 ADDR 11602 Reeder
+3 CONT Overland Park, KS 66210
+2 PHON 913-663-4558
+2 EMAIL Timothytierney@yahoo.com
+1 FAMC @F113@
+0 @I265@ INDI
+1 NAME John /Tierney/
+2 GIVN John
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX M
+1 RESI
+2 ADDR 4319 Voss Hills Place
+3 CONT Dallas, TX 75287
+2 PHON 972-248-0921
+2 EMAIL J12tierney@aol.com
+1 FAMS @F114@
+1 FAMC @F113@
+0 @I266@ INDI
+1 NAME Lauren /Dusselier/
+2 GIVN Lauren
+2 SURN Dusselier
+2 _MARNM Tierney
+1 SEX F
+1 BIRT
+2 DATE 3 FEB 1981
+1 RESI
+2 ADDR 4319 Voss Hills Place
+3 CONT Dallas, TX 75287
+2 PHON 972-248-0921
+1 FAMS @F114@
+0 @I267@ INDI
+1 NAME Chris /Tierney/
+2 GIVN Chris
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX M
+1 RESI
+2 ADDR 11602 Reeder
+3 CONT Overland Park, KS 66210
+2 PHON 913-663-4558
+2 EMAIL Tierney@licausistyers.com
+1 FAMS @F115@
+1 FAMC @F113@
+0 @I268@ INDI
+1 NAME J. Nelson /Elliott/
+2 GIVN J. Nelson
+2 SURN Elliott
+2 _MARNM Elliott
+1 SEX M
+1 BIRT
+2 DATE 21 APR 1944
+2 PLAC Wichita, KS
+1 DEAT Y
+2 DATE 17 FEB 2019
+1 BURI
+2 DATE 23 FEB 2019
+2 PLAC Johnson County Memorial Gardens
+1 OCCU CPA
+1 RESI
+2 ADDR 12324 Catalina
+3 CONT Leawood, KS 66209
+2 PHON 913-492-8394
+2 EMAIL Nelliott@kc.rr.com
+1 NOTE Bio notes: J. Nelson Elliott, 74, passed away February 17, 2019, after a long, hard-fought battle with cancer. Nelson Elliott’s legacy will surely continue on long after his death. As a CPA and tennis coach, he touched many lives through his dedication to family, coaching, writing, and art appreciation. Nelson also loved KU basketball and was a sports trivia enthusiast.
+2 CONT Born to John and Ruth Elliott on April 21, 1944, Nelson’s roots started in Wichita, KS. He was a 1966 graduate of Baker University where he was a member of the Delta Tau Delta Fraternity. Following graduation, he was a member of the Kansas Army National Guard and worked as a Certified Public Accountant both in Wichita and Kansas City. In 1974, Nelson married Helen and together they raised their son Scott in Kansas City.
+2 CONT In retirement, Nelson enjoyed many years as a tennis coach for the Blue Valley High School. The highlight of his coaching career was in 2010 when he coached the girls’ team to the Kansas 5A State Title.
+2 CONT He is preceded in death by his parents and his son. Nelson is survived by his wife, Helen; daughter-in-law, Karen Beetch (Kevin); granddaughter, Kassidy Brittain (Jacob); grandsons, Joel and Zeke Thompson; siblings, Karin Tierney (Tim) and Roger Elliott (Nancy); his uncle, Forrest Nelson; along with many nieces, nephews, and cousins.
+2 CONT A visitation will be held on Friday, February 22, from 6-8 PM, at Johnson County Funeral Chapel, 11200 Metcalf Ave, Overland Park, KS. A funeral service will be held at 11 AM, on Saturday, February 23, also at the funeral chapel, followed by a burial at Johnson County Memorial Gardens.
+2 CONT The family asks that memorial contributions be made to: KU Endowment, 3901 Rainbow Boulevard, Mail Stop 3012, Kansas City, KS 66160, to benefit the cancer research. Online contributions may be made at www.kuendowment.org/give. Please indicate that donations are for the Nelson Elliott memorial.
+1 FAMS @F116@
+1 FAMC @F33@
+0 @I269@ INDI
+1 NAME Helen /Elliott/
+2 GIVN Helen
+2 SURN Elliott
+2 _MARNM Elliott
+1 SEX F
+1 RESI
+2 ADDR 12324 Catalina
+3 CONT Leawood, KS 66209
+2 PHON 913-492-8394
+1 FAMS @F116@
+0 @I270@ INDI
+1 NAME Karen /Beetch/
+2 GIVN Karen
+2 SURN Beetch
+2 _MARNM Beetch
+1 SEX F
+1 RESI
+2 ADDR 925 S. Ash
+3 CONT Newton, KS
+2 PHON 316-284-0515
+1 FAMS @F117@
+1 FAMS @F118@
+1 FAMC @F116@
+0 @I271@ INDI
+1 NAME Scott /Thompson/
+2 GIVN Scott
+2 SURN Thompson
+2 _MARNM Thompson
+1 SEX M
+1 DEAT Y
+1 RESI
+2 ADDR 925 S. Ash
+3 CONT Newton, KS
+2 PHON 316-284-0515
+1 FAMS @F117@
+0 @I272@ INDI
+1 NAME Kassidy /Thompson/
+2 GIVN Kassidy
+2 SURN Thompson
+2 _MARNM Brittain
+1 SEX F
+1 FAMS @F119@
+1 FAMC @F117@
+0 @I273@ INDI
+1 NAME Joel /Thompson/
+2 GIVN Joel
+2 SURN Thompson
+2 _MARNM Thompson
+1 SEX M
+1 FAMC @F117@
+0 @I274@ INDI
+1 NAME Zeke /Thompson/
+2 GIVN Zeke
+2 SURN Thompson
+2 _MARNM Thompson
+1 SEX M
+1 FAMC @F117@
+0 @I275@ INDI
+1 NAME Roger /Elliott/
+2 GIVN Roger
+2 SURN Elliott
+2 _MARNM Elliott
+1 SEX M
+1 RESI
+2 ADDR 511 Birkdale
+3 CONT Wichita, KS 67230
+2 PHON 316-733-4966
+2 EMAIL Relliott@centralbank-kansas.com
+1 FAMS @F120@
+1 FAMC @F33@
+0 @I276@ INDI
+1 NAME Nancy /Elliott/
+2 GIVN Nancy
+2 SURN Elliott
+2 _MARNM Elliott
+1 SEX F
+1 RESI
+2 ADDR 511 Birkdale
+3 CONT Wichita, KS 67230
+2 PHON 316-733-4966
+1 FAMS @F120@
+0 @I277@ INDI
+1 NAME Jeffrey /Elliott/
+2 GIVN Jeffrey
+2 SURN Elliott
+2 _MARNM Elliott
+1 SEX M
+1 RESI
+2 ADDR 118 Fern
+3 CONT Lansing, KS 66043
+2 PHON 913-727-2891
+2 EMAIL Kstateksig@yahoo.com
+1 FAMC @F120@
+0 @I278@ INDI
+1 NAME Jessica /Elliott/
+2 GIVN Jessica
+2 SURN Elliott
+2 _MARNM Elliott
+1 SEX F
+1 FAMC @F120@
+0 @I279@ INDI
+1 NAME Jacquie /Elliott/
+2 GIVN Jacquie
+2 SURN Elliott
+2 _MARNM Elliott
+1 SEX F
+1 FAMC @F120@
+0 @I280@ INDI
+1 NAME Judy /Nelson/
+2 GIVN Judy
+2 SURN Nelson
+2 _MARNM Coe
+1 SEX F
+1 RESI
+2 ADDR 23 Farm Rd
+3 CONT Los Altas, CA 94024
+2 PHON 650-968-6461
+2 EMAIL Judycoe2000@aol.com
+1 FAMS @F121@
+1 FAMS @F122@
+1 FAMC @F35@
+0 @I281@ INDI
+1 NAME Nathan /Coe/
+2 GIVN Nathan
+2 SURN Coe
+2 _MARNM Coe
+1 SEX M
+1 RESI
+2 ADDR 23 Farm Rd
+3 CONT Los Altas, CA 94024
+2 PHON 650-968-6461
+1 FAMS @F121@
+0 @I282@ INDI
+1 NAME William Eric /Walker/
+2 GIVN William Eric
+2 SURN Walker
+2 _MARNM Walker
+1 SEX M
+1 RESI
+2 ADDR 2601 Talisman Ct.
+3 CONT Bedford, TX 76021
+2 PHON 817-354-1799
+2 EMAIL Skywauker@aol.com
+1 FAMC @F122@
+0 @I283@ INDI
+1 NAME
+1 SEX M
+1 FAMS @F122@
+0 @I284@ INDI
+1 NAME Adam Nelson /Walker/
+2 GIVN Adam Nelson
+2 SURN Walker
+2 _MARNM Walker
+1 SEX M
+1 RESI
+2 ADDR 909 Texas St.
+3 CONT #1811, Rice Lofts
+3 CONT Houston, TX 77002
+2 PHON 713-236-8056
+2 EMAIL Adamwalker1@compuserve.com
+1 FAMC @F122@
+0 @I285@ INDI
+1 NAME Gray /Walker/
+2 GIVN Gray
+2 SURN Walker
+2 _MARNM Walker
+1 SEX M
+1 RESI
+2 ADDR P.O. Box 574
+3 CONT Longmont, CO 80502
+2 EMAIL Graywalks@hotmail.com
+1 FAMC @F122@
+0 @I286@ INDI
+1 NAME Dan /Nelson/
+2 GIVN Dan
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 4524 Rawlins
+3 CONT Dallas, TX 75219
+2 PHON 214-528-5175
+1 FAMS @F123@
+1 FAMC @F35@
+0 @I287@ INDI
+1 NAME Chipper /Nelson/
+2 GIVN Chipper
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 4524 Rawlins
+3 CONT Dallas, TX 75219
+2 PHON 214-528-5175
+1 FAMS @F123@
+0 @I288@ INDI
+1 NAME Trey /Nelson/
+2 GIVN Trey
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR New York City, NY
+1 FAMC @F123@
+0 @I289@ INDI
+1 NAME Melinda /Nelson/
+2 GIVN Melinda
+2 SURN Nelson
+2 _MARNM Moody
+1 SEX F
+1 RESI
+2 ADDR 709 Coral Court
+3 CONT Midland, TX 79705
+2 PHON 915-682-4526
+1 FAMS @F124@
+1 FAMC @F35@
+0 @I290@ INDI
+1 NAME Dan /Moody/
+2 GIVN Dan
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 RESI
+2 ADDR 709 Coral Court
+3 CONT Midland, TX 79705
+2 PHON 915-682-4526
+1 FAMS @F124@
+0 @I291@ INDI
+1 NAME Walker /Moody/
+2 GIVN Walker
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 RESI
+2 ADDR 826 S. Fairfax St.
+3 CONT Alexandria, VA 22314
+2 EMAIL Walkermoody@hotmail.com
+1 FAMC @F124@
+0 @I292@ INDI
+1 NAME Taylor /Moody/
+2 GIVN Taylor
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 RESI
+2 ADDR 2600 Lake Austin Blvd.
+3 CONT Apt 11103
+3 CONT Austin, TX 78703
+1 FAMC @F124@
+0 @I293@ INDI
+1 NAME Morgan /Moody/
+2 GIVN Morgan
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 RESI
+2 ADDR Northern Illinois Univ
+3 CONT Douglas A, Room 0107
+3 CONT Dekalb, IL 60115
+1 FAMC @F124@
+0 @I294@ INDI
+1 NAME Bryan /Nelson/
+2 GIVN Bryan
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 304 Woodridge
+3 CONT Victoria, TX 77904
+2 PHON 361-573-3908
+2 EMAIL nelsonbl@cox-internet.com
+1 FAMS @F125@
+1 FAMC @F34@
+0 @I295@ INDI
+1 NAME Cathy /Nelson/
+2 GIVN Cathy
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 304 Woodridge
+3 CONT Victoria, TX 77904
+2 PHON 361-573-3908
+1 FAMS @F125@
+0 @I296@ INDI
+1 NAME Larry /Nelson/
+2 GIVN Larry
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 304 Woodridge
+3 CONT Victoria, TX 77904
+2 PHON 361-573-3908
+1 FAMC @F125@
+0 @I297@ INDI
+1 NAME Patricia /Nelson/
+2 GIVN Patricia
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 304 Woodridge
+3 CONT Victoria, TX 77904
+2 PHON 361-573-3908
+2 EMAIL patricianls18@aol.com
+1 FAMC @F125@
+0 @I298@ INDI
+1 NAME Wendell /Nelson/
+2 GIVN Wendell
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 1514 Hillside Forest Dr.
+3 CONT Sugar Land, TX 77479
+2 PHON 281-343-9188
+2 EMAIL wendell.nelson@fluor.com
+1 FAMS @F126@
+1 FAMC @F34@
+0 @I299@ INDI
+1 NAME Linda /Nelson/
+2 GIVN Linda
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 1514 Hillside Forest Dr.
+3 CONT Sugar Land, TX 77479
+2 PHON 281-343-9188
+1 FAMS @F126@
+0 @I300@ INDI
+1 NAME Nick /Nelson/
+2 GIVN Nick
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 316 Sapphire Dr.
+3 CONT College Station, TX 77845
+2 PHON 979-690-7172
+1 FAMS @F127@
+1 FAMC @F126@
+0 @I301@ INDI
+1 NAME Vicky /Nelson/
+2 GIVN Vicky
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 316 Sapphire Dr.
+3 CONT College, Station, TX 77845
+2 PHON 979-690-7172
+1 FAMS @F127@
+0 @I302@ INDI
+1 NAME Cameron /Nelson/
+2 GIVN Cameron
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 1514 Hillside Forest Dr.
+3 CONT Sugar Land, TX 77479
+2 PHON 281-343-9188
+1 FAMC @F126@
+0 @I303@ INDI
+1 NAME Lori /Nelson/
+2 GIVN Lori
+2 SURN Nelson
+2 _MARNM Williams
+1 SEX F
+1 RESI
+2 ADDR 8210 White Rd.
+3 CONT Beaumont, TX 77706
+2 PHON 409-866-2925
+1 FAMS @F128@
+1 FAMC @F34@
+0 @I304@ INDI
+1 NAME Bill /Williams/
+2 GIVN Bill
+2 SURN Williams
+2 _MARNM Williams
+1 SEX M
+1 RESI
+2 ADDR 8210 White Rd.
+3 CONT Beaumont, TX 77706
+2 PHON 409-866-2925
+1 FAMS @F128@
+0 @I305@ INDI
+1 NAME Julie /Williams/
+2 GIVN Julie
+2 SURN Williams
+1 SEX F
+1 FAMS @F129@
+1 FAMC @F128@
+0 @I306@ INDI
+1 NAME Keith
+2 GIVN Keith
+1 SEX M
+1 FAMS @F129@
+0 @I307@ INDI
+1 NAME Caitlin /Williams/
+2 GIVN Caitlin
+2 SURN Williams
+2 _MARNM Williams
+1 SEX F
+1 FAMC @F128@
+0 @I308@ INDI
+1 NAME Alex /Williams/
+2 GIVN Alex
+2 SURN Williams
+2 _MARNM Williams
+1 SEX M
+1 FAMC @F128@
+0 @I309@ INDI
+1 NAME William /Nelson/
+2 GIVN William
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 1918 Barons Glen
+3 CONT Sugar Land, TX 77478
+2 PHON 281-772-8338
+2 EMAIL billnelson@houston.rr.com
+1 FAMS @F130@
+1 FAMC @F74@
+0 @I310@ INDI
+1 NAME Mary /Behan/
+2 GIVN Mary
+2 SURN Behan
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 1918 Barons Glen
+3 CONT Sugar Land, TX 77478
+2 PHON 281-772-8338
+1 FAMS @F130@
+0 @I311@ INDI
+1 NAME Denise /Nelson/
+2 GIVN Denise
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 5426 Princeton Dr.
+3 CONT Katy, TX 77493
+2 PHON 281-391-2480
+2 EMAIL djnelson3@msn.com
+1 FAMC @F74@
+0 @I312@ INDI
+1 NAME Kristen /Nelson/
+2 GIVN Kristen
+2 SURN Nelson
+2 _MARNM Rowan
+1 SEX F
+1 RESI
+2 ADDR 9938 E. Diamond Dr.
+3 CONT Sun Lakes, AZ 85248
+2 PHON 602-909-4364
+2 EMAIL texcowgirl@msn.com
+1 FAMS @F131@
+1 FAMC @F74@
+0 @I313@ INDI
+1 NAME Jeremy /Logsdon/
+2 GIVN Jeremy
+2 SURN Logsdon
+2 _MARNM Logsdon
+1 SEX M
+1 RESI
+2 ADDR 15562 Glenwood Road SW
+3 CONT Port Orchard, WA 98367
+2 PHON 360-874-8691
+1 FAMC @F132@
+0 @I314@ INDI
+1 NAME
+1 SEX M
+1 FAMS @F132@
+0 @I315@ INDI
+1 NAME Ariane /Logsdon/
+2 GIVN Ariane
+2 SURN Logsdon
+2 _MARNM Logsdon
+1 SEX F
+1 RESI
+2 ADDR 15562 Glenwood Road SW
+3 CONT Port Orchard, WA 98367
+2 PHON 360-874-8691
+1 FAMC @F132@
+0 @I316@ INDI
+1 NAME Kaylee /Logsdon/
+2 GIVN Kaylee
+2 SURN Logsdon
+2 _MARNM Logsdon
+1 SEX F
+1 RESI
+2 ADDR 15562 Glenwood Road SW
+3 CONT Port Orchard, WA 98367
+2 PHON 360-874-8691
+1 FAMC @F132@
+0 @I317@ INDI
+1 NAME Kalyna M. /Nelson/
+2 GIVN Kalyna M.
+2 SURN Nelson
+2 _MARNM Buresh
+1 SEX F
+1 RESI
+2 ADDR 233 Zacharias Ct.
+3 CONT El Paso, TX 79927
+2 PHON 915-790-0099
+1 FAMS @F133@
+1 FAMC @F134@
+0 @I318@ INDI
+1 NAME
+1 SEX F
+1 FAMS @F134@
+0 @I319@ INDI
+1 NAME Staphania Maxine /Nelson/
+2 GIVN Staphania Maxine
+2 SURN Nelson
+2 _MARNM Martin
+1 SEX F
+1 RESI
+2 ADDR 233 Zacharias Ct.
+3 CONT El Paso, TX 79927
+2 PHON 915-790-0099
+1 FAMS @F135@
+1 FAMC @F134@
+0 @I320@ INDI
+1 NAME Stuart /Nelson/
+2 GIVN Stuart
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR P.O. Box 72
+3 CONT Clever, MO 65631
+1 FAMS @F136@
+1 FAMC @F29@
+0 @I321@ INDI
+1 NAME Jean /Nelson/
+2 GIVN Jean
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR P.O. Box 72
+3 CONT Clever, MO 65631
+1 FAMS @F136@
+0 @I322@ INDI
+1 NAME Christopher Stuart /Nelson/
+2 GIVN Christopher Stuart
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 19 JUL 1985
+1 RESI
+2 ADDR P.O. Box 72
+3 CONT Clever, MO 65631
+1 FAMS @F137@
+1 FAMC @F136@
+0 @I323@ INDI
+1 NAME Seanna /Nelson/
+2 GIVN Seanna
+2 SURN Nelson
+2 _MARNM Kalivoda
+1 SEX F
+1 RESI
+2 ADDR P.O. Box 72
+3 CONT Clever, MO 65631
+1 FAMS @F138@
+1 FAMC @F136@
+0 @I324@ INDI
+1 NAME Rodney /Nelson/
+2 GIVN Rodney
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 418 SE 5th St.
+3 CONT Pryor, OK 74361
+2 PHON 918-825-1346
+1 FAMS @F139@
+1 FAMC @F29@
+0 @I325@ INDI
+1 NAME Janice /Nelson/
+2 GIVN Janice
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 418 SE 5th St.
+3 CONT Pryor, OK 74361
+2 PHON 918-825-1346
+1 FAMS @F139@
+0 @I326@ INDI
+1 NAME Rodney /Nelson/
+2 GIVN Rodney
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 BIRT
+2 DATE 3 JUN 1979
+1 FAMS @F140@
+1 FAMC @F139@
+0 @I327@ INDI
+1 NAME Vanessa /Nelson/
+2 GIVN Vanessa
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 FAMS @F140@
+0 @I328@ INDI
+1 NAME Kourtnie /Nelson/
+2 GIVN Kourtnie
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 FAMC @F140@
+0 @I329@ INDI
+1 NAME Aspen /Nelson/
+2 GIVN Aspen
+2 SURN Nelson
+2 _MARNM Nelson
+1 FAMC @F140@
+0 @I330@ INDI
+1 NAME Kyran /Nelson/
+2 GIVN Kyran
+2 SURN Nelson
+2 _MARNM Nelson
+1 FAMC @F140@
+0 @I331@ INDI
+1 NAME Brent /Nelson/
+2 GIVN Brent
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 RESI
+2 ADDR 6200 E 288 Court Lot 10
+3 CONT Grove, OK 74344
+1 FAMS @F141@
+1 FAMC @F139@
+0 @I332@ INDI
+1 NAME Amanda /Nelson/
+2 GIVN Amanda
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 6200 E 288 Court Lot 10
+1 NOTE Other contact: Grove, OK 74344
+1 FAMS @F141@
+0 @I333@ INDI
+1 NAME Alexis Paige /Nelson/
+2 GIVN Alexis Paige
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 306 N. Taylor
+3 CONT Pryor, OK 74361
+1 FAMC @F141@
+0 @I334@ INDI
+1 NAME Erin Bailey /Nelson/
+2 GIVN Erin Bailey
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 6200 E 288 Court Lot 10
+3 CONT Grove, OK 74344
+1 FAMC @F141@
+0 @I335@ INDI
+1 NAME Kylie /Nelson/
+2 GIVN Kylie
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 RESI
+2 ADDR 6200 E 288 Court Lot 10
+3 CONT Grove, OK 74344
+1 FAMC @F141@
+0 @I336@ INDI
+1 NAME Amber /Nelson/
+2 GIVN Amber
+2 SURN Nelson
+2 _MARNM Choates
+1 SEX F
+1 FAMS @F142@
+1 FAMC @F139@
+0 @I337@ INDI
+1 NAME Jeff /Choates/
+2 GIVN Jeff
+2 SURN Choates
+2 _MARNM Choates
+1 SEX M
+1 FAMS @F142@
+0 @I338@ INDI
+1 NAME Christy /Nelson/
+2 GIVN Christy
+2 SURN Nelson
+2 _MARNM Craig
+1 SEX F
+1 RESI
+2 ADDR 317 N. Mayes
+3 CONT Pryor, OK 74361
+2 PHON 918-824-4485
+1 FAMS @F143@
+1 FAMC @F139@
+0 @I339@ INDI
+1 NAME Kendall /Craig/
+2 GIVN Kendall
+2 SURN Craig
+2 _MARNM Craig
+1 SEX M
+1 RESI
+2 ADDR 317 N. Mayes
+3 CONT Pryor, OK 74361
+2 PHON 918-824-4485
+1 FAMS @F143@
+0 @I340@ INDI
+1 NAME Shelby /Craig/
+2 GIVN Shelby
+2 SURN Craig
+2 _MARNM Craig
+1 SEX F
+1 RESI
+2 ADDR 317 N. Mayes
+3 CONT Pryor, OK 74361
+2 PHON 918-824-4485
+1 FAMC @F143@
+0 @I341@ INDI
+1 NAME Allyah /Craig/
+2 GIVN Allyah
+2 SURN Craig
+2 _MARNM Craig
+1 SEX F
+1 RESI
+2 ADDR 317 N. Mayes
+3 CONT Pryor, OK 74361
+2 PHON 918-824-4485
+1 FAMC @F143@
+0 @I342@ INDI
+1 NAME Alyssa /Craig/
+2 GIVN Alyssa
+2 SURN Craig
+2 _MARNM Craig
+1 SEX F
+1 RESI
+2 ADDR 317 N. Mayes
+3 CONT Pryor, OK 74361
+2 PHON 918-824-4485
+1 FAMC @F143@
+0 @I343@ INDI
+1 NAME Diane /Nelson/
+2 GIVN Diane
+2 SURN Nelson
+2 _MARNM Meredith
+1 SEX F
+1 BIRT
+2 DATE 23 SEP 1955
+1 RESI
+2 ADDR 268 Robert Hensley Rd.
+3 CONT Hohenwald, TN 38462
+2 PHON 931-796-1312
+2 EMAIL gotponys@yahoo.com
+1 FAMS @F144@
+1 FAMS @F145@
+1 FAMC @F29@
+0 @I344@ INDI
+1 NAME Sabrina /Meredith/
+2 GIVN Sabrina
+2 SURN Meredith
+2 _MARNM Meredith
+1 SEX F
+1 RESI
+2 ADDR 268 Robert Hensley Rd.
+3 CONT Hohenwald, TN 38462
+2 PHON 931-796-1312
+1 FAMC @F145@
+0 @I345@ INDI
+1 NAME /Meredith/
+2 SURN Meredith
+2 _MARNM Meredith
+1 SEX M
+1 FAMS @F145@
+0 @I346@ INDI
+1 NAME Cherie /Meredith/
+2 GIVN Cherie
+2 SURN Meredith
+2 _MARNM Meredith
+1 SEX F
+1 RESI
+2 ADDR 268 Robert Hensley Rd.
+3 CONT Hohenwald, TN 38462
+2 PHON 931-796-1312
+1 FAMC @F145@
+0 @I347@ INDI
+1 NAME Marian /Nelson/
+2 GIVN Marian
+2 SURN Nelson
+2 _MARNM Geeding
+1 SEX F
+1 DEAT Y
+1 FAMS @F146@
+1 FAMC @F8@
+0 @I348@ INDI
+1 NAME Wilbur /Geeding/
+2 GIVN Wilbur
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX M
+1 DEAT Y
+1 FAMS @F146@
+0 @I349@ INDI
+1 NAME Martin /Geeding/
+2 GIVN Martin
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX M
+1 BIRT
+2 DATE 2 AUG 1950
+1 RESI
+2 ADDR 8120 E. Peachtree Ln.
+3 CONT Wichita, KS 67207
+2 PHON 316-684-3345
+1 FAMS @F147@
+1 FAMC @F146@
+0 @I350@ INDI
+1 NAME Doris /Geeding/
+2 GIVN Doris
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX F
+1 RESI
+2 ADDR 8120 E. Peachtree Ln.
+3 CONT Wichita, KS 67207
+2 PHON 316-684-3345
+1 FAMS @F147@
+0 @I351@ INDI
+1 NAME Rachel /Geeding/
+2 GIVN Rachel
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX F
+1 RESI
+2 ADDR 8120 E. Peachtree Ln.
+3 CONT Wichita, KS 67207
+2 PHON 316-684-3345
+1 FAMC @F147@
+0 @I352@ INDI
+1 NAME Heather /Geeding/
+2 GIVN Heather
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX F
+1 RESI
+2 ADDR 8120 E. Peachtree Ln.
+3 CONT Wichita, KS 67207
+2 PHON 316-684-3345
+1 FAMC @F147@
+0 @I353@ INDI
+1 NAME Grant /Geeding/
+2 GIVN Grant
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX M
+1 RESI
+2 ADDR 8120 E. Peachtree Ln.
+3 CONT Wichita, KS 67207
+2 PHON 316-684-3345
+1 FAMC @F147@
+0 @I354@ INDI
+1 NAME Paul /Geeding/
+2 GIVN Paul
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX M
+1 DEAT Y
+1 RESI
+2 ADDR 2748 Broadwell Dr, #102
+3 CONT Raleigh, NC 27606
+2 PHON 919-834-9494
+2 EMAIL atticus3@swbell.net
+1 FAMC @F146@
+0 @I355@ INDI
+1 NAME Edward /Geeding/
+2 GIVN Edward
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX M
+1 RESI
+2 ADDR 1418 Julie Dr
+3 CONT Wamego, KS 66547
+2 PHON 785-456-8391
+1 FAMS @F148@
+1 FAMC @F146@
+0 @I356@ INDI
+1 NAME Sharon /Geeding/
+2 GIVN Sharon
+2 SURN Geeding
+2 _MARNM Geeding
+1 SEX F
+1 RESI
+2 ADDR 1418 Julie Dr
+3 CONT Wamego, KS 66547
+1 FAMS @F148@
+0 @I357@ INDI
+1 NAME Christina /Geeding/
+2 GIVN Christina
+2 SURN Geeding
+2 _MARNM Muff
+1 SEX F
+1 RESI
+2 ADDR 1715 West Avenue
+3 CONT Clarinda, IA 51632
+2 PHON 712-542-1152
+1 FAMS @F149@
+1 FAMC @F148@
+0 @I358@ INDI
+1 NAME Richard /Muff/
+2 GIVN Richard
+2 SURN Muff
+2 _MARNM Muff
+1 SEX M
+1 RESI
+2 ADDR 1715 West Avenue
+3 CONT Clarinda, IA 51632
+2 PHON 712-542-1152
+1 FAMS @F149@
+0 @I359@ INDI
+1 NAME Alec /Muff/
+2 GIVN Alec
+2 SURN Muff
+2 _MARNM Muff
+1 SEX M
+1 RESI
+2 ADDR 1715 West Avenue
+3 CONT Clarinda, IA 51632
+2 PHON 712-542-1152
+1 FAMC @F149@
+0 @I360@ INDI
+1 NAME James /Moody/
+2 GIVN James
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 RESI
+2 ADDR 935 Westbrook Dr.
+3 CONT Plain, WI 53577
+2 PHON 608-546-3224
+1 FAMS @F150@
+1 FAMC @F151@
+0 @I361@ INDI
+1 NAME Homer /Moody/
+2 GIVN Homer
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 BIRT
+2 DATE 23 JAN 1931
+1 DEAT Y
+2 DATE 24 FEB 1994
+1 FAMS @F151@
+0 @I362@ INDI
+1 NAME Debra /Moody/
+2 GIVN Debra
+2 SURN Moody
+2 _MARNM Moody
+1 SEX F
+1 RESI
+2 ADDR 935 Westbrook Dr.
+3 CONT Plain, WI 53577
+2 PHON 608-546-3224
+1 FAMS @F150@
+0 @I363@ INDI
+1 NAME Jacob /Moody/
+2 GIVN Jacob
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 RESI
+2 ADDR 935 Westbrook Dr.
+3 CONT Plain, WI 53577
+2 PHON 608-546-3224
+1 FAMC @F150@
+0 @I364@ INDI
+1 NAME Justin /Moody/
+2 GIVN Justin
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 RESI
+2 ADDR 935 Westbrook Dr.
+3 CONT Plain, WI 53577
+2 PHON 608-546-3224
+1 FAMC @F150@
+0 @I365@ INDI
+1 NAME Chelsey /Moody/
+2 GIVN Chelsey
+2 SURN Moody
+2 _MARNM Moody
+1 SEX F
+1 RESI
+2 ADDR 935 Westbrook Dr.
+3 CONT Plain, WI 53577
+2 PHON 608-546-3224
+1 FAMC @F150@
+0 @I366@ INDI
+1 NAME Lisa /Moody/
+2 GIVN Lisa
+2 SURN Moody
+2 _MARNM Thompson
+1 SEX F
+1 BIRT
+2 DATE 20 SEP 1963
+1 RESI
+2 ADDR 4408 Gretchen Court
+3 CONT Lawrence, KS 66047
+2 PHON 785-841-6241
+1 FAMS @F152@
+1 FAMC @F151@
+0 @I367@ INDI
+1 NAME Dan /Thompson/
+2 GIVN Dan
+2 SURN Thompson
+2 _MARNM Thompson
+1 SEX M
+1 BIRT
+2 DATE 7 APR 1963
+1 RESI
+2 ADDR 4408 Gretchen Court
+3 CONT Lawrence, KS 66047
+2 PHON 785-841-6241
+1 FAMS @F152@
+0 @I368@ INDI
+1 NAME Emily /Thompson/
+2 GIVN Emily
+2 SURN Thompson
+2 _MARNM Thompson
+1 SEX F
+1 RESI
+2 ADDR 4408 Gretchen Court
+3 CONT Lawrence, KS 66047
+2 PHON 785-841-6241
+1 FAMC @F152@
+0 @I369@ INDI
+1 NAME Abby /Thompson/
+2 GIVN Abby
+2 SURN Thompson
+2 _MARNM Thompson
+1 SEX F
+1 RESI
+2 ADDR 4408 Gretchen Court
+3 CONT Lawrence, KS 66047
+2 PHON 785-841-6241
+1 FAMC @F152@
+0 @I370@ INDI
+1 NAME Britton /Thompson/
+2 GIVN Britton
+2 SURN Thompson
+2 _MARNM Thompson
+1 RESI
+2 ADDR 4408 Gretchen Court
+3 CONT Lawrence, KS 66047
+2 PHON 785-841-6241
+1 FAMC @F152@
+0 @I371@ INDI
+1 NAME Mark /Moody/
+2 GIVN Mark
+2 SURN Moody
+2 _MARNM Moody
+1 SEX M
+1 BIRT
+2 DATE 2 SEP 1966
+1 RESI
+2 ADDR 877 W. Lake Road
+3 CONT Farlington, KS 66734
+2 PHON 620-362-3063
+2 EMAIL Boss@ckt.net
+1 FAMS @F153@
+1 FAMC @F151@
+0 @I372@ INDI
+1 NAME Tammy /Moody/
+2 GIVN Tammy
+2 SURN Moody
+2 _MARNM Moody
+1 SEX F
+1 RESI
+2 ADDR 877 W. Lake Road
+3 CONT Farlington, KS 66734
+2 PHON 620-362-3063
+1 FAMS @F153@
+0 @I373@ INDI
+1 NAME Janet /Moody/
+2 GIVN Janet
+2 SURN Moody
+2 _MARNM Sprague
+1 SEX F
+1 RESI
+2 ADDR 604 Summit
+3 CONT Girard, KS 66743
+2 PHON 620-724-6000
+1 FAMS @F154@
+1 FAMC @F151@
+0 @I374@ INDI
+1 NAME Tom /Sprague/
+2 GIVN Tom
+2 SURN Sprague
+2 _MARNM Sprague
+1 SEX M
+1 RESI
+2 ADDR 604 Summit
+3 CONT Girard, KS 66743
+2 PHON 620-724-6000
+1 FAMS @F154@
+0 @I375@ INDI
+1 NAME Jackie /Sprague/
+2 GIVN Jackie
+2 SURN Sprague
+2 _MARNM Sprague
+1 SEX F
+1 RESI
+2 ADDR 604 Summit
+3 CONT Girard, KS 66743
+2 PHON 620-724-6000
+1 FAMC @F154@
+0 @I376@ INDI
+1 NAME Michele /Sprague/
+2 GIVN Michele
+2 SURN Sprague
+2 _MARNM Sprague
+1 SEX F
+1 RESI
+2 ADDR 604 Summit
+3 CONT Girard, KS 66743
+2 PHON 620-724-6000
+1 FAMC @F154@
+0 @I377@ INDI
+1 NAME Bill /Freese/
+2 GIVN Bill
+2 SURN Freese
+2 _MARNM Freese
+1 SEX M
+1 FAMS @F53@
+0 @I378@ INDI
+1 NAME /Freese/
+2 SURN Freese
+2 _MARNM Freese
+1 FAMC @F53@
+0 @I379@ INDI
+1 NAME Debbie /Jordan/
+2 GIVN Debbie
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX F
+1 FAMS @F49@
+0 @I380@ INDI
+1 NAME Jeffrey /Jordan/
+2 GIVN Jeffrey
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 FAMC @F49@
+0 @I381@ INDI
+1 NAME Kate /Jordan/
+2 GIVN Kate
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX F
+1 FAMS @F48@
+0 @I382@ INDI
+1 NAME Greg /Jordan/
+2 GIVN Greg
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 RESI
+2 ADDR 2161 Lochlevin Dr
+3 CONT Memphis, TN 38119
+2 PHON 901-683-3123
+1 FAMS @F50@
+0 @I383@ INDI
+1 NAME Gregory /Jordan/
+2 GIVN Gregory
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 RESI
+2 ADDR 2161 Lochlevin Dr
+3 CONT Memphis, TN 38119
+2 PHON 901-683-3123
+1 FAMC @F50@
+0 @I384@ INDI
+1 NAME Samuel /Jordan/
+2 GIVN Samuel
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 RESI
+2 ADDR 2161 Lochlevin Dr
+3 CONT Memphis, TN 38119
+2 PHON 901-683-3123
+1 FAMC @F50@
+0 @I385@ INDI
+1 NAME Barry /Nelson/
+2 GIVN Barry
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 FAMS @F7@
+0 @I386@ INDI
+1 NAME Lynn /Nelson/
+2 GIVN Lynn
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 FAMS @F7@
+0 @I387@ INDI
+1 NAME Carl /Nelson/
+2 GIVN Carl
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 FAMC @F7@
+0 @I388@ INDI
+1 NAME Julie /Nelson/
+2 GIVN Julie
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 FAMC @F7@
+0 @I389@ INDI
+1 NAME John /Laws/
+2 GIVN John
+2 SURN Laws
+2 _MARNM Laws
+1 SEX M
+1 DEAT Y
+1 FAMS @F18@
+0 @I390@ INDI
+1 NAME Lucy Viola /Strothers/
+2 GIVN Lucy Viola
+2 SURN Strothers
+2 _MARNM Laws
+1 SEX F
+1 DEAT Y
+1 FAMS @F18@
+0 @I391@ INDI
+1 NAME Frank /McConnell/
+2 GIVN Frank
+2 SURN McConnell
+2 _MARNM McConnell
+1 SEX M
+1 DEAT Y
+1 FAMS @F24@
+0 @I392@ INDI
+1 NAME Matlida /McConnell/
+2 GIVN Matlida
+2 SURN McConnell
+2 _MARNM McConnell
+1 SEX F
+1 DEAT Y
+1 FAMS @F24@
+0 @I393@ INDI
+1 NAME Fred W. /Davis/
+2 GIVN Fred W.
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 27 SEP 1848
+2 PLAC Cleveland, Ohio
+1 DEAT Y
+2 DATE 27 JUN 1924
+1 FAMS @F61@
+1 FAMC @F155@
+0 @I394@ INDI
+1 NAME Virgilla /Taylor/
+2 GIVN Virgilla
+2 SURN Taylor
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 23 OCT 1854
+2 PLAC Broome County, New York
+1 DEAT Y
+2 DATE 22 OCT 1938
+1 FAMS @F61@
+1 FAMC @F156@
+0 @I395@ INDI
+1 NAME Fred W. /Davis/
+2 GIVN Fred W.
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 22 JUN 1883
+2 PLAC St. Louis, Missouri
+1 DEAT Y
+2 DATE 9 SEP 1956
+1 FAMC @F61@
+0 @I396@ INDI
+1 NAME Helen Naomi /Davis/
+2 GIVN Helen Naomi
+2 SURN Davis
+2 _MARNM Whitsett
+1 SEX F
+1 DEAT Y
+1 FAMS @F157@
+1 FAMC @F10@
+0 @I397@ INDI
+1 NAME Charles /Whitsett/
+2 GIVN Charles
+2 SURN Whitsett
+2 _MARNM Whitsett
+1 SEX M
+1 DEAT Y
+1 FAMS @F157@
+0 @I398@ INDI
+1 NAME Herbert William /Davis/
+2 GIVN Herbert William
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 26 MAR 1916
+1 DEAT Y
+2 DATE 18 DEC 1985
+1 FAMS @F158@
+1 FAMC @F10@
+0 @I399@ INDI
+1 NAME Aline /Baron/
+2 GIVN Aline
+2 SURN Baron
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 17 APR 1919
+1 DEAT Y
+2 DATE 23 APR 1983
+1 FAMS @F158@
+0 @I400@ INDI
+1 NAME Dwight Herbert /Davis/
+2 GIVN Dwight Herbert
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 8 NOV 1948
+1 FAMC @F158@
+0 @I401@ INDI
+1 NAME Diane Aline /Davis/
+2 GIVN Diane Aline
+2 SURN Davis
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 19 NOV 1955
+1 FAMC @F158@
+0 @I402@ INDI
+1 NAME /Davis/
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 DEAT Y
+1 FAMS @F155@
+0 @I403@ INDI
+1 NAME Betsy /Brown/
+2 GIVN Betsy
+2 SURN Brown
+2 _MARNM Davis
+1 SEX F
+1 DEAT Y
+1 FAMS @F155@
+0 @I404@ INDI
+1 NAME Johnathan /Taylor/
+2 GIVN Johnathan
+2 SURN Taylor
+2 _MARNM Taylor
+1 SEX M
+1 DEAT Y
+1 FAMS @F156@
+0 @I405@ INDI
+1 NAME /Taylor/
+2 SURN Taylor
+2 _MARNM Taylor
+1 SEX F
+1 DEAT Y
+1 FAMS @F156@
+0 @I406@ INDI
+1 NAME William Rylie /Russell/
+2 GIVN William Rylie
+2 SURN Russell
+2 _MARNM Russell
+1 SEX M
+1 DEAT Y
+1 FAMS @F62@
+1 FAMC @F159@
+0 @I407@ INDI
+1 NAME Sara Sally /Russell/
+2 GIVN Sara Sally
+2 SURN Russell
+2 _MARNM Russell
+1 SEX F
+1 DEAT Y
+1 FAMS @F62@
+1 FAMC @F160@
+0 @I408@ INDI
+1 NAME Alfred /Russell/
+2 GIVN Alfred
+2 SURN Russell
+2 _MARNM Russell
+1 SEX M
+1 DEAT Y
+1 FAMS @F159@
+0 @I409@ INDI
+1 NAME Maria /Steen/
+2 GIVN Maria
+2 SURN Steen
+2 _MARNM Russell
+1 SEX F
+1 DEAT Y
+1 FAMS @F159@
+0 @I410@ INDI
+1 NAME Zachariah /Wiseman/
+2 GIVN Zachariah
+2 SURN Wiseman
+2 _MARNM Wiseman
+1 SEX M
+1 DEAT Y
+1 FAMS @F160@
+0 @I411@ INDI
+1 NAME /Wiseman/
+2 SURN Wiseman
+2 _MARNM Wiseman
+1 SEX F
+1 DEAT Y
+1 FAMS @F160@
+0 @I412@ INDI
+1 NAME Kathleen /Whitsett/
+2 GIVN Kathleen
+2 SURN Whitsett
+2 _MARNM Whitsett
+1 SEX F
+1 BIRT
+2 DATE 23 APR 1952
+1 FAMC @F157@
+0 @I413@ INDI
+1 NAME David Charles /Whitsett/
+2 GIVN David Charles
+2 SURN Whitsett
+2 _MARNM Whitsett
+1 SEX M
+1 BIRT
+2 DATE 27 JAN 1955
+1 FAMS @F161@
+1 FAMC @F157@
+0 @I414@ INDI
+1 NAME /Whitsett/
+2 SURN Whitsett
+2 _MARNM Whitsett
+1 SEX F
+1 FAMS @F161@
+0 @I415@ INDI
+1 NAME John Foster /Whitsett/
+2 GIVN John Foster
+2 SURN Whitsett
+2 _MARNM Whitsett
+1 SEX M
+1 BIRT
+2 DATE 12 OCT 1961
+1 FAMC @F157@
+0 @I416@ INDI
+1 NAME Jessie May /Davis/
+2 GIVN Jessie May
+2 SURN Davis
+2 _MARNM Dill
+1 SEX F
+1 BIRT
+2 DATE 5 MAY 1878
+2 PLAC Georgetown, Missouri
+1 DEAT Y
+2 DATE 8 AUG 1970
+1 FAMC @F61@
+0 @I417@ INDI
+1 NAME A.J. /Davis/
+2 GIVN A.J.
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 5 SEP 1876
+2 PLAC St. Louis, Missouri
+1 DEAT Y
+2 DATE 1 JUN 1953
+1 FAMC @F61@
+0 @I418@ INDI
+1 NAME Walter L. /Davis/
+2 GIVN Walter L.
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 21 MAR 1885
+2 PLAC Columbus, Kansas
+1 DEAT Y
+2 DATE 25 JUN 1956
+1 FAMC @F61@
+0 @I419@ INDI
+1 NAME Rossa G. /Dawlad/
+2 GIVN Rossa G.
+2 SURN Dawlad
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 26 AUG 1889
+2 PLAC Columbus, Kansas
+1 DEAT Y
+2 DATE 5 JAN 1911
+1 FAMC @F61@
+0 @I420@ INDI
+1 NAME Alda /Davis/
+2 GIVN Alda
+2 SURN Davis
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 8 SEP 1891
+2 PLAC Webb City, Missouri
+1 DEAT Y
+2 DATE 18 JUL 1925
+1 FAMC @F61@
+0 @I421@ INDI
+1 NAME Carl T. /Davis/
+2 GIVN Carl T.
+2 SURN Davis
+2 _MARNM Davis
+1 SEX M
+1 BIRT
+2 DATE 9 APR 1894
+2 PLAC Melrose, Kansas
+1 DEAT Y
+2 DATE 13 AUG 1971
+1 FAMC @F61@
+0 @I422@ INDI
+1 NAME Betsy E. /Davis/
+2 GIVN Betsy E.
+2 SURN Davis
+2 _MARNM Davis
+1 SEX F
+1 BIRT
+2 DATE 22 APR 1896
+2 PLAC Miami, Oklahoma
+1 DEAT Y
+1 FAMC @F61@
+0 @I423@ INDI
+1 NAME Tanner /Thompson/
+2 GIVN Tanner
+2 SURN Thompson
+2 _MARNM Thompson
+1 SEX M
+1 FAMC @F152@
+0 @I424@ INDI
+1 NAME Jacob /Brittain/
+2 GIVN Jacob
+2 SURN Brittain
+2 _MARNM Brittain
+1 SEX M
+1 FAMS @F119@
+0 @I425@ INDI
+1 NAME
+1 SEX M
+1 FAMC @F162@
+0 @I426@ INDI
+1 NAME
+1 SEX M
+1 FAMS @F162@
+0 @I427@ INDI
+1 NAME /Rawlins/
+2 SURN Rawlins
+2 _MARNM Rawlins
+1 SEX F
+1 FAMC @F98@
+0 @I428@ INDI
+1 NAME Jack /Kaufmann/
+2 GIVN Jack
+2 SURN Kaufmann
+2 _MARNM Kaufmann
+1 SEX M
+1 FAMC @F97@
+0 @I429@ INDI
+1 NAME /Kaufmann/
+2 SURN Kaufmann
+2 _MARNM Kaufmann
+1 SEX M
+1 FAMC @F97@
+0 @I430@ INDI
+1 NAME /Kaufmann/
+2 SURN Kaufmann
+2 _MARNM Kaufmann
+1 SEX F
+1 FAMC @F97@
+0 @I431@ INDI
+1 NAME
+1 SEX M
+1 FAMC @F163@
+0 @I432@ INDI
+1 NAME
+1 SEX M
+1 FAMS @F163@
+0 @I433@ INDI
+1 NAME Tony /Ogle/
+2 GIVN Tony
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMS @F164@
+1 FAMC @F165@
+0 @I434@ INDI
+1 NAME
+1 SEX F
+1 FAMS @F165@
+0 @I435@ INDI
+1 NAME Matthew /Ogle/
+2 GIVN Matthew
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMS @F166@
+1 FAMC @F165@
+0 @I436@ INDI
+1 NAME Erin /Randell/
+2 GIVN Erin
+2 SURN Randell
+2 _MARNM Ogle
+1 SEX F
+1 FAMS @F164@
+0 @I437@ INDI
+1 NAME Aidan /Ogle/
+2 GIVN Aidan
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMC @F164@
+0 @I438@ INDI
+1 NAME Ivan /Ogle/
+2 GIVN Ivan
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMC @F164@
+0 @I439@ INDI
+1 NAME Rachel /Adler/
+2 GIVN Rachel
+2 SURN Adler
+2 _MARNM Ogle
+1 SEX F
+1 FAMS @F166@
+0 @I440@ INDI
+1 NAME /Ogle/
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMC @F166@
+0 @I441@ INDI
+1 NAME /Ogle/
+2 SURN Ogle
+2 _MARNM Ogle
+1 SEX M
+1 FAMC @F166@
+0 @I442@ INDI
+1 NAME Christa /Owens/
+2 GIVN Christa
+2 SURN Owens
+2 _MARNM Owens
+1 SEX F
+1 FAMS @F167@
+1 FAMC @F69@
+0 @I443@ INDI
+1 NAME Ryan /Loughmiller/
+2 GIVN Ryan
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMS @F168@
+1 FAMC @F51@
+0 @I444@ INDI
+1 NAME Kimrey /Loughmiller/
+2 GIVN Kimrey
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX F
+1 BIRT
+2 DATE 26 JAN 1979
+1 FAMS @F169@
+1 FAMC @F51@
+0 @I445@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX F
+1 FAMS @F168@
+0 @I446@ INDI
+1 NAME /Wright/
+2 SURN Wright
+2 _MARNM Wright
+1 SEX M
+1 FAMC @F93@
+0 @I447@ INDI
+1 NAME /Wright/
+2 SURN Wright
+2 _MARNM Wright
+1 SEX M
+1 FAMC @F93@
+0 @I448@ INDI
+1 NAME Robert Dean /Wright/
+2 GIVN Robert Dean
+2 SURN Wright
+2 _MARNM Wright
+1 SEX M
+1 BIRT
+2 DATE 1934
+1 FAMC @F93@
+0 @I449@ INDI
+1 NAME Thomas /Rowan/
+2 GIVN Thomas
+2 SURN Rowan
+2 _MARNM Rowan
+1 SEX M
+1 FAMS @F131@
+0 @I450@ INDI
+1 NAME /Rowan/
+2 SURN Rowan
+2 _MARNM Rowan
+1 SEX F
+1 FAMC @F131@
+0 @I451@ INDI
+1 NAME /Rowan/
+2 SURN Rowan
+2 _MARNM Rowan
+1 SEX F
+1 FAMC @F131@
+0 @I452@ INDI
+1 NAME Jason /Martin/
+2 GIVN Jason
+2 SURN Martin
+2 _MARNM Martin
+1 SEX M
+1 FAMS @F135@
+0 @I453@ INDI
+1 NAME /Buresh/
+2 SURN Buresh
+2 _MARNM Buresh
+1 SEX M
+1 FAMS @F133@
+0 @I454@ INDI
+1 NAME Charity /Nelson/
+2 GIVN Charity
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 FAMS @F137@
+0 @I455@ INDI
+1 NAME /Nelson/
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 FAMC @F137@
+0 @I456@ INDI
+1 NAME Sam /Kalivoda/
+2 GIVN Sam
+2 SURN Kalivoda
+2 _MARNM Kalivoda
+1 SEX M
+1 BIRT
+2 DATE 24 MAR 1985
+1 FAMS @F138@
+0 @I457@ INDI
+1 NAME /Fain/
+2 SURN Fain
+2 _MARNM Fain
+1 SEX M
+1 FAMS @F144@
+0 @I458@ INDI
+1 NAME /Tierney/
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX F
+1 FAMC @F114@
+0 @I459@ INDI
+1 NAME /Tierney/
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX M
+1 FAMC @F114@
+0 @I460@ INDI
+1 NAME /Tierney/
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX F
+1 FAMS @F115@
+0 @I461@ INDI
+1 NAME /Tierney/
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX F
+1 FAMC @F115@
+0 @I462@ INDI
+1 NAME /Tierney/
+2 SURN Tierney
+2 _MARNM Tierney
+1 SEX M
+1 FAMC @F115@
+0 @I463@ INDI
+1 NAME /Nelson/
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX M
+1 FAMC @F130@
+0 @I464@ INDI
+1 NAME /Nelson/
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 FAMC @F130@
+0 @I465@ INDI
+1 NAME /Stewart/
+2 SURN Stewart
+2 _MARNM Stewart
+1 SEX F
+1 FAMC @F60@
+0 @I466@ INDI
+1 NAME Jack /Jordan/
+2 GIVN Jack
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 FAMC @F48@
+0 @I467@ INDI
+1 NAME /Jordan/
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 FAMC @F48@
+0 @I468@ INDI
+1 NAME Claire /Jordan/
+2 GIVN Claire
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX F
+1 BIRT
+2 DATE 28 OCT 1998
+1 FAMC @F49@
+0 @I469@ INDI
+1 NAME /Jordan/
+2 SURN Jordan
+2 _MARNM Jordan
+1 SEX M
+1 FAMC @F50@
+0 @I470@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMS @F71@
+0 @I471@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX F
+1 FAMC @F71@
+0 @I472@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX F
+1 FAMC @F71@
+0 @I473@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMC @F168@
+0 @I474@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX F
+1 FAMC @F168@
+0 @I475@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMS @F169@
+0 @I476@ INDI
+1 NAME Ava /Loughmiller/
+2 GIVN Ava
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX F
+1 FAMC @F169@
+0 @I477@ INDI
+1 NAME /Loughmiller/
+2 SURN Loughmiller
+2 _MARNM Loughmiller
+1 SEX M
+1 FAMC @F169@
+0 @I478@ INDI
+1 NAME Natasha /Verbsky/
+2 GIVN Natasha
+2 SURN Verbsky
+2 _MARNM Verbsky
+1 SEX F
+1 BIRT
+2 DATE 26 OCT 1971
+1 FAMS @F170@
+1 FAMC @F69@
+0 @I479@ INDI
+1 NAME Douglas /Verbsky/
+2 GIVN Douglas
+2 SURN Verbsky
+2 _MARNM Verbsky
+1 SEX M
+1 FAMS @F170@
+0 @I480@ INDI
+1 NAME Samantha /Verbsky/
+2 GIVN Samantha
+2 SURN Verbsky
+2 _MARNM Verbsky
+1 SEX F
+1 FAMC @F170@
+0 @I481@ INDI
+1 NAME /Verbsky/
+2 SURN Verbsky
+2 _MARNM Verbsky
+1 SEX M
+1 FAMC @F170@
+0 @I482@ INDI
+1 NAME Scott /Owens/
+2 GIVN Scott
+2 SURN Owens
+2 _MARNM Owens
+1 SEX M
+1 FAMS @F167@
+0 @I483@ INDI
+1 NAME Ashlynn /Owens/
+2 GIVN Ashlynn
+2 SURN Owens
+2 _MARNM Owens
+1 SEX F
+1 FAMC @F167@
+0 @I484@ INDI
+1 NAME Caleb /Owens/
+2 GIVN Caleb
+2 SURN Owens
+2 _MARNM Owens
+1 SEX M
+1 FAMC @F167@
+0 @I485@ INDI
+1 NAME Caelynn /Owens/
+2 GIVN Caelynn
+2 SURN Owens
+2 _MARNM Owens
+1 SEX F
+1 FAMC @F167@
+0 @I486@ INDI
+1 NAME Hannah June /Nelson/
+2 GIVN Hannah June
+2 SURN Nelson
+2 _MARNM Nelson
+1 SEX F
+1 BIRT
+2 DATE 13 JUL 2019
+2 PLAC St. Louis, MO
+1 FAMC @F6@
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 MARR
+2 DATE 12 JUL 2008
+2 PLAC Ocho Rios, Jamaica
+1 _CURRENT Y
+0 @F2@ FAM
+1 HUSB @I3@
+1 WIFE @I4@
+1 CHIL @I1@
+1 CHIL @I5@
+1 MARR
+2 DATE 31 JUL 1982
+2 PLAC Riverton, Kansas
+1 _CURRENT Y
+0 @F3@ FAM
+1 HUSB @I99@
+1 WIFE @I100@
+1 CHIL @I2@
+1 CHIL @I101@
+1 MARR
+1 DIV
+1 _CURRENT Y
+0 @F4@ FAM
+1 HUSB @I9@
+1 WIFE @I10@
+1 CHIL @I3@
+1 CHIL @I12@
+1 CHIL @I13@
+1 MARR
+2 DATE 13 JUN 1947
+2 PLAC Joplin, Missouri
+1 _CURRENT Y
+0 @F5@ FAM
+1 HUSB @I7@
+1 WIFE @I8@
+1 CHIL @I4@
+1 CHIL @I11@
+1 CHIL @I14@
+1 CHIL @I15@
+1 CHIL @I16@
+1 MARR
+2 DATE 1 JUL 1951
+2 PLAC Parsons, Kansas
+1 _CURRENT Y
+0 @F6@ FAM
+1 HUSB @I6@
+1 WIFE @I5@
+1 CHIL @I486@
+1 MARR
+2 DATE 1 OCT 2016
+2 PLAC Riverton, Kansas
+1 _CURRENT Y
+0 @F7@ FAM
+1 HUSB @I385@
+1 WIFE @I386@
+1 CHIL @I6@
+1 CHIL @I387@
+1 CHIL @I388@
+1 _CURRENT Y
+0 @F8@ FAM
+1 HUSB @I42@
+1 WIFE @I43@
+1 CHIL @I7@
+1 CHIL @I44@
+1 CHIL @I51@
+1 CHIL @I52@
+1 CHIL @I53@
+1 CHIL @I54@
+1 CHIL @I55@
+1 CHIL @I347@
+1 MARR
+1 _CURRENT Y
+0 @F9@ FAM
+1 HUSB @I25@
+1 WIFE @I26@
+1 CHIL @I8@
+1 CHIL @I39@
+1 CHIL @I40@
+1 CHIL @I41@
+1 CHIL @I48@
+1 CHIL @I49@
+1 CHIL @I50@
+1 _CURRENT Y
+0 @F10@ FAM
+1 HUSB @I115@
+1 WIFE @I116@
+1 CHIL @I9@
+1 CHIL @I396@
+1 CHIL @I398@
+1 MARR
+2 DATE 18 DEC 1912
+1 _CURRENT Y
+0 @F11@ FAM
+1 HUSB @I23@
+1 WIFE @I24@
+1 CHIL @I10@
+1 CHIL @I35@
+1 _CURRENT Y
+0 @F12@ FAM
+1 HUSB @I11@
+1 WIFE @I17@
+1 CHIL @I29@
+1 MARR
+2 DATE 10 SEP 1988
+2 PLAC Waco, Missouri
+1 _CURRENT Y
+0 @F13@ FAM
+1 HUSB @I21@
+1 WIFE @I12@
+1 MARR
+2 DATE 1982
+1 _CURRENT Y
+0 @F14@ FAM
+1 HUSB @I22@
+1 WIFE @I12@
+1 CHIL @I27@
+1 CHIL @I28@
+1 MARR
+1 DIV
+1 _CURRENT N
+0 @F15@ FAM
+1 HUSB @I14@
+1 WIFE @I18@
+1 CHIL @I30@
+1 MARR
+1 _CURRENT Y
+0 @F16@ FAM
+1 HUSB @I14@
+1 WIFE @I19@
+1 MARR
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F17@ FAM
+1 HUSB @I20@
+1 WIFE @I16@
+1 CHIL @I31@
+1 CHIL @I32@
+1 CHIL @I33@
+1 MARR
+2 DATE 1 JUL 1989
+2 PLAC Oswego, Kansas
+1 _CURRENT Y
+0 @F18@ FAM
+1 HUSB @I389@
+1 WIFE @I390@
+1 CHIL @I23@
+1 _CURRENT Y
+0 @F19@ FAM
+1 HUSB @I36@
+1 WIFE @I37@
+1 CHIL @I24@
+1 CHIL @I38@
+1 _CURRENT Y
+0 @F20@ FAM
+1 HUSB @I27@
+1 WIFE @I45@
+1 CHIL @I46@
+1 CHIL @I47@
+1 _CURRENT Y
+0 @F21@ FAM
+1 HUSB @I117@
+1 WIFE @I28@
+1 CHIL @I118@
+1 _CURRENT Y
+0 @F22@ FAM
+1 HUSB @I31@
+1 WIFE @I34@
+1 MARR
+2 DATE 15 SEP 2018
+2 PLAC Columbus, Kansas
+1 _CURRENT Y
+0 @F23@ FAM
+1 HUSB @I35@
+1 WIFE @I96@
+1 _CURRENT Y
+0 @F24@ FAM
+1 HUSB @I391@
+1 WIFE @I392@
+1 CHIL @I37@
+1 _CURRENT Y
+0 @F25@ FAM
+1 HUSB @I95@
+1 WIFE @I38@
+1 CHIL @I97@
+1 _CURRENT Y
+0 @F26@ FAM
+1 HUSB @I39@
+1 WIFE @I59@
+1 CHIL @I87@
+1 CHIL @I88@
+1 CHIL @I89@
+1 CHIL @I90@
+1 CHIL @I141@
+1 CHIL @I156@
+1 _CURRENT Y
+0 @F27@ FAM
+1 HUSB @I58@
+1 WIFE @I41@
+1 CHIL @I80@
+1 CHIL @I81@
+1 CHIL @I82@
+1 CHIL @I83@
+1 CHIL @I84@
+1 CHIL @I85@
+1 CHIL @I86@
+1 MARR
+2 DATE 6 JUN 1953
+2 PLAC Parsons, Kansas
+1 _CURRENT Y
+0 @F28@ FAM
+1 HUSB @I169@
+1 WIFE @I170@
+1 CHIL @I42@
+1 CHIL @I195@
+1 CHIL @I197@
+1 CHIL @I199@
+1 CHIL @I201@
+1 CHIL @I203@
+1 CHIL @I205@
+1 MARR
+2 DATE 18 APR 1888
+2 PLAC Kansas City, Missouri
+1 _CURRENT Y
+0 @F29@ FAM
+1 HUSB @I44@
+1 WIFE @I56@
+1 CHIL @I151@
+1 CHIL @I261@
+1 CHIL @I320@
+1 CHIL @I324@
+1 CHIL @I343@
+1 MARR
+2 DATE 1 APR 1955
+2 PLAC Hernando, Mississippi
+1 _CURRENT Y
+0 @F30@ FAM
+1 HUSB @I61@
+1 WIFE @I48@
+1 CHIL @I74@
+1 CHIL @I78@
+1 _CURRENT Y
+0 @F31@ FAM
+1 HUSB @I60@
+1 WIFE @I49@
+1 CHIL @I63@
+1 CHIL @I64@
+1 _CURRENT Y
+0 @F32@ FAM
+1 HUSB @I62@
+1 WIFE @I50@
+1 CHIL @I67@
+1 CHIL @I68@
+1 CHIL @I69@
+1 CHIL @I70@
+1 CHIL @I71@
+1 _CURRENT Y
+0 @F33@ FAM
+1 HUSB @I57@
+1 WIFE @I51@
+1 CHIL @I262@
+1 CHIL @I268@
+1 CHIL @I275@
+1 MARR
+1 _CURRENT Y
+0 @F34@ FAM
+1 HUSB @I52@
+1 WIFE @I159@
+1 CHIL @I160@
+1 CHIL @I294@
+1 CHIL @I298@
+1 CHIL @I303@
+1 MARR
+1 _CURRENT Y
+0 @F35@ FAM
+1 HUSB @I53@
+1 WIFE @I260@
+1 CHIL @I280@
+1 CHIL @I286@
+1 CHIL @I289@
+1 _CURRENT Y
+0 @F36@ FAM
+1 HUSB @I63@
+1 WIFE @I65@
+1 _CURRENT Y
+0 @F37@ FAM
+1 HUSB @I64@
+1 WIFE @I66@
+1 _CURRENT Y
+0 @F38@ FAM
+1 HUSB @I67@
+1 WIFE @I153@
+1 _CURRENT Y
+0 @F39@ FAM
+1 HUSB @I70@
+1 WIFE @I155@
+1 _CURRENT Y
+0 @F40@ FAM
+1 HUSB @I71@
+1 WIFE @I72@
+1 CHIL @I73@
+1 MARR
+2 DATE 1 AUG 1998
+2 PLAC Chicago, Illinois
+1 _CURRENT Y
+0 @F41@ FAM
+1 HUSB @I74@
+1 WIFE @I75@
+1 CHIL @I76@
+1 CHIL @I77@
+1 _CURRENT Y
+0 @F42@ FAM
+1 HUSB @I76@
+1 WIFE @I146@
+1 CHIL @I147@
+1 CHIL @I148@
+1 CHIL @I149@
+1 CHIL @I150@
+1 MARR
+2 DATE 17 MAR 2007
+1 _CURRENT Y
+0 @F43@ FAM
+1 HUSB @I79@
+1 WIFE @I78@
+1 MARR
+2 DATE 29 APR 1984
+1 _CURRENT Y
+0 @F44@ FAM
+1 HUSB @I80@
+1 WIFE @I105@
+1 CHIL @I106@
+1 CHIL @I107@
+1 MARR
+2 DATE 9 JUN 1984
+1 _CURRENT Y
+0 @F45@ FAM
+1 HUSB @I108@
+1 WIFE @I81@
+1 CHIL @I109@
+1 CHIL @I110@
+1 CHIL @I113@
+1 _CURRENT N
+0 @F46@ FAM
+1 HUSB @I91@
+1 WIFE @I82@
+1 CHIL @I92@
+1 CHIL @I93@
+1 CHIL @I94@
+1 MARR
+2 DATE OCT 1982
+1 _CURRENT Y
+0 @F47@ FAM
+1 HUSB @I103@
+1 WIFE @I83@
+1 CHIL @I104@
+1 MARR
+2 DATE 1981
+1 _CURRENT Y
+0 @F48@ FAM
+1 HUSB @I84@
+1 WIFE @I381@
+1 CHIL @I466@
+1 CHIL @I467@
+1 MARR
+1 _CURRENT Y
+0 @F49@ FAM
+1 HUSB @I85@
+1 WIFE @I379@
+1 CHIL @I380@
+1 CHIL @I468@
+1 _CURRENT Y
+0 @F50@ FAM
+1 HUSB @I382@
+1 WIFE @I86@
+1 CHIL @I383@
+1 CHIL @I384@
+1 CHIL @I469@
+1 _CURRENT Y
+0 @F51@ FAM
+1 HUSB @I89@
+1 WIFE @I154@
+1 CHIL @I443@
+1 CHIL @I444@
+1 MARR
+2 DATE 29 MAY 1971
+1 _CURRENT Y
+0 @F52@ FAM
+1 HUSB @I90@
+1 WIFE @I142@
+1 CHIL @I143@
+1 CHIL @I144@
+1 CHIL @I145@
+1 _CURRENT Y
+0 @F53@ FAM
+1 HUSB @I377@
+1 WIFE @I93@
+1 CHIL @I378@
+1 _CURRENT Y
+0 @F54@ FAM
+1 HUSB @I98@
+1 WIFE @I97@
+1 _CURRENT Y
+0 @F55@ FAM
+1 HUSB @I127@
+1 WIFE @I128@
+1 CHIL @I99@
+1 CHIL @I129@
+1 CHIL @I130@
+1 CHIL @I131@
+1 _CURRENT Y
+0 @F56@ FAM
+1 HUSB @I120@
+1 WIFE @I121@
+1 CHIL @I100@
+1 CHIL @I135@
+1 CHIL @I136@
+1 CHIL @I137@
+1 MARR
+1 _CURRENT Y
+0 @F57@ FAM
+1 HUSB @I101@
+1 WIFE @I102@
+1 CHIL @I119@
+1 MARR
+2 DATE 26 MAR 2016
+2 PLAC Baxter Springs, Kansas
+1 _CURRENT Y
+0 @F58@ FAM
+1 HUSB @I122@
+1 WIFE @I123@
+1 CHIL @I102@
+1 CHIL @I124@
+1 _CURRENT Y
+0 @F59@ FAM
+1 HUSB @I110@
+1 WIFE @I111@
+1 CHIL @I112@
+1 CHIL @I158@
+1 MARR
+2 DATE 1 JUN 2013
+1 _CURRENT Y
+0 @F60@ FAM
+1 HUSB @I114@
+1 WIFE @I113@
+1 CHIL @I465@
+1 _CURRENT Y
+0 @F61@ FAM
+1 HUSB @I393@
+1 WIFE @I394@
+1 CHIL @I115@
+1 CHIL @I395@
+1 CHIL @I416@
+1 CHIL @I417@
+1 CHIL @I418@
+1 CHIL @I419@
+1 CHIL @I420@
+1 CHIL @I421@
+1 CHIL @I422@
+1 MARR
+2 DATE 30 SEP 1874
+2 PLAC St. Charles, Minnesota
+1 _CURRENT Y
+0 @F62@ FAM
+1 HUSB @I406@
+1 WIFE @I407@
+1 CHIL @I116@
+1 _CURRENT Y
+0 @F63@ FAM
+1 HUSB @I125@
+1 WIFE @I126@
+1 CHIL @I123@
+1 _CURRENT Y
+0 @F64@ FAM
+1 HUSB @I132@
+1 WIFE @I131@
+1 CHIL @I133@
+1 CHIL @I134@
+1 _CURRENT Y
+0 @F65@ FAM
+1 HUSB @I210@
+1 WIFE @I135@
+1 MARR
+1 _CURRENT Y
+0 @F66@ FAM
+1 HUSB @I209@
+1 WIFE @I135@
+1 CHIL @I211@
+1 CHIL @I213@
+1 MARR
+1 DIV
+1 _CURRENT N
+0 @F67@ FAM
+1 HUSB @I136@
+1 WIFE @I138@
+1 CHIL @I139@
+1 MARR
+2 DATE 26 MAR 1983
+1 _CURRENT Y
+0 @F68@ FAM
+1 HUSB @I215@
+1 WIFE @I137@
+1 MARR
+2 DATE 22 DEC 1995
+1 _CURRENT Y
+0 @F69@ FAM
+1 WIFE @I137@
+1 CHIL @I442@
+1 CHIL @I478@
+1 _CURRENT N
+0 @F70@ FAM
+1 HUSB @I139@
+1 WIFE @I140@
+1 MARR
+2 DATE 30 APR 2016
+2 PLAC Tulsa, Oklahoma
+1 _CURRENT Y
+0 @F71@ FAM
+1 HUSB @I470@
+1 WIFE @I141@
+1 CHIL @I471@
+1 CHIL @I472@
+1 _CURRENT Y
+0 @F72@ FAM
+1 HUSB @I151@
+1 WIFE @I152@
+1 MARR
+2 DATE 12 DEC 1996
+1 _CURRENT Y
+0 @F73@ FAM
+1 HUSB @I157@
+1 WIFE @I156@
+1 MARR
+2 DATE MAY 1966
+1 _CURRENT Y
+0 @F74@ FAM
+1 HUSB @I160@
+1 WIFE @I161@
+1 CHIL @I309@
+1 CHIL @I311@
+1 CHIL @I312@
+1 MARR
+1 _CURRENT Y
+0 @F75@ FAM
+1 HUSB @I162@
+1 WIFE @I164@
+1 _CURRENT Y
+0 @F76@ FAM
+1 HUSB @I21@
+1 WIFE @I163@
+1 CHIL @I162@
+1 CHIL @I165@
+1 CHIL @I167@
+1 _CURRENT N
+0 @F77@ FAM
+1 HUSB @I166@
+1 WIFE @I165@
+1 _CURRENT Y
+0 @F78@ FAM
+1 HUSB @I168@
+1 WIFE @I167@
+1 _CURRENT Y
+0 @F79@ FAM
+1 HUSB @I171@
+1 WIFE @I172@
+1 CHIL @I169@
+1 CHIL @I188@
+1 CHIL @I189@
+1 CHIL @I191@
+1 CHIL @I193@
+1 MARR
+2 DATE 3 JUN 1852
+2 PLAC Ankersta, Orebro, Sweden
+1 _CURRENT Y
+0 @F80@ FAM
+1 HUSB @I171@
+1 WIFE @I185@
+1 CHIL @I186@
+1 CHIL @I187@
+1 MARR
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F81@ FAM
+1 HUSB @I173@
+1 WIFE @I174@
+1 CHIL @I171@
+1 MARR
+2 DATE 23 OCT 1814
+1 _CURRENT Y
+0 @F82@ FAM
+1 HUSB @I179@
+1 WIFE @I180@
+1 CHIL @I173@
+1 MARR
+1 _CURRENT Y
+0 @F83@ FAM
+1 HUSB @I175@
+1 WIFE @I176@
+1 CHIL @I174@
+1 MARR
+1 _CURRENT Y
+0 @F84@ FAM
+1 HUSB @I177@
+1 WIFE @I178@
+1 CHIL @I175@
+1 _CURRENT Y
+0 @F85@ FAM
+1 HUSB @I183@
+1 WIFE @I184@
+1 CHIL @I179@
+1 MARR
+1 _CURRENT Y
+0 @F86@ FAM
+1 HUSB @I181@
+1 WIFE @I182@
+1 CHIL @I180@
+1 MARR
+1 _CURRENT Y
+0 @F87@ FAM
+1 HUSB @I189@
+1 WIFE @I190@
+1 MARR
+1 _CURRENT Y
+0 @F88@ FAM
+1 HUSB @I191@
+1 WIFE @I192@
+1 _CURRENT Y
+0 @F89@ FAM
+1 HUSB @I194@
+1 WIFE @I193@
+1 MARR
+1 _CURRENT Y
+0 @F90@ FAM
+1 HUSB @I195@
+1 WIFE @I196@
+1 CHIL @I216@
+1 CHIL @I228@
+1 CHIL @I244@
+1 MARR
+2 DATE 10 JAN 1926
+2 PLAC Chanute, Kansas
+1 _CURRENT Y
+0 @F91@ FAM
+1 HUSB @I197@
+1 WIFE @I198@
+1 MARR
+1 _CURRENT Y
+0 @F92@ FAM
+1 HUSB @I199@
+1 WIFE @I200@
+1 MARR
+1 _CURRENT Y
+0 @F93@ FAM
+1 HUSB @I202@
+1 WIFE @I201@
+1 CHIL @I446@
+1 CHIL @I447@
+1 CHIL @I448@
+1 MARR
+1 _CURRENT Y
+0 @F94@ FAM
+1 HUSB @I203@
+1 WIFE @I204@
+1 MARR
+2 DATE 8 MAY 1937
+1 _CURRENT Y
+0 @F95@ FAM
+1 HUSB @I205@
+1 WIFE @I206@
+1 MARR
+2 DATE 19 JAN 1958
+1 _CURRENT Y
+0 @F96@ FAM
+1 HUSB @I129@
+1 WIFE @I208@
+1 CHIL @I207@
+1 _CURRENT N
+0 @F97@ FAM
+1 HUSB @I211@
+1 WIFE @I212@
+1 CHIL @I428@
+1 CHIL @I429@
+1 CHIL @I430@
+1 MARR
+1 _CURRENT Y
+0 @F98@ FAM
+1 HUSB @I214@
+1 WIFE @I213@
+1 CHIL @I427@
+1 MARR
+2 DATE 27 OCT 2012
+1 _CURRENT Y
+0 @F99@ FAM
+1 HUSB @I216@
+1 WIFE @I217@
+1 CHIL @I218@
+1 CHIL @I219@
+1 MARR
+2 DATE 21 JUN 1958
+2 PLAC McCook, Nebraska
+1 _CURRENT Y
+0 @F100@ FAM
+1 HUSB @I219@
+1 WIFE @I226@
+1 CHIL @I227@
+1 MARR
+2 DATE 2 MAY 2009
+2 PLAC Ormand Beach, Florida
+1 _CURRENT Y
+0 @F101@ FAM
+1 HUSB @I219@
+1 WIFE @I220@
+1 CHIL @I221@
+1 CHIL @I224@
+1 CHIL @I225@
+1 MARR
+2 DATE 12 JUN 1988
+2 PLAC Littleton, Colorado
+1 DIV
+1 _CURRENT N
+0 @F102@ FAM
+1 HUSB @I222@
+1 WIFE @I221@
+1 CHIL @I223@
+1 MARR
+2 DATE 10 MAY 2010
+2 PLAC Joplin, Missouri
+1 _CURRENT Y
+0 @F103@ FAM
+1 HUSB @I229@
+1 WIFE @I228@
+1 CHIL @I230@
+1 CHIL @I234@
+1 CHIL @I239@
+1 MARR
+2 DATE 6 MAY 1956
+2 PLAC Chanute, Kansas
+1 _CURRENT Y
+0 @F104@ FAM
+1 HUSB @I231@
+1 WIFE @I230@
+1 CHIL @I232@
+1 CHIL @I233@
+1 MARR
+2 DATE 29 SEP 1980
+2 PLAC Middletown, Rhode Island
+1 _CURRENT Y
+0 @F105@ FAM
+1 HUSB @I238@
+1 WIFE @I234@
+1 MARR
+2 DATE 15 APR 2006
+1 _CURRENT Y
+0 @F106@ FAM
+1 HUSB @I235@
+1 WIFE @I234@
+1 CHIL @I236@
+1 CHIL @I237@
+1 MARR
+2 DATE 2 JUN 1984
+1 DIV
+1 _CURRENT N
+0 @F107@ FAM
+1 HUSB @I239@
+1 WIFE @I240@
+1 CHIL @I241@
+1 CHIL @I242@
+1 CHIL @I243@
+1 _CURRENT Y
+0 @F108@ FAM
+1 HUSB @I245@
+1 WIFE @I244@
+1 CHIL @I246@
+1 CHIL @I251@
+1 CHIL @I255@
+1 MARR
+2 DATE 15 SEP 1956
+2 PLAC Pittsburg, Kansas
+1 _CURRENT Y
+0 @F109@ FAM
+1 HUSB @I246@
+1 WIFE @I247@
+1 CHIL @I248@
+1 CHIL @I249@
+1 CHIL @I250@
+1 _CURRENT Y
+0 @F110@ FAM
+1 HUSB @I251@
+1 WIFE @I257@
+1 CHIL @I258@
+1 CHIL @I259@
+1 MARR
+1 _CURRENT Y
+0 @F111@ FAM
+1 HUSB @I251@
+1 WIFE @I252@
+1 CHIL @I253@
+1 CHIL @I254@
+1 MARR
+2 DATE 4 JAN 1987
+1 DIV
+1 _CURRENT N
+0 @F112@ FAM
+1 HUSB @I256@
+1 WIFE @I255@
+1 MARR
+2 DATE 12 NOV 1991
+1 _CURRENT Y
+0 @F113@ FAM
+1 HUSB @I263@
+1 WIFE @I262@
+1 CHIL @I264@
+1 CHIL @I265@
+1 CHIL @I267@
+1 MARR
+1 _CURRENT Y
+0 @F114@ FAM
+1 HUSB @I265@
+1 WIFE @I266@
+1 CHIL @I458@
+1 CHIL @I459@
+1 MARR
+1 _CURRENT Y
+0 @F115@ FAM
+1 HUSB @I267@
+1 WIFE @I460@
+1 CHIL @I461@
+1 CHIL @I462@
+1 _CURRENT Y
+0 @F116@ FAM
+1 HUSB @I268@
+1 WIFE @I269@
+1 CHIL @I270@
+1 MARR
+2 DATE 1974
+1 _CURRENT Y
+0 @F117@ FAM
+1 HUSB @I271@
+1 WIFE @I270@
+1 CHIL @I272@
+1 CHIL @I273@
+1 CHIL @I274@
+1 MARR
+1 _CURRENT Y
+0 @F118@ FAM
+1 WIFE @I270@
+1 _CURRENT N
+0 @F119@ FAM
+1 HUSB @I424@
+1 WIFE @I272@
+1 _CURRENT Y
+0 @F120@ FAM
+1 HUSB @I275@
+1 WIFE @I276@
+1 CHIL @I277@
+1 CHIL @I278@
+1 CHIL @I279@
+1 MARR
+1 _CURRENT Y
+0 @F121@ FAM
+1 HUSB @I281@
+1 WIFE @I280@
+1 _CURRENT Y
+0 @F122@ FAM
+1 HUSB @I283@
+1 WIFE @I280@
+1 CHIL @I282@
+1 CHIL @I284@
+1 CHIL @I285@
+1 _CURRENT N
+0 @F123@ FAM
+1 HUSB @I286@
+1 WIFE @I287@
+1 CHIL @I288@
+1 _CURRENT Y
+0 @F124@ FAM
+1 HUSB @I290@
+1 WIFE @I289@
+1 CHIL @I291@
+1 CHIL @I292@
+1 CHIL @I293@
+1 MARR
+1 _CURRENT Y
+0 @F125@ FAM
+1 HUSB @I294@
+1 WIFE @I295@
+1 CHIL @I296@
+1 CHIL @I297@
+1 MARR
+1 _CURRENT Y
+0 @F126@ FAM
+1 HUSB @I298@
+1 WIFE @I299@
+1 CHIL @I300@
+1 CHIL @I302@
+1 MARR
+1 _CURRENT Y
+0 @F127@ FAM
+1 HUSB @I300@
+1 WIFE @I301@
+1 MARR
+1 _CURRENT Y
+0 @F128@ FAM
+1 HUSB @I304@
+1 WIFE @I303@
+1 CHIL @I305@
+1 CHIL @I307@
+1 CHIL @I308@
+1 _CURRENT Y
+0 @F129@ FAM
+1 HUSB @I306@
+1 WIFE @I305@
+1 MARR
+1 _CURRENT Y
+0 @F130@ FAM
+1 HUSB @I309@
+1 WIFE @I310@
+1 CHIL @I463@
+1 CHIL @I464@
+1 MARR
+1 _CURRENT Y
+0 @F131@ FAM
+1 HUSB @I449@
+1 WIFE @I312@
+1 CHIL @I450@
+1 CHIL @I451@
+1 MARR
+2 DATE 15 MAR 2014
+1 _CURRENT Y
+0 @F132@ FAM
+1 HUSB @I314@
+1 WIFE @I152@
+1 CHIL @I313@
+1 CHIL @I315@
+1 CHIL @I316@
+1 _CURRENT N
+0 @F133@ FAM
+1 HUSB @I453@
+1 WIFE @I317@
+1 _CURRENT Y
+0 @F134@ FAM
+1 HUSB @I151@
+1 WIFE @I318@
+1 CHIL @I317@
+1 CHIL @I319@
+1 _CURRENT N
+0 @F135@ FAM
+1 HUSB @I452@
+1 WIFE @I319@
+1 _CURRENT Y
+0 @F136@ FAM
+1 HUSB @I320@
+1 WIFE @I321@
+1 CHIL @I322@
+1 CHIL @I323@
+1 MARR
+1 _CURRENT Y
+0 @F137@ FAM
+1 HUSB @I322@
+1 WIFE @I454@
+1 CHIL @I455@
+1 MARR
+2 DATE 18 JUL 2015
+1 _CURRENT Y
+0 @F138@ FAM
+1 HUSB @I456@
+1 WIFE @I323@
+1 MARR
+1 _CURRENT Y
+0 @F139@ FAM
+1 HUSB @I324@
+1 WIFE @I325@
+1 CHIL @I326@
+1 CHIL @I331@
+1 CHIL @I336@
+1 CHIL @I338@
+1 _CURRENT Y
+0 @F140@ FAM
+1 HUSB @I326@
+1 WIFE @I327@
+1 CHIL @I328@
+1 CHIL @I329@
+1 CHIL @I330@
+1 MARR
+1 _CURRENT Y
+0 @F141@ FAM
+1 HUSB @I331@
+1 WIFE @I332@
+1 CHIL @I333@
+1 CHIL @I334@
+1 CHIL @I335@
+1 MARR
+1 _CURRENT Y
+0 @F142@ FAM
+1 HUSB @I337@
+1 WIFE @I336@
+1 _CURRENT Y
+0 @F143@ FAM
+1 HUSB @I339@
+1 WIFE @I338@
+1 CHIL @I340@
+1 CHIL @I341@
+1 CHIL @I342@
+1 MARR
+1 _CURRENT Y
+0 @F144@ FAM
+1 HUSB @I457@
+1 WIFE @I343@
+1 _CURRENT Y
+0 @F145@ FAM
+1 HUSB @I345@
+1 WIFE @I343@
+1 CHIL @I344@
+1 CHIL @I346@
+1 _CURRENT N
+0 @F146@ FAM
+1 HUSB @I348@
+1 WIFE @I347@
+1 CHIL @I349@
+1 CHIL @I354@
+1 CHIL @I355@
+1 MARR
+1 _CURRENT Y
+0 @F147@ FAM
+1 HUSB @I349@
+1 WIFE @I350@
+1 CHIL @I351@
+1 CHIL @I352@
+1 CHIL @I353@
+1 MARR
+1 _CURRENT Y
+0 @F148@ FAM
+1 HUSB @I355@
+1 WIFE @I356@
+1 CHIL @I357@
+1 MARR
+1 _CURRENT Y
+0 @F149@ FAM
+1 HUSB @I358@
+1 WIFE @I357@
+1 CHIL @I359@
+1 _CURRENT Y
+0 @F150@ FAM
+1 HUSB @I360@
+1 WIFE @I362@
+1 CHIL @I363@
+1 CHIL @I364@
+1 CHIL @I365@
+1 MARR
+1 _CURRENT Y
+0 @F151@ FAM
+1 HUSB @I361@
+1 WIFE @I55@
+1 CHIL @I360@
+1 CHIL @I366@
+1 CHIL @I371@
+1 CHIL @I373@
+1 MARR
+2 DATE 17 SEP 1952
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F152@ FAM
+1 HUSB @I367@
+1 WIFE @I366@
+1 CHIL @I368@
+1 CHIL @I369@
+1 CHIL @I370@
+1 CHIL @I423@
+1 MARR
+2 DATE 2 JUN 1984
+1 _CURRENT Y
+0 @F153@ FAM
+1 HUSB @I371@
+1 WIFE @I372@
+1 _CURRENT Y
+0 @F154@ FAM
+1 HUSB @I374@
+1 WIFE @I373@
+1 CHIL @I375@
+1 CHIL @I376@
+1 MARR
+1 _CURRENT Y
+0 @F155@ FAM
+1 HUSB @I402@
+1 WIFE @I403@
+1 CHIL @I393@
+1 _CURRENT Y
+0 @F156@ FAM
+1 HUSB @I404@
+1 WIFE @I405@
+1 CHIL @I394@
+1 _CURRENT Y
+0 @F157@ FAM
+1 HUSB @I397@
+1 WIFE @I396@
+1 CHIL @I412@
+1 CHIL @I413@
+1 CHIL @I415@
+1 MARR
+2 DATE 23 SEP 1948
+1 _CURRENT Y
+0 @F158@ FAM
+1 HUSB @I398@
+1 WIFE @I399@
+1 CHIL @I400@
+1 CHIL @I401@
+1 MARR
+2 DATE 29 SEP 1946
+1 _CURRENT Y
+0 @F159@ FAM
+1 HUSB @I408@
+1 WIFE @I409@
+1 CHIL @I406@
+1 _CURRENT Y
+0 @F160@ FAM
+1 HUSB @I410@
+1 WIFE @I411@
+1 CHIL @I407@
+1 _CURRENT Y
+0 @F161@ FAM
+1 HUSB @I413@
+1 WIFE @I414@
+1 MARR
+2 DATE 25 AUG 1979
+1 _CURRENT Y
+0 @F162@ FAM
+1 HUSB @I426@
+1 WIFE @I213@
+1 CHIL @I425@
+1 _CURRENT N
+0 @F163@ FAM
+1 HUSB @I432@
+1 WIFE @I207@
+1 CHIL @I431@
+1 _CURRENT N
+0 @F164@ FAM
+1 HUSB @I433@
+1 WIFE @I436@
+1 CHIL @I437@
+1 CHIL @I438@
+1 _CURRENT Y
+0 @F165@ FAM
+1 HUSB @I130@
+1 WIFE @I434@
+1 CHIL @I433@
+1 CHIL @I435@
+1 _CURRENT N
+0 @F166@ FAM
+1 HUSB @I435@
+1 WIFE @I439@
+1 CHIL @I440@
+1 CHIL @I441@
+1 _CURRENT Y
+0 @F167@ FAM
+1 HUSB @I482@
+1 WIFE @I442@
+1 CHIL @I483@
+1 CHIL @I484@
+1 CHIL @I485@
+1 MARR
+1 _CURRENT Y
+0 @F168@ FAM
+1 HUSB @I443@
+1 WIFE @I445@
+1 CHIL @I473@
+1 CHIL @I474@
+1 MARR
+1 _CURRENT Y
+0 @F169@ FAM
+1 HUSB @I475@
+1 WIFE @I444@
+1 CHIL @I476@
+1 CHIL @I477@
+1 MARR
+1 _CURRENT Y
+0 @F170@ FAM
+1 HUSB @I479@
+1 WIFE @I478@
+1 CHIL @I480@
+1 CHIL @I481@
+1 MARR
+2 DATE 14 SEP 2002
+1 _CURRENT Y
+0 TRLR
