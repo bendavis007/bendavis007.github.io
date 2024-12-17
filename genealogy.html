@@ -5,7 +5,7 @@
 		
 		<TITLE>Family Echo - My Family</TITLE>
 		
-		<META NAME="Description" CONTENT="Draw your printable family tree online. Free and easy to use, no login required. Add photos and share with your family. Import/export GEDCOM files.">
+		<META NAME="Description" CONTENT="Draw your family tree online and share it with relatives. Add photos and biographical details. Print the family tree or download to own computer.">
 
 		
 <!--
@@ -45,12 +45,19 @@ input, select, textarea {padding:1px;}
 #lfamilyinfo {font-size:12px;}
 #lfamilylabels {font-size:14px;}
 .lfamilylabel {color:white; padding:3px 5px; border-radius:5px; background:linear-gradient(to right, #B8860B, #CD950C, #B8860B);}
+#footerlang img {width:16px; height:16px; vertical-align:middle; margin-right:4px;}
+#langoverlay {position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.5); justify-content:center; align-items:center;}
+#langcontent {background:white; padding:16px; border:1px solid #999; max-height:80%; max-width:80%; overflow:auto; position:relative;}
+#langlist {font-size:125%; columns:3; column-gap:2em; line-height:1.4em;}
+#langclose {float:right; font-weight:bold; text-decoration:none; font-size:150%;}
+#langtitle {font-size:150%; margin-bottom:1em;}
+#langfooter {font-size:125%; margin-top:1em;}
 
 .lbody {background-color:#e8e8e8;}
 .dark .lbody,.dark.lbody {background-color:#111;}
 .rbody {background-color:white;}
 .dark .rbody {background:#282828;}
-.mbody {background-color:#ddddff; border:outset #666666 2px; padding:8px;}
+.mbody {background-color:#ddddff; border:outset #666666 2px; padding:16px;}
 .dark .mbody {background:#111; border:#999 2px solid;}
 .fullsize {width:100%; height:100%;}
 .bordered {border:solid #666 1px;}
@@ -97,21 +104,22 @@ input, select, textarea {padding:1px;}
 .sdefname {font-size:18px; color:#666666; text-align:center;}
 .simage {border:1px #666666 solid;}
 .snormal {padding:2px 4px 2px 4px;}
-.sleft {color:#222222; padding:2px 2px 2px 6px; text-align:right;}
+.sleft {color:#222222; padding:2px 2px 2px 6px; text-align:end; padding-inline-start:6px; padding-inline-end:2px;}
 .dark .sleft {color:#bbb;}
-.sright {width:176px; padding:2px 6px 2px 2px;}
+.sright {width:176px; padding:2px 6px 2px 2px; padding-inline-start:2px; padding-inline-end:6px;}
 .sboth {padding:2px 4px 2px 4px; text-align:center;}
 .sfield {width:176px; font-family:arial; font-size:12px;}
 .sfieldexpand {width:160px; font-family:arial; font-size:12px;}
 .syear {width:3.5em;}
 .sselect {font-family:arial; font-size:12px; max-width:240px;}
-.ibutton, .sbutton, .sbutton2, .sbutton4 {font-family:arial; font-size:12px; padding:1px 2px;}
+.ibutton, .sbutton, .sbutton2, .sbutton4 {font-family:arial; font-size:12px; padding:1px 2px; text-overflow:ellipsis;}
 .sbutton {width:240px;}
 .sbutton2 {width:112px;}
 .sbutton4 {width:52px;}
 .spanel {border-left:solid #666666 1px; border-right:solid #666666 1px; border-bottom:solid #666666 1px;}
 .sswitch {padding-bottom:4px; border-bottom:solid #666666 1px; padding-left:5px; padding-top:5px; padding-right:5px;}
-.sswitched {padding:4px; padding-bottom:5px; border-left:solid #666666 1px; border-top:solid #666666 1px; border-right:solid #666666 1px;}
+.sswitched {padding:4px; padding-bottom:5px; border-left:solid #666666 1px; border-top:solid #666666 1px; border-right:solid #666666 1px; }
+.sswitch,.sswitched {word-break:break-all;}
 .slist {background:white;}
 .dark .slist {background:#282828;}
 .slist a,.slist div {padding:2px 4px; display:block; color:#000;}
@@ -119,7 +127,7 @@ input, select, textarea {padding:1px;}
 .dark .slist a:hover {background:#444;}
 a.sdatelink:hover {text-decoration:none;}
 .snameedit {width:240px; text-align:center;}
-.snamelist {width:240px; height:20em; padding:2px 0; background:#fff; border:1px solid black; text-align:left; overflow-x:hidden; overflow-y:auto; display:inline-block;}
+.snamelist {width:240px; height:20em; padding:2px 0; background:#fff; border:1px solid black; text-align:start; overflow-x:hidden; overflow-y:auto; display:inline-block;}
 .dark .snamelist {background:#282828;}
 .snamelist a,.snamelist div {padding:2px 4px; display:block; color:#000;}
 .snamelist a:hover {background:#ddd; text-decoration:none;}
@@ -163,9 +171,10 @@ input[type=color] { height:24px; }
 .dark .pl {background:#1c1c1c; border-color:#999}
 
 .ct {width:100%; margin-top:-12px;}
-.cm {text-align:center; font-weight:bold; font-size:15px; padding:18px 0 6px 6px;}
-.cl {text-align:right; padding:1px 0 1px 6px; vertical-align:baseline; font-weight:bold;}
+.cm {text-align:center; font-weight:bold; font-size:15px; padding:18px 0 6px 6px; padding-inline-start:6px; padding-inline-end:0;}
+.cl {text-align:right; padding:1px 0 1px 6px; vertical-align:baseline; font-weight:bold; padding-inline-start:6px; padding-inline-end:0;}
 .cr {padding:1px 4px; vertical-align:baseline;}
+.hg {margin:6px 0;}
 
 .fboth {padding:3px 6px 3px 6px;}
 #fileattachrows .snameedit, #fileattachrows .snamelist, #fileattachrows select {width:100%;}
@@ -175,7 +184,7 @@ input[type=color] { height:24px; }
 a.fattachpmlink:hover {text-decoration:none;}
 
 #filestable {position:relative; border-collapse:collapse; border-spacing:0;}
-#filestable th, .filesrow > td {font-size:14px; padding-top:6px; padding-bottom:6px; text-align:left; box-sizing:border-box;}
+#filestable th, .filesrow > td {font-size:14px; padding-top:6px; padding-bottom:6px; text-align:start; box-sizing:border-box;}
 #filestable th {font-weight:bold; position:sticky; top:0; background:white; border-bottom:1px #ccc solid; vertical-align:middle;}
 .dark #filestable th {background:#111;}
 .filesrow > td {vertical-align:top;} 
@@ -183,22 +192,22 @@ a.fattachpmlink:hover {text-decoration:none;}
 .dark #filesheader a {color:#ccc;}
 #filesrows > tr:nth-child(odd) {background: #eee;}
 .dark #filesrows > tr:nth-child(odd) {background: #191919;}
-.fname {padding-left:9px; padding-right:6px; width:25%;}
+.fname {padding-left:9px; padding-right:6px; padding-inline-start:9px; padding-inline-end:6px; width:25%;}
 .fdesc, .fattach {padding-left:6px; padding-right:6px;}
 .fdesc {width:35%;}
 .fattach {width:25%;}
 .fattach .snameedit, .fattach .snamelist {width:100%;}
-.ftype, .fsize, .fuploaded, .fbuttons {white-space:nowrap; padding-left:12px; padding-right:6px;}
-.fbuttons {width:5%; padding-right:12px;}
+.ftype, .fsize, .fuploaded, .fbuttons {white-space:nowrap; padding-left:12px; padding-right:6px; padding-inline-start:12px; padding-inline-end:6px;}
+.fbuttons {width:5%; padding-inline-end:12px;}
 #filesrows .fnone {padding:16px; font-style:italic; text-align:center; background:white;}
 #filestable textarea {font-family:arial; font-size:14px; padding:2px; vertical-align:top;}
 
 #uploaddiv td {font-size:14px;}
 #uploaddiv textarea, #uploadattachrows input {font-family:arial; font-size:14px;}
-.uleft {text-align:right;}
+.uleft {text-align:end;}
 #uploadattachrows .snameedit, #uploadattachrows .snamelist, #uploadattachrows select {width:100%;}
 #uploadattachrows .fattachsel {width:100%;}
-#uploadattachrows .fattachpm {padding-left:8px;}
+#uploadattachrows .fattachpm {padding-inline-start:8px;}
 #uploaddiv input[type=submit] {padding:3px 6px;}
 
 .blankpixel {background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw== );}
@@ -207,24 +216,20 @@ a.fattachpmlink:hover {text-decoration:none;}
 	#ad-leaderboard {display:none;}
 }
 
-@media (max-width: 1320px) { .marginon .iconlabel {display:none;} }
-@media (max-width: 1060px) { .marginon #showzoom {display:none;} }
-@media (max-width: 960px) { .marginon #backto {display:none;} }
-@media (max-width: 890px) { .marginon #optionslinktext {display:none;} }
-@media (max-width: 840px) { .marginon .buttondash {display:none;} }
+.nshrink1 .iconlabel {display:none;}
+.nshrink2 #showzoom {display:none;}
+.nshrink3 #backto {display:none;}
+.nshrink4 #optionslinktext {display:none;}
+.nshrink5 .buttondash {display:none;}
 
-@media (max-width: 1000px) { .marginoff .iconlabel {display:none;} }
-@media (max-width: 740px) { .marginoff #showzoom {display:none;} }
-@media (max-width: 640px) { .marginoff #backto {display:none;} }
-@media (max-width: 570px) { .marginoff #optionslinktext {display:none;} }
-@media (max-width: 520px) { .marginoff .buttondash {display:none;} }
+
 </STYLE>
 		
 		<SCRIPT language="JavaScript"><!--
 		var staticMode=true;
 		var hideSidebar=false;
 		var noCentering=false;
-		var defaultZoom=0.552;
+		var defaultZoom=0.5;
 		var defaultDetail=null;
 		var defaultBirthName=0;
 		var defaultSurnameFirst=0;
@@ -250,6 +255,14 @@ a.fattachpmlink:hover {text-decoration:none;}
 		};
 		--></SCRIPT>
 
+		<script type="text/javascript">
+
+
+var locale_value="en";
+var locale_rtl=false;
+var locale_names={"en":"English","ar":"\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (Arabic)","fa":"\u0641\u0627\u0631\u0633\u06cc (Persian)","ur":"\u0627\u0631\u062f\u0648 (Urdu)","he":"\u05e2\u05d1\u05e8\u05d9\u05ea (Hebrew)","de":"Deutsch (German)","es":"Espa\xf1ol (Spanish)","fr":"Fran\xe7ais (French)","ru":"\u0420\u0443\u0441\u0441\u043a\u0438\u0439 (Russian)","it":"Italiano (Italian)","pt":"Portugu\xeas (Portuguese)","tr":"T\xfcrk\xe7e (Turkish)","nl":"Nederlands (Dutch)","pl":"Polski (Polish)","cs":"\u010ce\u0161tina (Czech)","uk":"\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (Ukrainian)","el":"\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (Greek)","sv":"Svenska (Swedish)","ro":"Rom\xe2n\u0103 (Romanian)","hu":"Magyar (Hungarian)","da":"Dansk (Danish)","sk":"Sloven\u010dina (Slovak)","fi":"Suomi (Finnish)","sr":"\u0421\u0440\u043f\u0441\u043a\u0438 (Serbian)","no":"Norsk (Norwegian)","bg":"\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 (Bulgarian)","lt":"Lietuvi\u0173 (Lithuanian)","sl":"Sloven\u0161\u010dina (Slovene)","ca":"Catal\xe0 (Catalan)","et":"Eesti (Estonian)","lv":"Latvie\u0161u (Latvian)","hr":"Hrvatski (Croatian)","hy":"\u0540\u0561\u0575\u0565\u0580\u0565\u0576 (Armenian)","ka":"\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8 (Georgian)","sq":"Shqip (Albanian)","is":"\xcdslenska (Icelandic)","bs":"Bosanski (Bosnian)","mk":"\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438 (Macedonian)","hi":"\u0939\u093f\u0928\u094d\u0926\u0940 (Hindi)","bn":"\u09ac\u09be\u0982\u09b2\u09be (Bengali)","kn":"\u0c95\u0ca8\u0ccd\u0ca8\u0ca1 (Kannada)","te":"\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 (Telugu)","mr":"\u092e\u0930\u093e\u0920\u0940 (Marathi)","gu":"\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0 (Gujarati)","ml":"\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02 (Malayalam)","pa":"\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40 (Punjabi)","ta":"\u0ba4\u0bae\u0bbf\u0bb4\u0bcd (Tamil)","ja":"\u65e5\u672c\u8a9e (Japanese)","zh":"\u4e2d\u6587 (Chinese)","vi":"Ti\u1ebfng Vi\u1ec7t (Vietnamese)","id":"Indonesia (Indonesian)","ko":"\ud55c\uad6d\uc5b4 (Korean)","th":"\u0e44\u0e17\u0e22 (Thai)","ms":"Melayu (Malay)","tl":"Filipino (Tagalog)","kk":"\u049a\u0430\u0437\u0430\u049b \u0442\u0456\u043b\u0456 (Kazakh)","si":"\u0dc3\u0dd2\u0d82\u0dc4\u0dbd (Sinhala)","my":"\u1019\u103c\u1014\u103a\u1019\u102c (Burmese)","jv":"Jawa (Javanese)","ne":"\u0928\u0947\u092a\u093e\u0932\u0940 (Nepali)","sw":"Kiswahili (Swahili)","uz":"O\u2018zbek (Uzbek)"};
+var locale_phrases={"^":{"one":"^st","two":"^nd","few":"^rd","str":"^th"},"Mth_1":{"str":"Jan"},"Month_1":{"str":"January"},"Mth_2":{"str":"Feb"},"Month_2":{"str":"February"},"Mth_3":{"str":"Mar"},"Month_3":{"str":"March"},"Mth_4":{"str":"Apr"},"Month_4":{"str":"April"},"Mth_5":{"str":"May"},"Month_5":{"str":"May"},"Mth_6":{"str":"Jun"},"Month_6":{"str":"June"},"Mth_7":{"str":"Jul"},"Month_7":{"str":"July"},"Mth_8":{"str":"Aug"},"Month_8":{"str":"August"},"Mth_9":{"str":"Sep"},"Month_9":{"str":"September"},"Mth_10":{"str":"Oct"},"Month_10":{"str":"October"},"Mth_11":{"str":"Nov"},"Month_11":{"str":"November"},"Mth_12":{"str":"Dec"},"Month_12":{"str":"December"},"# ancestor/s":{"str":"# ancestors","one":"# ancestor"},"# descendant/s":{"str":"# descendants","one":"# descendant"},"# day/s old":{"str":"# days old","one":"# day old"},"# day/s":{"str":"# days","one":"# day"},"# month/s old":{"str":"# months old","one":"# month old"},"# month/s":{"str":"# months","one":"# month"},"# year/s old":{"str":"# years old","one":"# year old"},"# year/s":{"str":"# years","one":"# year"},"# file/s":{"str":"# files","one":"# file"},"# people":{"str":"# people","one":"# person"},"^ birthday":{"one":"^st birthday","two":"^nd birthday","few":"^rd birthday","str":"^th birthday"},"^ anniversary":{"one":"^st anniversary","two":"^nd anniversary","few":"^rd anniversary","str":"^th anniversary"},"Female cousin":{"str":"Cousin"},"Male cousin":{"str":"Cousin"},"Female second cousin":{"str":"Second cousin"},"Female third cousin":{"str":"Third cousin"},"Female fourth cousin":{"str":"Fourth cousin"},"Male fourth cousin":{"str":"Fourth cousin"},"Distant female cousin (# degrees)":{"str":"Distant Cousin (# degrees)"},"Distant male cousin (# degrees)":{"str":"Distant Cousin (# degrees)"},"Male second cousin":{"str":"Second cousin"},"Male third cousin":{"str":"Third cousin"}};
+</script>
 		<script type="text/javascript">
 
 
@@ -382,10 +395,11 @@ AP("log_js_error",{},m+"|"+(w?w.location:"")+"|"+u+"|"+l+"|",function(){
 function RE(e){
 alert(e);
 }
-function SC(n,v){
+function SC(n,v,s){
 var d=new Date();
 d.setTime(d.getTime()+365*86400000);
-document.cookie=n+"="+v+"; expires="+d.toGMTString()+"; path=/";
+var t=".familyecho.com";
+document.cookie=n+"="+v+"; expires="+d.toGMTString()+"; path=/"+((s&&(window.location.hostname.substr(-t.length)==t))?("; domain="+t):"");
 }
 function GC(n){
 var cs=document.cookie.split(";");
@@ -422,13 +436,193 @@ w.focus();
 }
 return !w;
 }
+var Dp=false;
+var Lp=false;
+function _i(_4a){
+return _4a;
+}
+function _t(_4b){
+var _4c=Array.from(arguments);
+_4c=_4c.slice(1);
+_4b=SL(_4b,_4c);
+_4b=SN(_4b,_4c);
+return _4b;
+}
+function _h(_4d){
+var _4e=Array.from(arguments);
+_4e=_4e.slice(1);
+_4d=SL(_4d,_4e);
+_4d=SN(_4d,_4e);
+_4d=EH(_4d);
+_4d=SG(_4d,_4e);
+return _4d;
+}
+var Pr=null,ordinalRules=null;
+function SL(_4f,_50){
+if((typeof Intl!=="undefined")&&(typeof Intl.PluralRules!==undefined)){
+if(!Pr){
+Pr=new Intl.PluralRules(locale_value);
+}
+if(!ordinalRules){
+ordinalRules=new Intl.PluralRules(locale_value,{"type":"ordinal"});
+}
+}
+var _51="str";
+var _52=_4f.indexOf("#");
+if(_52>=0){
+if(Pr){
+var _53=(_4f.substring(0,_52).match(/\$/g)||[]).length;
+var _54=_50[_53];
+if(Number.isInteger(parseFloat(_54))){
+_51=Pr.select(parseInt(_54));
+}
+}
+}else{
+var _55=_4f.indexOf("^");
+if(_55>=0){
+if(ordinalRules){
+var _53=(_4f.substring(0,_55).match(/\$/g)||[]).length;
+var _54=_50[_53];
+if(Number.isInteger(parseFloat(_54))){
+_51=ordinalRules.select(parseInt(_54));
+}
+}
+}
+}
+var _56=undefined;
+if(locale_phrases[_4f]){
+_56=locale_phrases[_4f][_51];
+var _57=["str","many","few","two","one","zero"];
+for(var i=0;i<_57.length;i++){
+if(_56!==undefined){
+break;
+}else{
+_56=locale_phrases[_4f][_57[i]];
+}
+}
+}
+if(_56===undefined){
+_56=_4f;
+}
+if(Dp){
+return "{"+_56+"}";
+}else{
+if(Lp){
+return _56+_56;
+}else{
+return _56;
+}
+}
+}
+function SN(_59,_5a){
+var _5b=(_59.match(/[\$\#\^]/g)||[]).length;
+var _5c=_5b>1;
+var _5d=_5c?/([\#\$\^])([1-9])/:/([\$\#\^])/;
+var _5e=0;
+while(true){
+var _5f=_59.slice(_5e).match(_5d);
+if(!_5f){
+break;
+}
+var _60=_59.indexOf(_5f[0],_5e);
+var _61=_5f[0].length;
+var _62=_5f[1];
+var _63=_5c?_5f[2]:1;
+var _64=_5a[_63-1];
+if(_64===undefined){
+_64=_62;
+}
+if(Dp){
+_64=_62+_64+_62;
+}
+_59=_59.substr(0,_60)+_64+_59.substr(_60+_61);
+_5e=_60+_64.length;
+}
+_5a.splice(0,_5b);
+return _59;
+}
+function SG(_65,_66){
+var _67=0;
+while(true){
+var _68=_65.indexOf("&lt;",_67);
+if(_68>=0){
+var _69=_65.indexOf("&gt;",_68);
+}
+if((_68>=0)&&(_69>=0)){
+var _6a=_66.shift();
+if(_6a===undefined){
+_6a="a href=\"#\"";
+}
+_6a=_6a.trim();
+var _6b=_6a.search(/[ \t]/);
+if(_6b<0){
+_6b=_6a.length;
+}
+var _6c=_65.substr(_69+4);
+_65=_65.substr(0,_68)+"<"+_6a+">"+_65.substr(_68+4,_69-_68-4)+"</"+_6a.substr(0,_6b)+">"+_6c;
+_67=_65.length-_6c.length;
+}else{
+break;
+}
+}
+return _65;
+}
+var Lf=null;
+function LF(_6d){
+Lf=_6d;
+SS("footerlang",true);
+var c=locale_names[locale_value];
+ST("currentlang",c);
+if((locale_value!="en")&&GC("langnote")){
+alert(_t("Some of the $ translation is AI-generated, so it may not be perfect.",c)+" "+_t("Please contact us if you would like to help improve the $ translation.",c));
+SC("langnote","");
+}
+}
+function LL(){
+var ls=[];
+for(var l in locale_names){
+ls[ls.length]={l:l,c:locale_names[l],s:(l==locale_value)};
+}
+ls=ls.sort(function(a,b){
+return a.c.localeCompare(b.c);
+});
+return ls;
+}
+function LC(){
+var h="<a id=\"langclose\" HREF=\"#\" TITLE=\"Close\" onClick=\"LH(); return false;\">&#x2715;</a>";
+h+="<div id=\"langtitle\">Please click to choose your preferred language:</div>";
+var ls=LL();
+h+="<div id=\"langlist\">";
+for(var i=0;i<ls.length;i++){
+h+="<a href=\"#\" onClick=\"LS('"+ls[i].l+"'); return false;\">"+(ls[i].s?"<B>":"")+EH(ls[i].c)+(ls[i].s?"</B>":"")+"</a><br>";
+}
+h+="</div>";
+h+="<div id=\"langfooter\">Some of these translations are AI-generated, so they may not be perfect.<br>"+"Please <a href=\"?page=feedback\" target=\"_blank\">contact us</a> if you would like to help improve Famliy Echo in your language.</div>";
+SH("langcontent",h);
+GE("langoverlay").style.display="flex";
+}
+function LH(){
+SS("langoverlay",false);
+}
+function LS(l){
+SC("lang",l,true);
+SC("langnote",1);
+if(Lf){
+document.forms[Lf].submit();
+}else{
+var u=new URL(location.href);
+var m="delete";
+u.searchParams[m]("lang");
+location.href=u.href;
+}
+}
 </script>
 		<script type="text/javascript">
 
 
-var Fmn=["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-var Fgn={"":"","f":"Female","m":"Male","o":"Other"};
-var Fvn={"":"Known date","app":"Approximate","bef":"Before","aft":"After","bet":"Date range"};
+var Fmn=["",_t("Mth_1"),_t("Mth_2"),_t("Mth_3"),_t("Mth_4"),_t("Mth_5"),_t("Mth_6"),_t("Mth_7"),_t("Mth_8"),_t("Mth_9"),_t("Mth_10"),_t("Mth_11"),_t("Mth_12")];
+var Fgn={"":"","f":_t("Female"),"m":_t("Male"),"o":_t("Other")};
+var Fvn={"":_t("Known date"),"app":_t("Approximate"),"bef":_t("Before"),"aft":_t("After"),"bet":_t("Date range")};
 function FAA(a,v){
 a[a.length]=v;
 }
@@ -563,42 +757,43 @@ var mi=p.m1;
 var fi=p.f1;
 if(!p.h){
 if(i==ap){
-p.h="Me";
+p.h=_t("Me");
 }else{
 if(i==fp){
-p.h="Founder";
+p.h=_t("Founder");
 }else{
 var r=p["^"];
 if(r&&f[r]&&f[r].h){
+var s=null;
 if((r==mi)||(r==fi)){
-p.h=FST("",f[r],p.V,((p.g=="f")?"Daughter":((p.g=="m")?"Son":"Child")));
+s=FIT(p.V,p.g);
 }else{
 if(f[r].m==i){
-p.h=FPT(f[r],(p.g=="m")?"Father":(((p.g||"").charAt(0)=="o")?"Parent":"Mother"));
+s=FPT(f[r].V,p.g,"f",1);
 }else{
 if(f[r].f==i){
-p.h=FPT(f[r],(p.g=="f")?"Mother":(((p.g||"").charAt(0)=="o")?"Parent":"Father"));
+s=FPT(f[r].V,p.g,"m",1);
 }else{
 if(f[r].X==i){
-p.h=FST("Second ",f[r],f[r].W,(p.g=="m")?"Father":(((p.g||"").charAt(0)=="o")?"Parent":"Mother"));
+s=FPT(f[r].W,p.g,"f",2);
 }else{
 if(f[r].Y==i){
-p.h=FST("Second ",f[r],f[r].W,(p.g=="f")?"Mother":(((p.g||"").charAt(0)=="o")?"Parent":"Father"));
+s=FPT(f[r].W,p.g,"m",2);
 }else{
 if(f[r].K==i){
-p.h=FST("Third ",f[r],f[r].Q,(p.g=="m")?"Father":(((p.g||"").charAt(0)=="o")?"Parent":"Mother"));
+s=FPT(f[r].W,p.g,"f",3);
 }else{
 if(f[r].L==i){
-p.h=FST("Third ",f[r],f[r].Q,(p.g=="f")?"Mother":(((p.g||"").charAt(0)=="o")?"Parent":"Father"));
+s=FPT(f[r].W,p.g,"m",3);
 }else{
 if((mi&&(f[r].m==mi))||(fi&&(f[r].f==fi))){
-p.h=FPT(f[r],(((f[r].m==mi)&&(f[r].f==fi))?"":"Half ")+((p.g=="f")?"Sister":((p.g=="m")?"Brother":"Sibling")));
+s=FST((f[r].m==mi)&&(f[r].f==fi),p.g);
 }else{
 if((r==p.s)||(p.ep&&(p.ep[r]==2))){
-p.h=FPT(f[r],"Partner");
+s=_t("Partner");
 }else{
 if(f[r].pc[i]){
-p.h=FPT(f[r],"Ex-partner");
+s=_t("Ex-partner");
 }
 }
 }
@@ -608,12 +803,15 @@ p.h=FPT(f[r],"Ex-partner");
 }
 }
 }
+}
+if(s){
+p.h=_t("$1 of $2",s,f[r].h);
 }
 }
 }
 }
 if(!p.h){
-p.h="Anon "+p.ai;
+p.h=_t("Anon #",p.ai);
 }
 }
 p.cp=0;
@@ -663,17 +861,6 @@ c++;
 }
 }
 return c-1;
-}
-function FRT(c,s,p){
-if(c==1){
-return "1 "+s;
-}else{
-if(c>0){
-return c+" "+p;
-}else{
-return "No "+p;
-}
-}
 }
 function FDF(f,i,si,sf,st){
 for(var j in f){
@@ -788,7 +975,7 @@ var ps=[];
 for(var pi in p.pc){
 if(pi!=si){
 var gpi=new String(p.gp?(p.gp[pi]||""):"");
-var _62=(gpi.charAt(0)=="o");
+var _60=(gpi.charAt(0)=="o");
 var d=99999999;
 if((gpi=="m")||(gpi=="s")||(gpi=="d")||(gpi=="a")){
 if(p.mp&&p.mp[pi]){
@@ -800,7 +987,7 @@ if(p.rp&&p.rp[pi]){
 d=p.rp[pi];
 }
 }else{
-if(_62||(gpi=="r")){
+if(_60||(gpi=="r")){
 if(p.bp&&p.bp[pi]){
 d=p.bp[pi];
 }
@@ -900,13 +1087,22 @@ var t="";
 if(y){
 t+=Math.abs(y);
 if(y<0){
-t+=" BCE";
+t=_t("$ BCE",t);
 }
 }
 return t;
 }
-function FET(d,m,y){
-return (m?((d?(d+" "):"")+Fmn[m]+(y?" ":"")):"")+FDY(y);
+function FSD(d,m,y){
+if(m){
+if(d){
+var f=y?"j M Y":"j M";
+}else{
+var f=y?"M Y":"M";
+}
+}else{
+f=y?"Y":"";
+}
+return f.replaceAll("j",String(d)).replaceAll("M",Fmn[m]).replaceAll("Y",FDY(y));
 }
 function FDT(d,c,b){
 var p=FPS(d?d.toString():"",true);
@@ -929,27 +1125,31 @@ if(sy&&(p.m1==p.m2)&&p.d1&&p.d2){
 var s1=p.d1;
 us=((p.d2-p.d1)==1);
 }else{
-var s1=FET(p.d1,p.m1,p.y1);
+var s1=FSD(p.d1,p.m1,p.y1);
 us=sy&&p.m1&&p.m2&&((p.m2-p.m1)==1)&&(!p.d1)&&(!p.d2);
 }
-var s2=FET(p.d2,p.m2,p.y2);
+var s2=FSD(p.d2,p.m2,p.y2);
 if(s1&&s2){
 var s=s1+(((s1+"").indexOf(" ")>0)?" ~ ":(us?"/":"~"))+s2;
 }else{
 if(s1||s2){
-var s=(b?"~ ":"approx ")+s1+s2;
+var s=(b?("~ "+s1+s2):(c?_t("Approx $",s1+s2):_t("approx $",s1+s2)));
 }
 }
 }
 }else{
-s=FET(p.d1,p.m1,p.y1);
+s=FSD(p.d1,p.m1,p.y1);
 if(s){
-var es=b?{"app":"~ ","bef":"< ","aft":"> "}:{"app":"approx ","bef":"before ","aft":"after "};
+if(b){
+var es={"app":"~ ","bef":"< ","aft":"> "};
 s=(es[p.v]||"")+s;
+}else{
+var ts={"app":c?_i("Approx $"):_i("approx $"),"bef":c?_i("Before $"):_i("before $"),"aft":c?_i("After $"):_i("after $")};
+if(ts[p.v]){
+s=_t(ts[p.v],s);
 }
 }
-if(c&&s){
-s=s.charAt(0).toUpperCase()+s.substring(1);
+}
 }
 }
 return s;
@@ -976,7 +1176,7 @@ s="~"+FDY(p.y1)+FDY(p.y2);
 }else{
 s=FDY(p.y1);
 if(s){
-var es={"app":"~","bef":"~","aft":"~"};
+var es={"app":"~","bef":"<","aft":">"};
 s=(es[p.v]||"")+s;
 }
 }
@@ -993,7 +1193,11 @@ y2=-t;
 if(Math.floor(y1/100)==Math.floor(y2/100)){
 d=(Math.floor(y1/10)==Math.floor(y2/10))?10:100;
 }
-return y1+"/"+(y2%d)+(bce?" BCE":"");
+var s=y1+"/"+(y2%d);
+if(bce){
+s=_t("$ BCE",s);
+}
+return s;
 }
 function FYS(p){
 if(!p){
@@ -1001,7 +1205,7 @@ return "";
 }
 var by=FYT(p.b);
 var dy=(p.z=="1")?FYT(p.d):"";
-var y=(by||"")+(((""+by+dy).indexOf("~")>=0)?" \u2013 ":"\u2013")+(dy||"");
+var y=(by||"")+(((""+by+dy).indexOf("~")>=0)?" - ":"-")+(dy||"");
 return (by||dy)?(" ("+y.trim()+")"):"";
 }
 function FDE(v,m,l){
@@ -1037,7 +1241,7 @@ return s;
 }
 function FDN(p,mn,sn,sf,bn,ah,ni,ti,su){
 if(!p){
-return "Unknown";
+return _t("Unknown");
 }
 var fn=p.p||"";
 var n=fn;
@@ -1083,31 +1287,73 @@ n=p.h;
 }
 return n;
 }
-function FPT(p,r){
-return r+" of "+p.h;
+function FIT(t,g){
+if(t=="b"){
+var gs={"f":_t("Biological daughter"),"m":_t("Biological son"),"":_t("Biological child")};
+}else{
+if(t=="a"){
+var gs={"f":_t("Adopted daughter"),"m":_t("Adopted son"),"":_t("Adopted child")};
+}else{
+if(t=="f"){
+var gs={"f":_t("Foster daughter"),"m":_t("Foster son"),"":_t("Foster child")};
+}else{
+if(t=="s"){
+var gs={"f":_t("Stepdaughter"),"m":_t("Stepson"),"":_t("Stepchild")};
+}else{
+if(t=="g"){
+var gs={"f":_t("Goddaughter"),"m":_t("Godson"),"":_t("Godchild")};
+}else{
+var gs={"f":_t("Daughter"),"m":_t("Son"),"":_t("Child")};
 }
-function FST(s,p,t,r){
-var l=false;
-switch(t){
-case "a":
-s="Adopted ";
-break;
-case "b":
-s="Biological ";
-break;
-case "f":
-s="Foster ";
-break;
-case "s":
-s="Step";
-l=true;
-break;
-case "g":
-s="God";
-l=true;
-break;
 }
-return s+(l?r.toLowerCase():r)+" of "+p.h;
+}
+}
+}
+return gs[g]||gs[""];
+}
+function FPT(t,g,dg,s){
+if(t=="b"){
+var gs={"f":_t("Biological mother"),"m":_t("Biological father"),"":_t("Biological parent")};
+}else{
+if(t=="a"){
+var gs={"f":_t("Adopted mother"),"m":_t("Adopted father"),"":_t("Adopted parent")};
+}else{
+if(t=="f"){
+var gs={"f":_t("Foster mother"),"m":_t("Foster father"),"":_t("Foster parent")};
+}else{
+if(t=="s"){
+var gs={"f":_t("Stepmother"),"m":_t("Stepfather"),"":_t("Stepparent")};
+}else{
+if(t=="g"){
+var gs={"f":_t("Godmother"),"m":_t("Godfather"),"":_t("Godparent")};
+}else{
+if(s==2){
+var gs={"f":_t("Second mother"),"m":_t("Second father"),"":_t("Second parent")};
+}else{
+if(s==3){
+var gs={"f":_t("Third mother"),"m":_t("Third father"),"":_t("Third parent")};
+}else{
+var gs={"f":_t("Mother"),"m":_t("Father"),"":_t("Parent")};
+}
+}
+}
+}
+}
+}
+}
+return gs[g]||(((g||"").charAt(0)=="o")?gs[""]:gs[dg])||gs[""];
+}
+function FST(b,g){
+if(b){
+var gs={"f":_t("Sister"),"m":_t("Brother"),"":_t("Sibling")};
+}else{
+var gs={"f":_t("Half sister"),"m":_t("Half brother"),"":_t("Half sibling")};
+}
+return gs[g]||gs[""];
+}
+function FET(g){
+var gs={"f":_t("Stepsister"),"m":_t("Stepbrother"),"":_t("Stepsibling")};
+return gs[g]||gs[""];
 }
 function FPO(p,o){
 var d=FPD(p.b);
@@ -1364,35 +1610,35 @@ var s="";
 var cm=-FGM(sp.g);
 if(((gpi=="m")&&(cp||pl))||(gpi=="s")){
 if(pl){
-s=cm?((cm>0)?"Late wife":"Late husband"):"Late spouse";
+s=cm?((cm>0)?_t("Late wife"):_t("Late husband")):_t("Late spouse");
 }else{
 if(pw){
-s=cm?((cm>0)?"Widow":"Widower"):"Widowed spouse";
+s=cm?((cm>0)?_t("Widow"):_t("Widower")):_t("Widowed spouse");
 }else{
-s=cm?((cm>0)?"Wife":"Husband"):"Spouse";
+s=cm?((cm>0)?_t("Wife"):_t("Husband")):_t("Spouse");
 }
 }
 if(gpi=="s"){
-s+=" (separated)";
+s=_t("$ (separated)",s);
 }
 }else{
 if((gpi=="m")||(gpi=="d")||(gpi=="a")){
-s=cm?((cm>0)?"Ex-wife":"Ex-husband"):"Ex-spouse";
+s=cm?((cm>0)?_t("Ex-wife"):_t("Ex-husband")):_t("Ex-spouse");
 }else{
 if((gpi=="e")&&(cp||pl)){
 if(pl){
-s=(cm>0)?"Late fianc\xe9e":"Late fianc\xe9";
+s=(cm>0)?_t("Late fiancee"):_t("Late fiance");
 }else{
-s=(cm>0)?"Fianc\xe9e":"Fianc\xe9";
+s=(cm>0)?_t("Fiancee"):_t("Fiance");
 }
 }else{
 if(gpi=="e"){
-s=(cm>0)?"Ex-fianc\xe9e":"Ex-fianc\xe9";
+s=(cm>0)?_t("Ex-fiancee"):_t("Ex-fiance");
 }else{
 if((gpi=="r")&&FAD(pz)&&(!((p.z==1)&&(p.d==pz)))&&(!((sp.z==1)&&(sp.d==pz)))){
-s="Ex-partner";
+s=_t("Ex-partner");
 }else{
-s=pl?"Late partner":(cp?"Partner":"Ex-partner");
+s=pl?_t("Late partner"):(cp?_t("Partner"):_t("Ex-partner"));
 }
 }
 }
@@ -1686,34 +1932,35 @@ return a;
 return null;
 }
 }
-function FAS(a){
-var m={"d":"day","m":"month","y":"year"};
-return a?(a.v+(m[a.t]?(" "+m[a.t]+((a.v!=1)?"s":"")):"")):null;
+function FAS(a,o){
+var m={"d":o?_i("# day/s old"):_i("# day/s"),"m":o?_i("# month/s old"):_i("# month/s"),"y":o?_i("# year/s old"):_i("# year/s")};
+return a?(m[a.t]?_t(m[a.t],a.v):a.v):null;
 }
-function FDR(b,t){
+function FDR(b,t,o){
 var l=FBA(FSL(b),FSE(t));
 var u=FBA(FSE(b),FSL(t));
-var s=((l&&l.a)||(u&&u.a))?"approx ":"";
+var s="";
 if(l){
 if(u&&(l.t==u.t)){
-if(l.v!=u.v){
-s+=l.v+"-";
+if(l.v==u.v){
+s=FAS(u,o);
+}else{
+s=FAS({t:l.t,v:(l.v+"-"+u.v)},o);
 }
 }else{
-if(!u){
-s+="at least ";
-}
-s+=FAS(l);
 if(u){
-s+=" - ";
+s=FAS(l,o)+" - "+FAS(u,o);
+}else{
+s=_t("at least $",FAS(l,o));
 }
 }
-}
+}else{
 if(u){
-if(!l){
-s+="at most ";
+s=_t("at most $",FAS(u,o));
 }
-s+=FAS(u);
+}
+if((l&&l.a)||(u&&u.a)){
+s=_t("approx $",s);
 }
 return s;
 }
@@ -1746,6 +1993,7 @@ var Eoh=null;
 function PL(){
 if(!staticMode){
 CE();
+LF("topform");
 }
 if(hideSidebar){
 ESI(false);
@@ -1785,10 +2033,15 @@ var wf=parseFloat((c===null)?defaultWidth:c);
 SV("showwidth",wf);
 var c=GC("textsize");
 var tf=parseFloat((c===null)?defaultTextSize:c);
-SV("textsize",wf);
+SV("textsize",tf);
+var c=GC("otheragedate");
+if(c){
+EWA(c);
+}
 Ebi=(document.all&&(navigator.userAgent.toLowerCase().indexOf("msie")>=0));
 Esb=(navigator.userAgent.toLowerCase().indexOf("safari")>=0);
 TIS(GE("treemargin"));
+NRR();
 if(staticMode){
 Efo=GV("founderid");
 var h=new String(window.location.hash);
@@ -1826,6 +2079,7 @@ SS("noajax",true);
 }
 function EPR(){
 NPF();
+NRR();
 }
 function ESB(l){
 if(!Esb){
@@ -1882,7 +2136,7 @@ function EPU(e){
 if((!Esc)&&(!staticMode)){
 if(GV("newscript").length||GV("importcacheid")){
 e=e||window.event;
-var m="If you leave this page before saving, your changes to this family will be lost.";
+var m=_t("If you leave this page before saving, your changes to this family will be lost.");
 e.returnValue=m;
 return m;
 }
@@ -1936,7 +2190,7 @@ DAD();
 Ece=false;
 Eca=false;
 Ecd=false;
-RE("You do not have permission to view this family");
+RE(_t("You do not have permission to view this family."));
 if(GE("addfamily")){
 SS("addfamily",false);
 }
@@ -1960,7 +2214,7 @@ SH("lfamilyname",_19.lo);
 }
 }
 }else{
-RE("This family could not currently be loaded. This may be due to occasional system maintenance, so please try again in a few hours.");
+RE(_t("This family could not currently be loaded.")+" "+_t("This may be due to occasional system maintenance, so please try again in a few hours."));
 }
 ERP(_18);
 }
@@ -2013,7 +2267,7 @@ fc++;
 NCP(fc);
 if((staticMode||GV("familyid"))&&Efo&&Efa[Efo]){
 var fb=FDN(Efa[Efo],false,1,false,false,false);
-ST("lfamilyinfo","Founded by "+fb);
+ST("lfamilyinfo",_t("Founded by $",fb));
 if(!staticMode){
 SS("historybutton",true);
 }
@@ -2387,7 +2641,7 @@ ERS(GV("newscript"));
 EUS(true,null,null,true,false);
 }
 }else{
-RE("The family could not be saved - please try again");
+RE(_t("The family could not be saved - please try again."));
 }
 EUL(true);
 }
@@ -2419,6 +2673,7 @@ SS("sharebutton",Esf&&si&&fi&&!Eaf);
 SS("usersbutton",Eaf&&si&&fi);
 SS("downloadbutton",fi&&Edy&&!Eis.length);
 SS("filesbutton",fi&&(Edd||Eud)&&!GS("filesdiv"));
+NRR();
 SSF();
 }
 }
@@ -2430,7 +2685,7 @@ if(_7b.ok){
 ST("lfamilyname",_7b.n);
 SS("addfamily",false);
 }else{
-RE(_7b.er||"The family could not be added");
+RE(_7b.er||_t("The family could not be added to your account - please try again."));
 }
 }
 function EBS(){
@@ -2484,11 +2739,21 @@ var p={y:d.getFullYear(),m:1+d.getMonth(),d:d.getDate()};
 }
 var f=FDE(Math.abs(p.y),9999,4)+"-"+FDE(p.m,12,2)+"-"+FDE(p.d,31,2)+((p.y<0)?" B":"");
 while(true){
-var f=prompt("Show ages on which date? (YYYY-MM-DD format, add \"B\" for BCE)",f);
+var f=prompt(_t("Show ages on which date? Please enter the date in YYYY-MM-DD format and add \"B\" for BCE."),f);
 if(f===null){
 SV("otherage","");
 break;
 }
+if(EWA(f)){
+e.selectedIndex=2;
+SC("otheragedate",f);
+break;
+}
+}
+}
+ERF();
+}
+function EWA(f){
 var b=(f.toLowerCase().indexOf("b")>=0);
 var s=f.replace(/[^0-9-]/g,"").split("-");
 if(s.length==3){
@@ -2499,28 +2764,25 @@ if((y>=1)&&(y<=9999)&&(m>=1)&&(m<=12)&&(o>=1)&&(o<=31)){
 if(b){
 y=-y;
 }
-e.options[2]=new Option("on "+FET(o,m,y),FDS(o,m,y));
-e.selectedIndex=2;
-break;
+GE("otherage").options[2]=new Option("on "+FSD(o,m,y),FDS(o,m,y));
+return true;
 }
 }
+return false;
 }
-}
-ERF();
-}
-function ECR(_8f){
-var i=_8f.id;
+function ECR(_90){
+var i=_90.id;
 if(i.substr(0,5)=="color"){
 var f=i.substr(5);
-SC("color"+f,_8f.value);
+SC("color"+f,_90.value);
 ERF();
 }
 }
-function ECE(_92){
-var i=_92.id;
+function ECE(_93){
+var i=_93.id;
 if(i.substr(0,4)=="line"){
 var f=i.substr(4);
-SC("line"+f,_92.value);
+SC("line"+f,_93.value);
 ERF();
 }
 }
@@ -2580,7 +2842,7 @@ if(s&&GS("usersdiv")){
 ETU();
 }
 SS("optionsdiv",s);
-SH("optionslinktext",s?"Hide options":"Options");
+SH("optionslinktext",s?_h("Hide options"):_h("Options"));
 GE("treemargin").style.paddingBottom=(s?(GE("optionsdiv").offsetHeight+"px"):0);
 TCD(Evp,250);
 }
@@ -2625,6 +2887,7 @@ var s=TGS();
 var v=GI("leftdiv");
 ESM("view");
 ESI(!v);
+NRR();
 TSD(s.left+(v?-w:w),s.top);
 TCD(Evp,250);
 }
@@ -2708,6 +2971,7 @@ if(s){
 SV("exporttext",GV(s).trim());
 GE("exporttext").select();
 GE("exporttext").scrollTop=0;
+GE("exporttext").dir=(locale_rtl&&(s=="text"))?"rtl":"ltr";
 }else{
 SV("exporttext","");
 }
@@ -3457,7 +3721,7 @@ function NGA(){
 return parseInt(GO("showparents"));
 }
 function NSP(i){
-ST("backtotext",(i==GV("personid"))?"me":(Efa[i]?Efa[i].h:"start"));
+ST("backtotext",(i==GV("personid"))?_t("Back to me"):(Efa[i]?_t("Back to $",Efa[i].h):_t("Back to start")));
 }
 function NRT(){
 }
@@ -3465,8 +3729,18 @@ function NPF(){
 var r=GE("findfield").getBoundingClientRect();
 GE("findlist").style.left=r.left+"px";
 }
+function NRR(){
+var e=GE("navrow");
+e.className="";
+for(s=1;s<=5;s++){
+if(e.scrollWidth<=e.offsetWidth){
+break;
+}
+e.className+="nshrink"+s+" ";
+}
+}
 function NCP(i){
-GE("findfield").placeholder=i+((i==1)?" person":" people");
+GE("findfield").placeholder=_t("# people",i);
 }
 function NFF(){
 NPF();
@@ -3506,7 +3780,7 @@ ai[ai.length]=j;
 }
 var jn=[];
 if(no){
-var m="(none)";
+var m=_t("(none)");
 var i=true;
 for(var k=0;k<ss.length;k++){
 if(m.indexOf(ss[k])<0){
@@ -3547,9 +3821,12 @@ h+="<a href=\"#\" id=\"list_"+jn[j].i+"\" onclick=\"return false;\">"+NSE(jn[j].
 }
 }
 if(!h){
-h="<div>No matches found</div>";
+h="<div>"+_h("No matches found")+"</div>";
 }
 e.innerHTML=h;
+if(locale_rtl){
+e.dir="rtl";
+}
 var i=e.querySelector("#list_"+(si||""));
 if(i){
 i.className="snamesel";
@@ -3801,6 +4078,9 @@ sh=Math.max(sh,sz.Tmh);
 TRB(o,sx-(sz.Tew/2),sy-(sh/2),sz.Tew,sh,e.k?3:1,(e.p.g=="f")?c.female:((e.p.g=="m")?c.male:(((e.p.g||"").charAt(0)=="o")?c.other:"#FFFFFF")),null);
 var v=document.createElement("div");
 v.className="di";
+if(locale_rtl){
+v.dir="rtl";
+}
 var s=v.style;
 s.width=sz.Tew+"px";
 s.height=sh+"px";
@@ -3814,7 +4094,7 @@ o.ps[i]={x:sx,y:sy};
 }
 if(spn){
 var tn=FDN(e.p,mn,ssn?((bn==2)?2:1):0,sf,(bn==1),true,ni,tj,tj);
-var ns="<TR><TD CLASS=\"dcell\" STYLE=\"font-size:"+(e.d?sz.Tds:sz.Tfs)+"px;color:"+_53+"; padding:0 "+sz.Tep+"px;\""+" TITLE=\""+(e.d?"Duplicate: ":"")+EH(fn)+"\">"+(e.d?"<I>Duplicate:</I><BR>":"")+(spn?(SB(EL(tn))):"")+"</TD></TR>";
+var ns="<TR><TD CLASS=\"dcell\" STYLE=\"font-size:"+(e.d?sz.Tds:sz.Tfs)+"px;color:"+_53+"; padding:0 "+sz.Tep+"px;\""+" TITLE=\""+(e.d?(_h("Duplicate:")+" "):"")+EH(fn)+"\">"+(e.d?"<I>"+_h("Duplicate:")+"</I><BR>":"")+(spn?(SB(EL(tn))):"")+"</TD></TR>";
 }else{
 var ns="";
 }
@@ -3873,26 +4153,23 @@ ae=true;
 if((p.z!="1")||ae){
 var de=p.b?FSE(p.b):null;
 if(de&&(FCD(de,FPD(ad))>0)){
-ey+="Not yet born\n";
+ey+=_t("Not yet born")+"\n";
 }else{
-var aa=FDR(p.b,ad);
-if(aa){
-ey+=aa+" old\n";
-}
+ey+=FDR(p.b,ad,true)+"\n";
 }
 }
 }
 if(yb["bd"]){
 var bs=FYT(p.b);
 var ds=(p.z=="1")?FYT(p.d):"";
-if(bs&&ds){
-ey+=bs+(((""+bs+ds).indexOf("~")>=0)?" \u2013 ":"\u2013")+ds+"\n";
+if(bs&&(ds||(p.z=="1"))){
+ey+=bs+(((""+bs+ds).indexOf("~")>=0)?" - ":"-")+(ds||"?")+"\n";
 }else{
 if(bs){
-ey+="Born "+bs+"\n";
+ey+=_t("Born")+" "+bs+"\n";
 }else{
 if(ds){
-ey+="Died "+ds+"\n";
+ey+=_t("Died")+" "+ds+"\n";
 }
 }
 }
@@ -3904,23 +4181,23 @@ if(yb["b"]||yb["v"]){
 var bs=yb["b"]?FDT(p.b,false):"";
 var vs=yb["v"]?(p.v||""):"";
 if(bs||vs){
-ey+="Born "+bs+((bs&&vs)?", ":"")+vs+"\n";
+ey+=_t("Born")+" "+bs+((bs&&vs)?", ":"")+vs+"\n";
 }
 }
-var az=(yb["age"]&&(p.z=="1")&&!ae)?FDR(p.b,p.d):null;
+var az=(yb["age"]&&(p.z=="1")&&!ae)?FDR(p.b,p.d,false):null;
 if((yb["d"]||az||yb["y"]||yb["Z"])&&(p.z=="1")){
 var ds=yb["d"]?FDT(p.d,false):"";
 var ys=yb["y"]?(p.y||""):"";
 var Zs=yb["Z"]?(p.Z||""):"";
 if(ds||az||ys||Zs){
-ey+="Died "+ds+((ds&&az)?(" ("+az+")"):(az?(az+" old"):""))+(((ds||az)&&ys)?", ":"")+ys+(Zs?(" ("+Zs+")"):"")+"\n";
+ey+=_t("Died")+" "+ds+((ds&&az)?(" ("+az+")"):(az?(FDR(p.b,p.d,true)):""))+(((ds||az)&&ys)?", ":"")+ys+(Zs?(" ("+Zs+")"):"")+"\n";
 }
 }
 if((yb["F"]||yb["U"])&&(p.z=="1")){
 var Fs=yb["F"]?FDT(p.F,false):"";
 var Us=yb["U"]?(p.U||""):"";
 if(Fs||Us){
-ey+="Buried "+Fs+((Fs&&Us)?", ":"")+Us+"\n";
+ey+=_t("Buried")+" "+Fs+((Fs&&Us)?", ":"")+Us+"\n";
 }
 }
 if(yb["e"]&&p.e){
@@ -3928,13 +4205,13 @@ ey+=p.e.replace(/@/g,"@ ")+"\n";
 }
 if(yb["tku"]){
 if(p.t){
-ey+=p.t+" (h)\n";
+ey+=p.t+" "+_t("(h)")+"\n";
 }
 if(p.k){
-ey+=p.k+" (w)\n";
+ey+=p.k+" "+_t("(w)")+"\n";
 }
 if(p.u){
-ey+=p.u+" (m)\n";
+ey+=p.u+" "+_t("(m)")+"\n";
 }
 }
 if(yb["a"]&&p.a){
@@ -3991,7 +4268,7 @@ dl+=dt;
 }
 }
 }
-return (ml?("m. "+ml):"")+(dl?((ml?", ":"")+"d. "+dl):"");
+return (ml?(_t("m.")+" "+ml):"")+(dl?((ml?", ":"")+_t("d.")+" "+dl):"");
 }
 function TCD(i,t){
 var o=GE("treebg");
@@ -4022,13 +4299,13 @@ var scs=DT();
 TSS(sx,sy,scs,scs+t,"_sel");
 }
 }
-function TRB(o,l,t,w,h,k,bg,_8f){
+function TRB(o,l,t,w,h,k,bg,_8e){
 v=document.createElement("div");
 v.className="dbox";
 var s=v.style;
-if(_8f){
+if(_8e){
 s.visibility="hidden";
-v.id=_8f;
+v.id=_8e;
 }
 s.position="absolute";
 s.width=(w)+"px";
@@ -4061,54 +4338,54 @@ return {top:-(e.offsetTop-e.parentNode.offsetTop),left:-(e.offsetLeft-e.parentNo
 }
 function TIS(o){
 moveobject=o;
-o.onmousedown=function(_93){
-_93=_93?_93:window.event;
+o.onmousedown=function(_92){
+_92=_92?_92:window.event;
 Tpd=true;
 scrollpos=TGS();
-Tdx=scrollpos.left+_93.screenX;
-Tdy=scrollpos.top+_93.screenY;
+Tdx=scrollpos.left+_92.screenX;
+Tdy=scrollpos.top+_92.screenY;
 };
-document.onmouseup=function(_94){
+document.onmouseup=function(_93){
 Tpd=false;
 };
-document.onmousemove=function(_95){
-_95=_95?_95:window.event;
+document.onmousemove=function(_94){
+_94=_94?_94:window.event;
 if(Tpd){
-TSS(Tdx-_95.screenX,Tdy-_95.screenY,0,0,null);
+TSS(Tdx-_94.screenX,Tdy-_94.screenY,0,0,null);
 }
 };
-document.body.onselectstart=function(_96){
+document.body.onselectstart=function(_95){
 if(Tpd){
 return false;
 }
 };
-o.ontouchstart=function(_97){
-if((_97.target==moveobject)&&(_97.touches.length==1)){
+o.ontouchstart=function(_96){
+if((_96.target==moveobject)&&(_96.touches.length==1)){
 Tpd=true;
 scrollpos=TGS();
-Tdx=scrollpos.left+_97.touches[0].screenX;
-Tdy=scrollpos.top+_97.touches[0].screenY;
+Tdx=scrollpos.left+_96.touches[0].screenX;
+Tdy=scrollpos.top+_96.touches[0].screenY;
+_96.preventDefault();
+}
+};
+o.ontouchend=function(_97){
+if(Tpd){
+Tpd=false;
 _97.preventDefault();
 }
 };
-o.ontouchend=function(_98){
-if(Tpd){
-Tpd=false;
-_98.preventDefault();
-}
-};
-o.onwheel=function(_99){
-var d=_99.deltaY;
-if(_99.deltaMode==1){
+o.onwheel=function(_98){
+var d=_98.deltaY;
+if(_98.deltaMode==1){
 d/=12;
 }
 EZD(1-d/120);
-_99.preventDefault();
+_98.preventDefault();
 };
-document.ontouchmove=function(_9b){
+document.ontouchmove=function(_9a){
 if(Tpd){
-TSS(Tdx-_9b.touches[0].screenX,Tdy-_9b.touches[0].screenY,0,0,null);
-_9b.preventDefault();
+TSS(Tdx-_9a.touches[0].screenX,Tdy-_9a.touches[0].screenY,0,0,null);
+_9a.preventDefault();
 }
 };
 }
@@ -4160,14 +4437,14 @@ return (o.ps&&i)?o.ps[i]:null;
 }
 function TRT(f,i,m,y,ad,bn,sf,c,l,fl,ch,ph,co,pi,zf,wf,ts,s){
 var o=GE("treebg");
-var _ba=null;
+var _b9=null;
 if(TFE(o,i)){
 var oi=i;
 var sd=0;
 if(i!=pi){
-_ba="_sel";
-if(GE(_ba)){
-SI(_ba,false);
+_b9="_sel";
+if(GE(_b9)){
+SI(_b9,false);
 }
 }
 }else{
@@ -4175,10 +4452,10 @@ var oi=TFE(o,pi)?pi:null;
 var sd=oi?250:0;
 }
 var pg=TGG(y);
-TRD(BFT(f,i,m,ch,ph,co,fl,pg),y,ad,bn,sf,c,l,o,oi,true,false,zf,wf,ts,_ba);
+TRD(BFT(f,i,m,ch,ph,co,fl,pg),y,ad,bn,sf,c,l,o,oi,true,false,zf,wf,ts,_b9);
 if(s&&noCentering){
-if(_ba&&GE(_ba)){
-SI(_ba,true);
+if(_b9&&GE(_b9)){
+SI(_b9,true);
 }
 }else{
 setTimeout("TCD('"+i+"', "+(s?250:0)+")",sd);
@@ -4201,48 +4478,29 @@ var fn=FDN(e,true,1,sf,(bn==1),true,true,true,true);
 var nj=p[j+1]||s;
 var ni=nj?nj.i:null;
 var n=ni?f[ni]:{};
-var rh="";
+var rt="";
 switch(t){
 case "p":
-rh=FTP(f,e,ni,n);
+rt=FTP(f,e,ni,n);
 if(e.gp&&((e.gp[ni]||"").charAt(0)=="o")){
-rh+=" ("+e.gp[ni].substring(1)+")";
+rt+=" ("+e.gp[ni].substring(1)+")";
 }
 break;
 case "o":
-if(n&&((n.m==i)||(n.f==i))&&Sat[n.V]){
-rh=Sat[n.V]+" ";
+if(n&&((n.m==i)||(n.f==i))){
+rt=FIT(n.V,n.g);
 }else{
-if(n&&((n.X==i)||(n.Y==i))&&Sat[n.W]){
-rh=Sat[n.W]+" ";
+if(n&&((n.X==i)||(n.Y==i))){
+rt=FIT(n.W,n.g);
 }else{
-if(n&&((n.K==i)||(n.L==i))&&Sat[n.Q]){
-rh=Sat[n.Q]+" ";
-}else{
-rh="";
+if(n&&((n.K==i)||(n.L==i))){
+rt=FIT(n.Q,n.g);
 }
-}
-}
-if(n.g=="f"){
-rh+="Daughter";
-}else{
-if(n.g=="m"){
-rh+="Son";
-}else{
-rh+="Child";
 }
 }
 break;
 case "g":
-if(n.g=="f"){
-rh+="Goddaughter";
-}else{
-if(n.g=="m"){
-rh+="Godson";
-}else{
-rh+="Godchild";
-}
-}
+rt=FIT("g",n.g);
 break;
 case "s":
 var sc=0;
@@ -4256,225 +4514,175 @@ oc++;
 }
 }
 if((sc>0)&&(oc==0)){
-rh="Step ";
+rt=FET(n.g);
 }else{
 if(((e.m||e.f)&&FTM(n,e.m,e.f))||((e.X||e.Y)&&FTM(n,e.X,e.Y))||((e.K||e.L)&&FTM(n,e.K,e.L))){
-rh="";
+rt=FST(true,n.g);
 }else{
-rh="Half-";
-}
-}
-if(n.g=="f"){
-rh+="Sister";
-}else{
-if(n.g=="m"){
-rh+="Brother";
-}else{
-rh+="Sibling";
+rt=FST(false,n.g);
 }
 }
 break;
 case "a":
-if(ni&&((e.m==ni)||(e.f==ni))&&Sat[e.V]){
-rh=Sat[e.V]+" ";
+if(ni&&((e.m==ni)||(e.f==ni))){
+rt=FPT(e.V,n.g,"",1);
 }else{
-if(ni&&((e.X==ni)||(e.Y==ni))&&Sat[e.W]){
-rh=Sat[e.W]+" ";
+if(ni&&((e.X==ni)||(e.Y==ni))){
+rt=FPT(e.W,n.g,"",2);
 }else{
-if(ni&&((e.K==ni)||(e.L==ni))&&Sat[e.Q]){
-rh=Sat[e.Q]+" ";
-}else{
-rh="";
+if(ni&&((e.K==ni)||(e.L==ni))){
+rt=FPT(e.Q,n.g,"",3);
 }
-}
-}
-if(n.g=="f"){
-rh+="Mother";
-}else{
-if(n.g=="m"){
-rh+="Father";
-}else{
-rh+="Parent";
 }
 }
 break;
 case "d":
-if(n.g=="f"){
-rh+="Godmother";
-}else{
-if(n.g=="m"){
-rh+="Godfather";
-}else{
-rh+="Godparent";
-}
-}
+rt=FPT("g",n.g,"",1);
 break;
 case "oi":
 if(n.g=="f"){
-rh+="Daughter-in-law";
+rt=_t("Daughter-in-law");
 }else{
 if(n.g=="m"){
-rh+="Son-in-law";
+rt=_t("Son-in-law");
 }else{
-rh+="Child-in-law";
+rt=_t("Child-in-law");
 }
 }
 break;
 case "ai":
 if(n.g=="f"){
-rh+="Mother-in-law";
+rt=_t("Mother-in-law");
 }else{
 if(n.g=="m"){
-rh+="Father-in-law";
+rt=_t("Father-in-law");
 }else{
-rh+="Parent-in-law";
+rt=_t("Parent-in-law");
 }
 }
 break;
 case "si":
 if(n.g=="f"){
-rh+="Sister-in-law";
+rt=_t("Sister-in-law");
 }else{
 if(n.g=="m"){
-rh+="Brother-in-law";
+rt=_t("Brother-in-law");
 }else{
-rh+="Sibling-in-law";
+rt=_t("Sibling-in-law");
 }
 }
 break;
 case "x":
-rh="Unrelated";
+rt=_t("Unrelated");
 break;
 default:
 var t1=t.substring(0,1);
 var d=t.substring(1);
 if((t1=="a")||(t1=="o")){
-if(d<=4){
-for(var k=2;k<d;k++){
-rh+="Great-";
-}
-}else{
-rh+="Great x"+(d-2)+"-";
-}
+if(d<=2){
 if(t1=="a"){
-if(n.g=="f"){
-rh+="Grandmother";
+var gs={"f":_t("Grandmother"),"m":_t("Grandfather"),"":_t("Grandparent")};
 }else{
-if(n.g=="m"){
-rh+="Grandfather";
-}else{
-rh+="Grandparent";
-}
+var gs={"f":_t("Granddaughter"),"m":_t("Grandson"),"":_t("Grandchild")};
 }
 }else{
-if(n.g=="f"){
-rh+="Granddaughter";
+if(d==3){
+if(t1=="a"){
+var gs={"f":_t("Great-grandmother"),"m":_t("Great-grandfather"),"":_t("Great-grandparent")};
 }else{
-if(n.g=="m"){
-rh+="Grandson";
+var gs={"f":_t("Great-granddaughter"),"m":_t("Great-grandson"),"":_t("Great-grandchild")};
+}
 }else{
-rh+="Grandchild";
+if(d==4){
+if(t1=="a"){
+var gs={"f":_t("Great-great-grandmother"),"m":_t("Great-great-grandfather"),"":_t("Great-great-grandparent")};
+}else{
+var gs={"f":_t("Great-great-granddaughter"),"m":_t("Great-great-grandson"),"":_t("Great-great-grandchild")};
+}
+}else{
+if(t1=="a"){
+var gs={"f":_t("Great-...-grandmother (# gens)",d),"m":_t("Great-...-grandfather (# gens)",d),"":_t("Great-...-grandparent (# gens)",d)};
+}else{
+var gs={"f":_t("Great-...-granddaughter (# gens)",d),"m":_t("Great-...-grandson (# gens)",d),"":_t("Great-...-grandchild (# gens)",d)};
 }
 }
 }
+}
+rt=gs[n.g]||gs[""];
 }else{
 if(t1=="c"){
-switch(parseInt(d)){
-case 1:
-break;
-case 2:
-rh+="Second ";
-break;
-case 3:
-rh+="Third ";
-break;
-case 4:
-rh+="Fourth ";
-break;
-case 5:
-rh+="Fifth ";
-break;
-case 6:
-rh+="Sixth ";
-break;
-case 7:
-rh+="Seventh ";
-break;
-case 8:
-rh+="Eighth ";
-break;
-case 9:
-rh+="Ninth ";
-break;
-case 10:
-rh+="Tenth ";
-break;
-default:
-rh+="Degree "+d+" ";
-break;
+if(d<=1){
+var gs={"f":_t("Female cousin"),"m":_t("Male cousin"),"":_t("Cousin")};
+}else{
+if(d==2){
+var gs={"f":_t("Female second cousin"),"m":_t("Male second cousin"),"":_t("Second cousin")};
+}else{
+if(d==3){
+var gs={"f":_t("Female third cousin"),"m":_t("Male third cousin"),"":_t("Third cousin")};
+}else{
+if(d==4){
+var gs={"f":_t("Female fourth cousin"),"m":_t("Male fourth cousin"),"":_t("Fourth cousin")};
+}else{
+var gs={"f":_t("Distant female cousin (# degrees)",d),"m":_t("Distant male cousin (# degrees)",d),"":_t("Distant cousin (# degrees)",d)};
 }
-rh+="Cousin";
+}
+}
+}
+rt=gs[n.g]||gs[""];
 }else{
 if(t1=="u"){
-if(d<=3){
-for(var k=1;k<d;k++){
-rh+="Great-";
-}
+if(d<=1){
+var gs={"f":_t("Aunt"),"m":_t("Uncle"),"":_t("Auncle")};
 }else{
-rh+="Great x"+(d-1)+"-";
-}
-if(n.g=="f"){
-rh+="Aunt";
+if(d==2){
+var gs={"f":_t("Great-aunt"),"m":_t("Great-uncle"),"":_t("Great-auncle")};
 }else{
-if(n.g=="m"){
-rh+="Uncle";
+if(d==3){
+var gs={"f":_t("Great-great-aunt"),"m":_t("Great-great-uncle"),"":_t("Great-great-auncle")};
 }else{
-rh+="Auncle";
+var gs={"f":_t("Great-...-aunt (# gens)",d),"m":_t("Great-...-uncle (# gens)",d),"":_t("Great-...-auncle (# gens)",d)};
 }
 }
+}
+rt=gs[n.g]||gs[""];
 }else{
 if(t1=="n"){
-if(d<=3){
-for(var k=1;k<d;k++){
-rh+="Great-";
-}
+if(d<=1){
+var gs={"f":_t("Niece"),"m":_t("Nephew"),"":_t("Nibling")};
 }else{
-rh+="Great x"+(d-1)+"-";
-}
-if(n.g=="f"){
-rh+="Niece";
+if(d==2){
+var gs={"f":_t("Great-niece"),"m":_t("Great-nephew"),"":_t("Great-nibling")};
 }else{
-if(n.g=="m"){
-rh+="Nephew";
+if(d==3){
+var gs={"f":_t("Great-great-niece"),"m":_t("Great-great-nephew"),"":_t("Great-great-nibling")};
 }else{
-rh+="Nibling";
+var gs={"f":_t("Great-...-niece (# gens)",d),"m":_t("Great-...-nephew (# gens)",d),"":_t("Great-...-nibling (# gens)",d)};
 }
 }
+}
+rt=gs[n.g]||gs[""];
 }
 }
 }
 }
 break;
-}
-if(rh.substring(0,5)=="Step "){
-rh="Step"+rh.substring(5).toLowerCase();
 }
 if(j||!s){
 h+="<p class=\"pi\" id=\"path-"+i+"\"><a href=\"#\" onClick=\"ESP('"+i+"', true); return false;\">"+EH(fn)+"</a></p>";
-if(rh){
+if(rt){
 h+="<p class=\"pa\">&darr;</p>";
 }
 }
 if(p[j].p){
-h+="<p id=\"shortpath-"+i+"\" class=\"pr\"><a href=\"#\" onClick=\"SEP('"+i+"', true); return false;\" title=\"Expand this relationship\">"+rh+"</a></p>";
+h+="<p id=\"shortpath-"+i+"\" class=\"pr\"><a href=\"#\" onClick=\"SEP('"+i+"', true); return false;\" title=\""+_h("Expand this relationship")+"\">"+EH(rt)+"</a></p>";
 h+="<div id=\"longpath-"+i+"\" style=\"display:none;\">";
-h+="<p class=\"pr\"><a href=\"#\" onClick=\"SEP('"+i+"', false); return false;\" title=\"Contract this relationship\">"+rh+"</a></p>";
+h+="<p class=\"pr\"><a href=\"#\" onClick=\"SEP('"+i+"', false); return false;\" title=\""+_h("Contract this relationship")+"\">"+EH(rt)+"</a></p>";
 h+="<div class=\"pl\">";
 h+=TPH(f,p[j].p,bn,sf,p[j+1]);
 h+="</div></div>";
 }else{
-if(rh){
-h+="<p class=\"pr\">"+rh+"</p>";
+if(rt){
+h+="<p class=\"pr\">"+EH(rt)+"</p>";
 }
 }
 }
@@ -4488,12 +4696,12 @@ return "";
 
 
 var Sen=[{p:"personalname",N:"nickname",T:"title",J:"suffix",l:"familyname",q:"familybirth"},{e:"c_email",w:"website",B:"blog",P:"photosite",t:"hometel",k:"worktel",u:"mobile",S:"skype",a:"address",C:"othercontact"},{v:"birthplace",y:"deathplace",Z:"deathcause",U:"burialplace",j:"profession",E:"employer",I:"interests",A:"activities",o:"bionotes"}];
-var Sv1={e:"Email",w:"Website",B:"Blog",P:"Photo site",t:"Home tel",k:"Work tel",u:"Mobile",a:"Address",C:"Other",S:"Skype"};
-var Sv2={v:"Birth place",y:"Death place",Z:"Cause of death",U:"Burial place",F:"Burial date",j:"Profession",E:"Company",I:"Interests",A:"Activities",o:"Bio notes"};
-var Spt={m:"Married",e:"Engaged",r:"Relationship",s:"Separated",d:"Divorced",a:"Annulled",o:"Other"};
-var Sat={b:"Biological",a:"Adopted",f:"Foster",s:"Step",g:"Godparent"};
 var Sur={w:"website",B:"blog",P:"photos"};
-var Sec=",de,del,delle,la,von,van,den,der,of,the,and,y,da,dos,das,by,in,las,av,le,du,di,af,della,ap,und,do,ferch,och,zu,zur,des,bei,los,mac,ingen,el,al,dit,";
+var Sec=",de,del,delle,la,von,van,den,der,of,the,and,y,da,dos,das,by,in,las,av,le,du,di,af,della,ap,und,do,ferch,och,zu,zur,des,bei,los,mac,ingen,el,al,dit,e,";
+var Sv1={e:_t("Email"),w:_t("Website"),B:_t("Blog"),P:_t("Photo site"),t:_t("Home tel"),k:_t("Work tel"),u:_t("Mobile"),a:_t("Address"),C:_t("Other"),S:_t("Skype")};
+var Sv2={v:_t("Birth place"),y:_t("Death place"),Z:_t("Cause of death"),U:_t("Burial place"),F:_t("Burial date"),j:_t("Profession"),E:_t("Company"),I:_t("Interests"),A:_t("Activities"),o:_t("Bio notes")};
+var Spt={m:_t("Married"),e:_t("Engaged"),r:_t("Relationship"),s:_t("Separated"),d:_t("Divorced"),a:_t("Annulled"),o:_t("Other")};
+var Sat={b:_t("Biological"),a:_t("Adopted"),f:_t("Foster"),s:_t("Step"),g:_t("Godparent")};
 var Spe;
 var Spa=0;
 var Sed=false;
@@ -4522,12 +4730,12 @@ var md=(Spe==GV("personid"));
 var v=GE("nametitle");
 v.innerHTML=EH(SPN(p));
 v.className=p.p?"sname":"sdefname";
-SV("shareperson","Invite "+p.h+" to share family");
+SV("shareperson",_t("Invite $ to share family",p.h));
 SS("hideurl",false);
 GE("switchpanel3").style.display=p.cp?"block":"none";
 GE("switchpanel4").style.display=(Edd||Eud)?"block":"none";
 if(!md){
-SV("showpath","Show relationship to "+p.h);
+SV("showpath",_t("Show relationship to $",p.h));
 SS("showpath",true);
 }else{
 SS("showpath",false);
@@ -4537,7 +4745,7 @@ SS("showurl",uf?true:false);
 if(uf){
 SV("urlmode",Sur[uf]);
 GE("urllink").href=p[uf];
-SV("showurl","Show "+(false?"my":(p.h+"'s"))+" "+Sv1[uf].toLowerCase());
+SV("showurl",_t("Show $1's $2",p.h,Sv1[uf].toLowerCase()));
 }
 SSA((((Spa==3)&&!p.cp)||((pi!=i)&&((e=="edit")||Sed)))?0:Spa,(e=="edit")?((Sed&&(pi==i))?null:true):false);
 SIU(false);
@@ -4591,9 +4799,9 @@ SR("readonlyfooter",(!staticMode)&&(!Ece)&&(!Ewp));
 SR("writemefooter",(!Ece)&&pw);
 SR("writenotfooter",Ewp&&!pw);
 if(Spa==3){
-var et="Edit partnership details";
+var et=_t("Edit partnership details");
 }else{
-var et="Edit "+(md?"my":(p.h+"'s"))+" details";
+var et=md?_t("Edit my details"):_t("Edit $'s details",p.h);
 }
 if(Spa==4){
 SS("sideuploadfile",Eud);
@@ -4722,13 +4930,16 @@ v.personlist=x;
 }
 w.className="snameedit";
 w.style.cursor="pointer";
-w.value=(s&&f[s])?FDN(f[s],false,1,sf,bn1,true):"(none)";
+if(locale_rtl){
+w.dir="rtl";
+}
+w.value=(s&&f[s])?FDN(f[s],false,1,sf,bn1,true):_t("(none)");
 w.onfocus=function(){
 w.tohide=false;
 w.oldvalue=w.value;
 w.value="";
 w.style.cursor="";
-w.style.textAlign="left";
+w.style.textAlign="start";
 x.style.display="inline-block";
 SGP(v,w,x,no);
 };
@@ -4758,13 +4969,16 @@ w.blur();
 x.className="snamelist";
 x.style.display="none";
 x.ids=ra;
+if(locale_rtl){
+x.dir="rtl";
+}
 x.onclick=function(e){
 var i=e.target.id||e.target.parentElement.id;
 if(i.substring(0,5)=="list_"){
 v.options.length=0;
 var z=i.substring(5);
 v.options[0]=new Option(z,z);
-w.oldvalue=(z&&f[z])?FDN(f[z],false,1,sf,bn1,true):"(none)";
+w.oldvalue=(z&&f[z])?FDN(f[z],false,1,sf,bn1,true):_t("(none)");
 w.completed();
 if(v.onchange){
 v.onchange();
@@ -4800,17 +5014,17 @@ SO(i,s);
 function SUT(i,df){
 var f=Efa;
 var t=GO(i);
-var w=df?"mother":"father";
+var w=df?_t("mother"):_t("father");
 if(t&&f[t]){
 var p=f[t];
 if(p.g=="m"){
-var w="father";
+var w=_t("father");
 }else{
 if(p.g=="f"){
-var w="mother";
+var w=_t("mother");
 }else{
 if((p.g||"").charAt(0)=="o"){
-var w="parent";
+var w=_t("parent");
 }
 }
 }
@@ -4836,14 +5050,14 @@ var p=f[Spe];
 if(e){
 var fd=false;
 var ns=false;
-SRB("Set parents","treeparents","");
+SRB(_t("Set parents"),"treeparents","");
 var ot=p.b&&FPD(p.b).y;
 var bs=FLS(f,Spe,1,ot);
 if(bs.length){
-SRB(ot?"Change multiple birth order":"Change sibling order","changeorder","");
+SRB(ot?_t("Change multiple birth order"):_t("Change sibling order"),"changeorder","");
 }
 if(p.cp){
-SRB(((p.cp>1)||!p.s)?"Change partners":"Change partner","changespouse","");
+SRB(((p.cp>1)||!p.s)?_t("Change partners"):_t("Change partner"),"changespouse","");
 }
 if(Ecd){
 if(Spe==Efo){
@@ -4857,56 +5071,56 @@ ns=true;
 }
 }
 if(!ns){
-SRB("Delete "+p.h,"delete",Spe);
+SRB(_t("Delete $",p.h),"delete",Spe);
 }
 }
 }
-SRB("Cancel","cancel","");
+SRB(_t("Cancel"),"cancel","");
 if(Ecd){
 if(ns){
-SJR("relactions","<BR>This person cannot be deleted because that would split the tree. Try deleting outer people on the tree first.",true,1);
+SJR("relactions","<BR>"+_h("This person cannot be deleted because that would split the tree. Try deleting outer people on the tree first."),true,1);
 }
 if(fd){
-SJR("relactions","<BR>This person started the tree and cannot be deleted.",true,1);
+SJR("relactions","<BR>"+_h("This person started the tree and cannot be deleted."),true,1);
 }
 }else{
-SJR("relactions","<BR>Yoo do not have permission to delete people.",true,1);
+SJR("relactions","<BR>"+_h("You do not have permission to delete people."),true,1);
 }
 }else{
 var md=(GV("personid")==Spe);
 var ap=p.fg||Eaf||(GV("personid")==Efo);
 if(Eca){
-SJR("relactions",md?"Click to add your relatives:":("Click to add relatives of "+p.h+":"),false,1);
+SJR("relactions",md?_t("Click to add your relatives:"):_t("Click to add relatives of $:",p.h),false,1);
 if(ap){
 if((p.f&&p.m)||((p.V=="s")&&(p.f||p.m))){
 }else{
 if(p.f){
-SRB((p.m2||p.f2)?"Add primary mother":"Add mother","choosemother","");
+SRB((p.m2||p.f2)?_t("Add primary mother"):_t("Add mother"),"choosemother","");
 }else{
 if(p.m){
-SRB((p.m2||p.f2)?"Add primary father":"Add father","choosefather","");
+SRB((p.m2||p.f2)?_t("Add primary father"):_t("Add father"),"choosefather","");
 }else{
-SRB((p.m2||p.f2)?"Add primary parents":"Add new parents","addparents","");
+SRB((p.m2||p.f2)?_t("Add primary parents"):_t("Add new parents"),"addparents","");
 }
 }
 }
 }
-SRB("Add partner/ex","choosespouse","");
+SRB(_t("Add partner/ex"),"choosespouse","");
 if(ap){
-SRB("Add brother/sister","addsibling","");
+SRB(_t("Add brother/sister"),"addsibling","");
 }
-SRB("Add child","addchild","");
+SRB(_t("Add child"),"addchild","");
 if(ap){
 if((p.X&&p.Y)||((p.W=="s")&&(p.X||p.Y))){
 }else{
 if(p.Y){
-SRB("Add second mother","choosemother2","");
+SRB(_t("Add second mother"),"choosemother2","");
 }else{
 if(p.X){
-SRB("Add second father","choosefather2","");
+SRB(_t("Add second father"),"choosefather2","");
 }else{
 if(p.f||p.m){
-SRB("Add second parents","addparents2","");
+SRB(_t("Add second parents"),"addparents2","");
 }
 }
 }
@@ -4914,13 +5128,13 @@ SRB("Add second parents","addparents2","");
 if((p.K&&p.L)||((p.Q=="s")&&(p.K||p.L))){
 }else{
 if(p.L){
-SRB("Add third mother","choosemother3","");
+SRB(_t("Add third mother"),"choosemother3","");
 }else{
 if(p.K){
-SRB("Add third father","choosefather3","");
+SRB(_t("Add third father"),"choosefather3","");
 }else{
 if((p.f||p.m)&&(p.X||p.Y)){
-SRB("Add third parents","addparents3","");
+SRB(_t("Add third parents"),"addparents3","");
 }
 }
 }
@@ -4932,7 +5146,7 @@ for(var j in f){
 cf++;
 if(cf>1){
 SLR("relactions",1);
-SRB("More actions...","morelactions","");
+SRB(_t("More actions..."),"morelactions","");
 break;
 }
 }
@@ -4940,19 +5154,19 @@ if(Eca){
 if(!ap){
 var si=GV("sessionid");
 if(md){
-SJR("relactions","<BR>To add your parents, brothers or sisters, "+"please "+(si?"":"sign in then ")+"create a new family branch.",true,1);
+SJR("relactions","<BR>"+(si?_h("To add your parents, brothers or sisters, please sign in then create a new family branch."):_h("To add your parents, brothers or sisters, please create a new family branch.")),true,1);
 if(si){
-SRB("Create new family for me","startbranch","");
+SRB(_t("Create new family for me"),"startbranch","");
 }
 }else{
-SJR("relactions","<BR>To add "+p.h+"'s parents, brothers or sisters, "+"a new family branch can be created"+(si?"":" after signing in")+".",true,1);
+SJR("relactions","<BR>"+(si?_h("To add $'s parents, brothers or sisters, a new family branch can be created after signing in.",p.h):_h("To add $'s parents, brothers or sisters, a new family branch can be created.",p.h)),true,1);
 if(si){
-SRB("Create new family for "+p.h,"startbranch","");
+SRB(_t("Create new family for $",p.h),"startbranch","");
 }
 }
 }
 }else{
-SJR("relactions","<BR>You do not have permission to add new people.",true,1);
+SJR("relactions","<BR>"+_h("You do not have permission to add new people."),true,1);
 }
 var ad=GE("advertisement");
 if(ad){
@@ -4983,18 +5197,18 @@ SV("othergender",(g.charAt(0)=="o")?p.g.substring(1):"");
 SRR("personalview");
 var bn=NGB();
 var bn1=(bn==1);
-SSR("personalview","Full name",FDN(p,true,1,NGS(),bn1,false,true,true,true),false);
+SSR("personalview",_t("Full name"),FDN(p,true,1,NGS(),bn1,false,true,true,true),false);
 if(p.q&&p.l&&(p.q!=p.l)){
-SSR("personalview",bn1?"Surname now":"Surname at birth",bn1?p.l:p.q,false);
+SSR("personalview",bn1?_t("Surname now"):_t("Surname at birth"),bn1?p.l:p.q,false);
 }
-SSR("personalview","Gender",Fgn[g]?Fgn[g]:((g.charAt(0)=="o")?g.substring(1):Fgn[""]),false);
-SSR("personalview","Birth date",FDT(p.b,true),false);
+SSR("personalview",_t("Gender"),Fgn[g]?Fgn[g]:((g.charAt(0)=="o")?g.substring(1):Fgn[""]),false);
+SSR("personalview",_t("Birth date"),FDT(p.b,true),false);
 if(p.z==1){
-SSR("personalview","Death date",FDT(p.d,true),false);
+SSR("personalview",_t("Death date"),FDT(p.d,true),false);
 }
 var ac=FCR(f,Spe,true,false,false);
 var dc=FCR(f,Spe,false,true,false);
-SSR("personalview","Tree stats",FRT(ac,"ancestor","ancestors")+", "+FRT(dc,"descendant"," descendants"));
+SSR("personalview",_t("Tree stats"),(ac?_t("# ancestor/s",ac):_t("No ancestors"))+", "+(dc?_t("# descendant/s",dc):_t("No descendants")));
 }
 }
 function SEN(){
@@ -5010,13 +5224,16 @@ SRR("contactview");
 for(var j in Sv1){
 if(p[j]||((!staticMode)&&(j=="e"))){
 if(j=="e"){
-SSR("contactview",Sv1[j],p[j]?("<A HREF=\"mailto:"+EH(p[j])+"\">"+EH(p[j])+"</A>"):"",true);
+SSR("contactview",Sv1[j],p[j]?("<A HREF=\"mailto:"+EH(p[j])+"\" DIR=\"ltr\">"+EH(p[j])+"</A>"):"",true);
 }else{
 if(j=="S"){
-SSR("contactview",Sv1[j],p[j]?("<A HREF=\"callto:"+EH(p[j])+"\">"+EH(p[j])+"</A>"):"",true);
+SSR("contactview",Sv1[j],p[j]?("<A HREF=\"callto:"+EH(p[j])+"\" DIR=\"ltr\">"+EH(p[j])+"</A>"):"",true);
 }else{
 if((j=="w")||(j=="B")||(j=="P")){
-SSR("contactview",Sv1[j],p[j]?("<A HREF=\""+EH(p[j])+"\" TARGET=\"_new\" onClick=\"return UL(this);\">"+EH(p[j])+"</A>"):"",true);
+SSR("contactview",Sv1[j],p[j]?("<A HREF=\""+EH(p[j])+"\" TARGET=\"_new\" onClick=\"return UL(this);\" DIR=\"ltr\">"+EH(p[j])+"</A>"):"",true);
+}else{
+if((j=="t")||(j=="k")||(j=="u")){
+SSR("contactview",Sv1[j],"<SPAN DIR=\"ltr\">"+EH(p[j])+"<SPAN>",true);
 }else{
 SSR("contactview",Sv1[j],p[j],false);
 }
@@ -5024,8 +5241,9 @@ SSR("contactview",Sv1[j],p[j],false);
 }
 }
 }
+}
 if(staticMode&&!Esa){
-SJR("contactview","&nbsp;<BR>To protect your privacy, phone numbers, addresses and emails have been removed.",true,2);
+SJR("contactview","&nbsp;<BR>"+_h("To protect your privacy, phone numbers, addresses and emails have been removed."),true,2);
 }
 }
 }
@@ -5068,22 +5286,22 @@ var pl=(p.z!=1)&&(f[pi].z==1);
 var gpi=new String(p.gp?(p.gp[pi]||""):"");
 var _77=(gpi.charAt(0)=="o");
 if(gpi=="m"){
-var t={m:"Marriage date",w:"Location",z:((cp||pl)?"":"End date")};
+var t={m:_t("Marriage date"),w:_t("Location"),z:((cp||pl)?"":_t("End date"))};
 }else{
 if(gpi=="e"){
-var t={r:"Engagement date",z:((cp||pl)?"":"End date")};
+var t={r:_t("Engagement date"),z:((cp||pl)?"":_t("End date"))};
 }else{
 if(gpi=="s"){
-var t={m:"Marriage date",w:"Location",s:"Separation date"};
+var t={m:_t("Marriage date"),w:_t("Location"),s:_t("Separation date")};
 }else{
 if(gpi=="d"){
-var t={m:"Marriage date",w:"Location",d:"Divorce date"};
+var t={m:_t("Marriage date"),w:_t("Location"),d:_t("Divorce date")};
 }else{
 if(gpi=="a"){
-var t={m:"Marriage date",w:"Location",a:"Annulment date"};
+var t={m:_t("Marriage date"),w:_t("Location"),a:_t("Annulment date")};
 }else{
 if(_77||(gpi=="r")){
-var t={b:"Start date",z:((p.s==pi)?"":"End date")};
+var t={b:_t("Start date"),z:((p.s==pi)?"":_t("End date"))};
 }else{
 var t={};
 }
@@ -5146,7 +5364,7 @@ SSD("partner"+pi+ti,d);
 }
 }
 function SDH(i,c){
-return "<SPAN ID=\""+i+"options\" STYLE=\"display:none;\"><SELECT ID=\""+i+"variant\" CLASS=\"sselect\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<SPAN TITLE=\"Before the Common Era (BC)\"><INPUT ID=\""+i+"bce\" TYPE=\"checkbox\" onClick=\""+c+"\"><LABEL FOR=\""+i+"bce\">BCE</LABEL></SPAN><br/></SPAN>"+"<SELECT ID=\""+i+"dom1\" CLASS=\"sselect\" TITLE=\"Day\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<SELECT ID=\""+i+"month1\" CLASS=\"sselect\" TITLE=\"Month\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<INPUT ID=\""+i+"year1\" CLASS=\"syear\" TITLE=\"Year\" onChange=\""+c+"\" MAXLENGTH=4>"+"<SPAN ID=\""+i+"expand\"> <A HREF=\"#\" CLASS=\"sdatelink\" onClick=\"SDR('"+i+"')\" TITLE=\"Show more date options\">&#x25BA;</A></SPAN>"+"<SPAN ID=\""+i+"date2\" STYLE=\"display:none;\"> to<br/>"+"<SELECT ID=\""+i+"dom2\" CLASS=\"sselect\" TITLE=\"Day\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<SELECT ID=\""+i+"month2\" CLASS=\"sselect\" TITLE=\"Month\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<INPUT ID=\""+i+"year2\" CLASS=\"syear\" TITLE=\"Year\" onChange=\""+c+"\" MAXLENGTH=4>"+" <A HREF=\"#\" CLASS=\"sdatelink\" onClick=\"SWR('"+i+"')\" TITLE=\"Swap two dates\" STYLE=\"font-weight:bold;\">&#x21C5;</A></SPAN>";
+return "<SPAN ID=\""+i+"options\" STYLE=\"display:none;\"><SELECT ID=\""+i+"variant\" CLASS=\"sselect\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<SPAN TITLE=\""+_h("Before the Common Era (BC)")+"\"><INPUT ID=\""+i+"bce\" TYPE=\"checkbox\" onClick=\""+c+"\"><LABEL FOR=\""+i+"bce\">"+_h("BCE")+"</LABEL></SPAN><br/></SPAN>"+"<SELECT ID=\""+i+"dom1\" CLASS=\"sselect\" TITLE=\""+_h("Day")+"\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<SELECT ID=\""+i+"month1\" CLASS=\"sselect\" TITLE=\""+_h("Month")+"\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<INPUT ID=\""+i+"year1\" CLASS=\"syear\" TITLE=\""+_h("Year")+"\" onChange=\""+c+"\" MAXLENGTH=4>"+"<SPAN ID=\""+i+"expand\"> <A HREF=\"#\" CLASS=\"sdatelink\" onClick=\"SDR('"+i+"')\" TITLE=\""+_h("Show more date options")+"\">"+(locale_rtl?"&#x25C4;":"&#x25BA;")+"</A></SPAN>"+"<SPAN ID=\""+i+"date2\" STYLE=\"display:none;\"> to<br/>"+"<SELECT ID=\""+i+"dom2\" CLASS=\"sselect\" TITLE=\""+_h("Day")+"\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<SELECT ID=\""+i+"month2\" CLASS=\"sselect\" TITLE=\""+_h("Month")+"\" onChange=\""+c+"\"></SELECT>&nbsp;"+"<INPUT ID=\""+i+"year2\" CLASS=\"syear\" TITLE=\""+_h("Year")+"\" onChange=\""+c+"\" MAXLENGTH=4>"+" <A HREF=\"#\" CLASS=\"sdatelink\" onClick=\"SWR('"+i+"')\" TITLE=\""+_h("Swap two dates")+"\" STYLE=\"font-weight:bold;\">&#x21C5;</A></SPAN>";
 }
 function SDR(i){
 SS(i+"options",true);
@@ -5202,12 +5420,12 @@ var f=fs[j];
 var h="";
 if(Edd){
 if(DTV(f.t)){
-h+="<a href=\"#\" title=\"View "+DSH(f.s)+" "+DTH(f.t)+"\" onclick=\"DSI('"+f.i+"'); return false;\">";
+h+="<a href=\"#\" title=\""+_h("View $1 $2",DSH(f.s),DTH(f.t))+"\" onclick=\"DSI('"+f.i+"'); return false;\">";
 }else{
-h+="<a href=\""+EH(DGU(f.i,true))+"\" title=\"Download "+DSH(f.s)+" "+DTH(f.t)+"\">";
+h+="<a href=\""+EH(DGU(f.i,true))+"\" title=\""+_h("Download $1 $2",DSH(f.s),DTH(f.t))+"\">";
 }
 }
-h+=EH(f.n||"Untitled")+(Edd?"</a>":"")+(f.d?(" &ndash; "+f.d):"");
+h+=EH(f.n||_t("Untitled"))+(Edd?"</a>":"")+(f.d?(" &ndash; "+f.d):"");
 var c=document.createElement("TD");
 c.className="fboth";
 c.colSpan=2;
@@ -5221,7 +5439,7 @@ var c=document.createElement("TD");
 c.className="fboth";
 c.colSpan=2;
 c.style.textAlign="center";
-c.innerHTML="This person has no files attached.";
+c.innerHTML=_h("This person has no files attached.");
 var r=document.createElement("TR");
 r.appendChild(c);
 t.appendChild(r);
@@ -5360,11 +5578,11 @@ hp[ps[j]]=true;
 }
 if(oi&&(op.es||op.cp)){
 if((op.es)&&!hp[op.es]){
-SRB(spt+SPN(f[op.es]),spm,op.es);
+SRB(_t(spt,SPN(f[op.es])),spm,op.es);
 }
 for(var pi in op.pc){
 if((pi!=op.es)&&!hp[pi]){
-SRB(spt+SPN(f[pi]),spm,pi);
+SRB(_t(spt,SPN(f[pi])),spm,pi);
 }
 }
 if(apm){
@@ -5415,33 +5633,33 @@ ESE(true,[mi,fi],Spe);
 }else{
 if(i=="choosemother"){
 SPR(true);
-SAP(f,p,p.f,"Set mother to ","setmother","Add new mother","addmother");
-SRB("Cancel","cancel","");
+SAP(f,p,p.f,_i("Set mother to $"),"setmother",_t("Add new mother"),"addmother");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="choosefather"){
 SPR(true);
-SAP(f,p,p.m,"Set father to ","setfather","Add new father","addfather");
-SRB("Cancel","cancel","");
+SAP(f,p,p.m,_i("Set father to $"),"setfather",_t("Add new father"),"addfather");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="choosemother2"){
 SPR(true);
-SAP(f,p,p.Y,"Set second mother to ","setmother2","Add new second mother","addmother2");
-SRB("Cancel","cancel","");
+SAP(f,p,p.Y,_i("Set second mother to $"),"setmother2",_t("Add new second mother"),"addmother2");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="choosefather2"){
 SPR(true);
-SAP(f,p,p.X,"Set second father to ","setfather2","Add new second father","addfather2");
-SRB("Cancel","cancel","");
+SAP(f,p,p.X,_i("Set second father to $"),"setfather2",_t("Add new second father"),"addfather2");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="choosemother3"){
 SPR(true);
-SAP(f,p,p.L,"Set third mother to ","setmother3","Add new third mother","addmother3");
-SRB("Cancel","cancel","");
+SAP(f,p,p.L,_i("Set third mother to $"),"setmother3",_t("Add new third mother"),"addmother3");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="choosefather3"){
 SPR(true);
-SAP(f,p,p.K,"Set third father to ","setfather3","Add new third father","addfather3");
-SRB("Cancel","cancel","");
+SAP(f,p,p.K,_i("Set third father to $"),"setfather3",_t("Add new third father"),"addfather3");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="changeorder"){
 SPR(true);
@@ -5452,9 +5670,9 @@ if(FCC(f[bs[j]],p)>=0){
 break;
 }
 }
-SRB("Move left (born earlier)","moveleft","");
-SRB("Move right (born later)","moveright","");
-SRB("Done","movedone","");
+SRB(_t("Move left (born earlier)"),"moveleft","");
+SRB(_t("Move right (born later)"),"moveright","");
+SRB(_t("Done"),"movedone","");
 SD("moveleft",j<=0);
 SD("moveright",j>=bs.length);
 }else{
@@ -5494,22 +5712,22 @@ SPR(true);
 if(!p.s){
 for(var pi in p.pc){
 if(pi!=p.s){
-SRB("Set partner to "+SPN(f[pi]),"setspouse",pi);
+SRB(_t("Set partner to $",SPN(f[pi])),"setspouse",pi);
 }
 }
 }
 if(p.s){
-SRB("Add new primary partner","addspouse","");
-SRB("Add new extra partner","addextraspouse","");
+SRB(_t("Add new primary partner"),"addspouse","");
+SRB(_t("Add new extra partner"),"addextraspouse","");
 }else{
-SRB("Add new partner","addspouse","");
+SRB(_t("Add new partner"),"addspouse","");
 }
-SRB("Add new ex-partner","addexspouse","");
+SRB(_t("Add new ex-partner"),"addexspouse","");
 var ra=FPL(f,Spe);
 if(ra.length){
-SRB("Partner with person already on tree","treespouse","");
+SRB(_t("Partner with person already on tree"),"treespouse","");
 }
-SRB("Cancel","cancel","");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="changespouse"){
 SPR(true);
@@ -5520,61 +5738,61 @@ for(var pi in p.pc){
 var pp=(pi==p.s);
 var ep=p.ep&&(p.ep[pi]==2);
 if(!pp){
-SRB("Set primary partner to "+SPN(f[pi]),"setspouse",pi);
+SRB(_t("Set primary partner to $",SPN(f[pi])),"setspouse",pi);
 }
 if(pp||ep){
-SRB("Change "+SPN(f[pi])+" to ex-partner","toexspouse",pi);
+SRB(_t("Change $ to ex-partner",SPN(f[pi])),"toexspouse",pi);
 }
 if(pp||!ep){
-SRB("Change "+SPN(f[pi])+" to extra partner","toextraspouse",pi);
+SRB(_t("Change $ to extra partner",SPN(f[pi])),"toextraspouse",pi);
 }
 if(!FLP(f,Spe,pi,true).length){
 if(!disable_family_tests){
 var df=FDF(f,Spe,null,Spe,pi);
 }
 if(disable_family_tests||(df.length<=cf.length)){
-SRB("Remove "+((pp||ep)?"":"ex-")+"partner "+SPN(f[pi]),"notanyspouse",pi);
+SRB((pp||ep)?_t("Remove partner $",SPN(f[pi])):_t("Remove ex-partner $",SPN(f[pi])),"notanyspouse",pi);
 }
 }
 }
-SRB("Cancel","cancel","");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="addchild"){
 SPR(true);
-var ct="";
 var vt=v;
 if(v=="a"){
-ct="adopted ";
+var bt={ep:_i("Add adopted child with $"),np:_i("Add adopted child with new partner"),xp:_i("Add adopted child without partner")};
 }else{
 if(v=="f"){
-ct="foster ";
+var bt={ep:_i("Add foster child with $"),np:_i("Add foster child with new partner"),xp:_i("Add foster child without partner")};
 }else{
 if(v=="g"){
-ct="god";
+var bt={ep:_i("Add godchild with $"),np:_i("Add godchild with new partner"),xp:_i("Add godchild without partner")};
 }else{
+var bt={ep:_i("Add child with $"),np:_i("Add child with new partner"),xp:_i("Add child without partner")};
 vt=" ";
 }
 }
 }
 if(p.es){
-SRB("Add "+ct+"child with "+SPN(f[p.es]),"addchildwith",vt+p.es);
+SRB(_t(bt.ep,SPN(f[p.es])),"addchildwith",vt+p.es);
 }
 for(var pi in p.pc){
 if(pi!=p.es){
-SRB("Add "+ct+"child with "+SPN(f[pi]),"addchildwith",vt+pi);
+SRB(_t(bt.ep,SPN(f[pi])),"addchildwith",vt+pi);
 }
 }
-SRB("Add "+ct+"child with new partner","addchildwithnew",v);
-SRB("Add "+ct+"child without partner","addchildwithout",v);
+SRB(_t(bt.np),"addchildwithnew",v);
+SRB(_t(bt.xp),"addchildwithout",v);
 if(!v){
 SLR("relactions",1);
-SRB("Add adopted child","addchild","a");
-SRB("Add foster child","addchild","f");
-SRB("Add godchild","addchild","g");
+SRB(_t("Add adopted child"),"addchild","a");
+SRB(_t("Add foster child"),"addchild","f");
+SRB(_t("Add godchild"),"addchild","g");
 SLR("relactions",1);
 }
-SRB("Cancel","cancel","");
-SJR("relactions","<BR>To add a child who is already on the tree, select that child and set their parent to this person.",true,1);
+SRB(_t("Cancel"),"cancel","");
+SJR("relactions","<BR>"+_h("To add a child who is already on the tree, select that child and set their parent to this person."),true,1);
 }else{
 if(i=="addchildwith"){
 ECS();
@@ -5717,17 +5935,17 @@ EUF();
 }else{
 if(i=="treespouse"){
 SPR(true);
-SJR("relactions","Choose the person to partner with:",false,1);
+SJR("relactions",_t("Choose the person to partner with:"),false,1);
 SJR("relactions","<SELECT ID=\"treepartner\" CLASS=\"sselect\"></SELECT>",true,1);
 SLR("relactions",1);
 if(p.s){
-SRB("Add as primary partner","treeaddspouse","");
-SRB("Add as extra partner","treeaddextraspouse","");
+SRB(_t("Add as primary partner"),"treeaddspouse","");
+SRB(_t("Add as extra partner"),"treeaddextraspouse","");
 }else{
-SRB("Add as partner","treeaddspouse","");
+SRB(_t("Add as partner"),"treeaddspouse","");
 }
-SRB("Add as ex-partner","treeaddexspouse","");
-SRB("Cancel","cancel","");
+SRB(_t("Add as ex-partner"),"treeaddexspouse","");
+SRB(_t("Cancel"),"cancel","");
 SPP("treepartner",FPL(f,Spe),null,true,true);
 }else{
 if(i=="treeaddspouse"){
@@ -5817,21 +6035,29 @@ EUF();
 if(i=="treeparents"){
 SPR(true);
 for(var j=1;j<=3;j++){
-var pt=(j==1)?"Primary":((j==2)?"Second":"Third");
-SJR("relactions",pt+" parents &ndash; <SPAN ID=\"treemother"+j+"title\">mother</SPAN>:",true,1);
+if(j==2){
+var lt={p:_h("Second parents"),t:_h("Type of second parents")};
+}else{
+if(j==3){
+var lt={p:_h("Third parents"),t:_h("Type of third parents")};
+}else{
+var lt={p:_h("Primary parents"),t:_h("Type of primary parents")};
+}
+}
+SJR("relactions",lt.p+" &ndash; <SPAN ID=\"treemother"+j+"title\">"+_h("mother")+"</SPAN>:",true,1);
 SJR("relactions","<SELECT ID=\"treemother"+j+"\" CLASS=\"sselect\" onChange=\"SCM("+j+")\"></SELECT>",true,1);
 SLR("relactions",1);
-SJR("relactions",pt+" parents &ndash; <SPAN ID=\"treefather"+j+"title\">father</SPAN>:",true,1);
+SJR("relactions",lt.p+" &ndash; <SPAN ID=\"treefather"+j+"title\">"+_h("father")+"</SPAN>:",true,1);
 SJR("relactions","<SELECT ID=\"treefather"+j+"\" CLASS=\"sselect\" onChange=\"SCF("+j+")\"></SELECT>",true,1);
 SLR("relactions",1);
-SJR("relactions","Type of "+pt.toLowerCase()+" parents:",false,1);
+SJR("relactions",lt.t+":",true,1);
 SJR("relactions","<SELECT ID=\"treeparenttype"+j+"\" CLASS=\"sselect\" onChange=\"SCT("+j+")\"></SELECT>",true,1);
 SLR("relactions",1);
 SLR("relactions",1);
 }
-SRB("OK","treesetparents","");
-SRB("Switch primary and second parents","switchparents","");
-SRB("Cancel","cancel","");
+SRB(_t("OK"),"treesetparents","");
+SRB(_t("Switch primary and second parents"),"switchparents","");
+SRB(_t("Cancel"),"cancel","");
 SPP("treemother1",FAL(f,Spe,null),p.m,true);
 SPP("treefather1",FAL(f,Spe,p.m),p.f,true);
 SPP("treemother2",FAL(f,Spe,null),p.X,true);
@@ -5873,7 +6099,7 @@ if(!disable_family_tests){
 var df=FDF(f,Spe,null,null,null);
 }
 if((!disable_family_tests)&&(df.length>cf.length)){
-RE("This choice of parents is not allowed because it would split the tree. Try deleting the parents and their relatives instead, or deleting this person.");
+RE(_t("This choice of parents is not allowed because it would split the tree. Please try deleting the parents and their relatives instead, or deleting this person."));
 EFC(Spe,o);
 }
 ESS();
@@ -5881,33 +6107,33 @@ EUF();
 }else{
 if(i=="addparents2"){
 SPR(true);
-SRB("Add adopted parents","addparents2go","a");
-SRB("Add foster parents","addparents2go","f");
-SRB("Add godmother","addgodparent","2m");
-SRB("Add godfather","addgodparent","2f");
+SRB(_t("Add adopted parents"),"addparents2go","a");
+SRB(_t("Add foster parents"),"addparents2go","f");
+SRB(_t("Add godmother"),"addgodparent","2m");
+SRB(_t("Add godfather"),"addgodparent","2f");
 if(p.V){
 if(p.V!="b"){
-SRB("Add biological parents","addparents2go","b");
+SRB(_t("Add biological parents"),"addparents2go","b");
 }
 }else{
-SRB("Add biological parents (was adopted)","addparents2go","ba");
-SRB("Add biological parents (was fostered)","addparents2go","bf");
+SRB(_t("Add biological parents (was adopted)"),"addparents2go","ba");
+SRB(_t("Add biological parents (was fostered)"),"addparents2go","bf");
 }
-SAP(f,p,p.f,"Set stepmother to ","setstepmother2",null,null);
-SAP(f,p,p.m,"Set stepfather to ","setstepfather2",null,null);
-SRB("Choose parents from tree","treeparents","");
-SRB("Cancel","cancel","");
+SAP(f,p,p.f,_i("Set stepmother to $"),"setstepmother2",null,null);
+SAP(f,p,p.m,_i("Set stepfather to $"),"setstepfather2",null,null);
+SRB(_t("Choose parents from tree"),"treeparents","");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if(i=="addparents3"){
 SPR(true);
-SRB("Add adopted parents","addparents3go","a");
-SRB("Add foster parents","addparents3go","f");
-SRB("Add godmother","addgodparent","3m");
-SRB("Add godfather","addgodparent","3f");
-SAP(f,p,p.f,"Set stepmother to ","setstepmother3",null,null);
-SAP(f,p,p.m,"Set stepfather to ","setstepfather3",null,null);
-SRB("Choose parents from tree","treeparents","");
-SRB("Cancel","cancel","");
+SRB(_t("Add adopted parents"),"addparents3go","a");
+SRB(_t("Add foster parents"),"addparents3go","f");
+SRB(_t("Add godmother"),"addgodparent","3m");
+SRB(_t("Add godfather"),"addgodparent","3f");
+SAP(f,p,p.f,_i("Set stepmother to $"),"setstepmother3",null,null);
+SAP(f,p,p.m,_i("Set stepfather to $"),"setstepfather3",null,null);
+SRB(_t("Choose parents from tree"),"treeparents","");
+SRB(_t("Cancel"),"cancel","");
 }else{
 if((i=="addparents2go")||(i=="addparents3go")){
 ECS();
@@ -5964,7 +6190,7 @@ ESE(true,[fi],Spe);
 }else{
 if(i=="delete"){
 var p=Efa[v];
-if(confirm("Are you sure you want to permanently delete "+SPN(p)+"?")){
+if(confirm(_t("Are you sure you want to permanently delete $?",SPN(p)))){
 var ni=p["^"];
 if((!ni)||(!f[ni])){
 ni=p["^"]||p.es||p.f||p.m||p.X||p.Y||p.K||p.L||p.c[0];
@@ -5986,8 +6212,8 @@ SRP(true);
 }else{
 if(i=="startbranch"){
 var md=(GV("personid")==Spe);
-if(confirm("This will create a new family for "+(md?"your":(p.h+"'s"))+" relatives. Are you sure you want to proceed?")){
-GE("startbranch").value="Please wait a few moments...";
+if(confirm((md?_t("This will create a new family for your relatives."):_t("This will create a new family for $'s relatives.",p.h))+" "+_t("Are you sure you want to proceed?"))){
+GE("startbranch").value=_t("Please wait a few moments...");
 EFB(Spe);
 }
 }
@@ -6121,10 +6347,10 @@ v.src="imageupload.php?f="+escape(GV("familyid"))+"&p="+escape(GV("personid"))+"
 if(r){
 var v=GE("personimage");
 SIV(r,v);
-v.title=pw?"Click to change photo":"";
+v.title=pw?_t("Click to change photo"):"";
 }
 }
-SV("uploadbutton",(Spe==GV("personid"))?"Add my photo":("Add photo for "+p.h));
+SV("uploadbutton",(Spe==GV("personid"))?_t("Add my photo"):_t("Add photo for $",p.h));
 SS("uploadbutton",pw&&(!r)&&(!u));
 SS("uploadiframe",u);
 SS("personimage",r&&(!u));
@@ -6159,7 +6385,7 @@ function SIA(){
 SIU(false);
 }
 function SCC(){
-if(confirm("Are you sure you want to clear this entire family and start again? "+"None of your work will be saved!")){
+if(confirm(_t("Are you sure you want to clear this entire family and start again?")+" "+_t("None of your work will be saved!"))){
 ESA();
 }
 }
@@ -6227,13 +6453,13 @@ for(var j in Efa){
 var p=Efa[j];
 if(p.b&&(p.z!=1)){
 var bd=FPS(p.b);
-if(bd.d1&&bd.m1&&bd.y1&&(!bd.v)&&(bd.y1>=(y-120))&&(bd.y1<y)){
+if(bd.d1&&bd.m1&&(!bd.v)&&(((bd.y1>=(y-120))&&(bd.y1<=y))||!bd.y1)){
 es[es.length]={d:bd.d1,m:bd.m1,y:bd.y1,t:"b",i1:j};
 }
 }
 if(p.es&&(p.es>j)&&Efa[p.es]&&(Efa[p.es].es==j)&&(p.z!=1)&&(Efa[p.es].z!=1)&&p.gp&&(p.gp[p.es]=="m")&&p.mp&&p.mp[p.es]){
 var md=FPS(p.mp[p.es]);
-if(md.d1&&md.m1&&md.y1&&(!md.v)&&(md.y1>=(y-100))&&(md.y1<y)){
+if(md.d1&&md.m1&&(!md.v)&&(((md.y1>=(y-100))&&(md.y1<=y))||!md.y1)){
 es[es.length]={d:md.d1,m:md.m1,y:md.y1,t:"m",i1:j,i2:p.es};
 }
 }
@@ -6245,7 +6471,7 @@ es[j].st=new Date(es[j].sy,e.m-1,e.d).getTime();
 }
 es.sort(SCI);
 if(es.length){
-var ms=["","January","February","March","April","May","June","July","August","September","October","November","December"];
+var ms=["",_t("Month_1"),_t("Month_2"),_t("Month_3"),_t("Month_4"),_t("Month_5"),_t("Month_6"),_t("Month_7"),_t("Month_8"),_t("Month_9"),_t("Month_10"),_t("Month_11"),_t("Month_12")];
 var sf=NGS();
 var bn=NGB();
 var h="";
@@ -6254,11 +6480,14 @@ h+="<table class=\"ct\">";
 for(var j=0;j<es.length;j++){
 var e=es[j];
 var my=e.m+e.sy*12;
+if(e.y>=e.sy){
+continue;
+}
 if(my!=lmy){
 h+="<tr><td colspan=\"2\" class=\"cm\">"+ms[e.m]+" "+e.sy+"</td></tr>";
 lmy=my;
 }
-h+="<tr><td class=\"cl\">"+SNO(e.d)+"</td><td class=\"cr\">";
+h+="<tr><td class=\"cl\" style=\"white-space:nowrap;\">"+_h("^",e.d)+"</td><td class=\"cr\">";
 if(e.i2){
 h+="<a href=\"#\" onClick=\"ESP('"+e.i1+"', true); return false;\">"+EH(FDN(Efa[e.i1],false,1,sf,(bn==1),true,false,false,false))+"</a>";
 h+=" and <a href=\"#\" onClick=\"ESP('"+e.i2+"', true); return false;\">"+EH(FDN(Efa[e.i2],false,1,sf,(bn==1),true,false,false,false))+"</a>";
@@ -6266,16 +6495,16 @@ h+=" and <a href=\"#\" onClick=\"ESP('"+e.i2+"', true); return false;\">"+EH(FDN
 h+="<a href=\"#\" onClick=\"ESP('"+e.i1+"', true); return false;\">"+EH(FDN(Efa[e.i1],true,1,sf,(bn==1),true,true,true,true))+"</a>";
 }
 if(e.t=="b"){
-h+=" &ndash; "+SNO(e.sy-e.y)+" birthday";
+h+=" &ndash; "+(e.y?_h("^ birthday",e.sy-e.y):_h("birthday"));
 }
 if(e.t=="m"){
-h+=" &ndash; "+SNO(e.sy-e.y)+" anniversary";
+h+=" &ndash; "+(e.y?_h("^ anniversary",e.sy-e.y):_h("anniversary"));
 }
 h+"</td></tr>";
 }
 h+="</table>";
 }else{
-h="<div style=\"text-align:center; padding:8px;\">There are no birthdays or anniversaries to display.</div>";
+h="<div style=\"text-align:center; padding:8px;\">"+_h("There are no birthdays or anniversaries to display.")+"</div>";
 }
 SS("showcalendar",true);
 SS("showtimeline",false);
@@ -6331,26 +6560,29 @@ ly=e.y;
 }
 var dt=FDT(e.fd,true,true);
 h+="<tr><td class=\"cl\""+((dt.length<14)?" nowrap":"")+">"+dt+"</td><td class=\"cr\">";
+var l1="a href=\"#\" onClick=\"ESP('"+e.i1+"', true); return false;\"";
+var l2=e.i2?"a href=\"#\" onClick=\"ESP('"+e.i2+"', true); return false;\"":"";
 if(e.i2){
-h+="<a href=\"#\" onClick=\"ESP('"+e.i1+"', true); return false;\">"+EH(FDN(Efa[e.i1],false,1,sf,(bn==1),true,false,false,false))+"</a>";
-h+=" and <a href=\"#\" onClick=\"ESP('"+e.i2+"', true); return false;\">"+EH(FDN(Efa[e.i2],false,1,sf,(bn==1),true,false,false,false))+"</a>";
+var n1=FDN(Efa[e.i1],false,1,sf,(bn==1),true,false,false,false);
+var n2=FDN(Efa[e.i2],false,1,sf,(bn==1),true,false,false,false);
 }else{
-h+="<a href=\"#\" onClick=\"ESP('"+e.i1+"', true); return false;\">"+EH(FDN(Efa[e.i1],true,1,sf,(bn==1),true,true,true,true))+"</a>";
+var n1=FDN(Efa[e.i1],true,1,sf,(bn==1),true,true,true,true);
+var n2="";
 }
 if(e.t=="b"){
-h+=" born";
+h+=_h("<$> born",n1,l1);
 }
 if(e.t=="d"){
-h+=" died";
+h+=_h("<$> died",n1,l1);
 }
 if(e.t=="m"){
-h+=" married";
+h+=_h("<$1> and <$2> married",n1,n2,l1,l2);
 }
 h+"</td></tr>";
 }
 h+="</table>";
 }else{
-h="<div style=\"text-align:center; padding:8px;\">There are no birth dates, death dates or marriages to display.</div>";
+h="<div style=\"text-align:center; padding:8px;\">"+_h("There are no birth dates, death dates or marriages to display.")+"</div>";
 }
 SS("showcalendar",false);
 SS("showtimeline",true);
@@ -6358,11 +6590,6 @@ SH("caltimecontent",h);
 }
 function SCI(e1,e2){
 return e1.st-e2.st;
-}
-function SNO(d){
-var ds=["th","st","nd","rd"];
-var dd=d%100;
-return d+ds[(((dd>3)&&(dd<21))||((dd%10)>3))?0:(dd%10)];
 }
 </script>
 		<script type="text/javascript">
@@ -6389,8 +6616,8 @@ var v=DTV(f.t);
 var _8=(v=="iframe");
 var u=DGU(i,false);
 ST("fileviewname",f.n);
-SH("fileviewmeta","<a href=\""+EH(DGU(i,true))+"\" title=\"Download file\">"+DSH(f.s)+" "+DTH(f.t)+"</a>");
-SH("fileviewdate","Uploaded "+DCH(f.u));
+SH("fileviewmeta","<a href=\""+EH(DGU(i,true))+"\" title=\""+_h("Download file")+"\">"+_h("$1 $2",DSH(f.s),DTH(f.t))+"</a>");
+ST("fileviewdate",_t("Uploaded $",DDT(f.u)));
 if(v=="iframe"){
 GE("fileviewiframe").src="";
 GE("fileviewiframe").src=u;
@@ -6413,7 +6640,7 @@ SS("fileviewdiv",true);
 function DHV(){
 SS("fileviewdiv",false);
 }
-function DSH(s){
+function DST(s){
 if(s>=1073741824){
 return Number.parseFloat(s/1073741824).toFixed(1)+"G";
 }else{
@@ -6424,7 +6651,10 @@ return Number.parseFloat(s/1024).toFixed(0)+"K";
 }
 }
 }
-function DMH(s){
+function DSH(s){
+return EH(DST(s));
+}
+function DMT(s){
 if(s>=1073741824){
 return Math.floor(s/1073741824)+"G";
 }else{
@@ -6441,16 +6671,16 @@ if(t){
 var u=t.toUpperCase();
 switch(u){
 case "JPG":
-x=e?"JPEG image":"Image";
+x=e?_t("$ image","JPEG"):_t("Image");
 break;
 case "JPEG":
 case "BMP":
 case "PNG":
 case "GIF":
-x=e?u+" image":"Image";
+x=e?_t("$ image",u):_t("Image");
 break;
 case "TXT":
-x="Text";
+x=_t("Text");
 break;
 case "HTM":
 x="HTML";
@@ -6459,38 +6689,38 @@ case "MP3":
 case "WAV":
 case "OGG":
 case "M4A":
-x=e?u+" audio":"Audio";
+x=e?_t("$ audio",u):_t("Audio");
 break;
 case "AVI":
 case "WMV":
 case "MPEG":
-x=e?u+" video":"Video";
+x=e?_t("$ video",u):_t("Video");
 break;
 case "MPG":
-x=e?"MPEG video":"Video";
+x=e?_t("$ video","MPEG"):_t("Video");
 break;
 case "MP4":
-x=e?"MPEG4 video":"Video";
+x=e?_t("$ video","MPEG4"):_t("Video");
 break;
 case "MPV":
-x=e?"QuickTime video":"Video";
+x=e?_t("$ video","QuickTime"):_t("Video");
 break;
 case "ZIP":
 case "GZ":
-x=e?u+" archive":"Archive";
+x=e?_t("$ archive",u):_t("Archive");
 break;
 case "DOC":
 case "DOCX":
-x="Word";
+x=_t("Word");
 break;
 case "XLS":
 case "XLSX":
 case "XLSM":
-x="Excel";
+x=_t("Excel");
 break;
 case "PPT":
 case "PPTX":
-x="PowerPoint";
+x=_t("PowerPoint");
 break;
 default:
 x=u;
@@ -6502,9 +6732,12 @@ return x;
 function DTH(t,e){
 return EH(DTT(t,e));
 }
-function DCH(u){
+function DDT(u){
 var d=new Date(u*1000);
-return EH(FET(d.getDate(),1+d.getMonth(),d.getFullYear()));
+return FSD(d.getDate(),1+d.getMonth(),d.getFullYear());
+}
+function DCH(u){
+return EH(DDT(u));
 }
 function DTV(t){
 switch(t.toUpperCase()){
@@ -6628,10 +6861,10 @@ var c=document.createElement("TD");
 c.className="fbuttons";
 var h="";
 if(Eed){
-h+="<INPUT CLASS=\"sbutton4\" ID=\"fileedit"+EH(f.i)+"\" TYPE=\"submit\" onClick=\"DCE('"+f.i+"'); return false;\" VALUE=\"Edit\"> "+"<INPUT CLASS=\"sbutton4\" ID=\"filesave"+EH(f.i)+"\" TYPE=\"submit\" onClick=\"DCS('"+f.i+"', true); return false;\" VALUE=\"Save\" STYLE=\"display:none;\"> "+"<INPUT CLASS=\"sbutton4\" ID=\"filecancel"+EH(f.i)+"\" TYPE=\"submit\" onClick=\"DCS('"+f.i+"', false); return false;\" VALUE=\"Cancel\" STYLE=\"display:none;\"> ";
+h+="<INPUT CLASS=\"sbutton4\" ID=\"fileedit"+EH(f.i)+"\" TYPE=\"submit\" onClick=\"DCE('"+f.i+"'); return false;\" VALUE=\""+_h("Edit")+"\"> "+"<INPUT CLASS=\"sbutton4\" ID=\"filesave"+EH(f.i)+"\" TYPE=\"submit\" onClick=\"DCS('"+f.i+"', true); return false;\" VALUE=\""+_h("Save")+"\" STYLE=\"display:none;\"> "+"<INPUT CLASS=\"sbutton4\" ID=\"filecancel"+EH(f.i)+"\" TYPE=\"submit\" onClick=\"DCS('"+f.i+"', false); return false;\" VALUE=\""+_h("Cancel")+"\" STYLE=\"display:none;\"> ";
 }
 if(Exd){
-h+="<INPUT CLASS=\"sbutton4\" ID=\"filedelete"+EH(f.i)+"\" TYPE=\"submit\" onClick=\"DCD('"+f.i+"'); return false;\" VALUE=\"Delete\">";
+h+="<INPUT CLASS=\"sbutton4\" ID=\"filedelete"+EH(f.i)+"\" TYPE=\"submit\" onClick=\"DCD('"+f.i+"'); return false;\" VALUE=\""+_h("Delete")+"\">";
 }
 c.innerHTML=h;
 r.appendChild(c);
@@ -6643,7 +6876,7 @@ r.className="filesrow";
 var c=document.createElement("TD");
 c.className="fnone";
 c.colSpan=7;
-c.innerHTML=hf?"No files match the current search.":"There are currently no files in this family.";
+c.innerHTML=hf?_h("No files match the current search."):_h("There are currently no files in this family.");
 r.appendChild(c);
 t.appendChild(r);
 }
@@ -6657,27 +6890,27 @@ var c=0;
 for(var i in Eff){
 c++;
 }
-var h=(c==1)?"1 file":(c+" files");
-h+=", "+DSH(Edt)+" used";
+var h=_h("# file/s",c)+", ";
 if(Eda>Edt){
-h+=" (plus "+DSH(Eda-Edt)+" in other families)";
+h+=_h("$1 used (plus $2 in other families) of $3 available",DST(Edt),DST(Eda-Edt),DMT(Edc));
+}else{
+h+=_h("$1 used of $2 available",DST(Edt),DMT(Edc));
 }
-h+=" of "+DMH(Edc)+" available.";
 var np=[];
 if(!Edd){
-np.push("download");
+np.push(_t("download"));
 }
 if(!Eud){
-np.push("upload");
+np.push(_t("upload"));
 }
 if(!Eed){
-np.push("edit");
+np.push(_t("edit"));
 }
 if(!Exd){
-np.push("delete");
+np.push(_t("delete"));
 }
 if(np.length){
-h+=" You do not currently have permission to "+np.join(", ")+" files.";
+h+=" "+_h("You do not currently have permission to $ files.",np.join(", "));
 }
 SH("filesstatus",h);
 }
@@ -6695,12 +6928,12 @@ function DNH(i,f,exp){
 var h="";
 if(Edd){
 if(DTV(f.t)){
-h+="<a href=\"#\" title=\"View file\" onclick=\"DSI('"+i+"'); return false;\">";
+h+="<a href=\"#\" title=\""+_h("View file")+"\" onclick=\"DSI('"+i+"'); return false;\">";
 }else{
-h+="<a href=\""+EH(DGU(i,true))+"\" title=\"Download file\">";
+h+="<a href=\""+EH(DGU(i,true))+"\" title=\""+_h("Download file")+"\">";
 }
 }
-return h+NSE(f.n||"Untitled",exp)+(Edd?"</a>":"");
+return h+NSE(f.n||_t("Untitled"),exp)+(Edd?"</a>":"");
 }
 function DDH(i,f,exp){
 return NSE(f.d,exp);
@@ -6854,20 +7087,20 @@ DEI(false);
 function DCD(i){
 var f=Eff[i];
 if(f){
-if(confirm("Are you sure you want to permanently delete the file \""+f.n+"\"?")){
+if(confirm(_t("Are you sure you want to permanently delete the file $?",f.n))){
 AP("file_delete",{f:GV("familyid"),p:GV("personid"),c:GV("checksum"),r:i,t:f.t},"",DDR,{i:i});
 }
 }
 }
-function DDR(_5a,_5b,_5c){
-if(_5c.ok){
-EDC(_5b.i,{x:""});
-GE("filesrows").removeChild(GE("filesrow"+_5b.i));
-var ds=parseInt(_5c.ds);
+function DDR(_5c,_5d,_5e){
+if(_5e.ok){
+EDC(_5d.i,{x:""});
+GE("filesrows").removeChild(GE("filesrow"+_5d.i));
+var ds=parseInt(_5e.ds);
 if(!isNaN(ds)){
 Edt=ds;
 }
-var da=parseInt(_5c.da);
+var da=parseInt(_5e.da);
 if(!isNaN(da)){
 Eda=da;
 }
@@ -6875,7 +7108,7 @@ DUS();
 ESS();
 EUS(false,null,null,false,false);
 }else{
-RE(_5c.er||"The file could not be deleted");
+RE(_5e.er||_t("The file could not be deleted - please try again."));
 }
 }
 function DAA(t,f,p){
@@ -6890,7 +7123,7 @@ m.appendChild(s);
 w.appendChild(m);
 var r=document.createElement("TD");
 r.className="fattachpm";
-r.innerHTML="<A HREF=\"#\" CLASS=\"fattachpmlink\" onClick=\"DDA("+EH(i)+"); return false;\" TITLE=\"Remove this person\""+(f?"STYLE=\"visibility:hidden;\" ":"")+">&minus;</A> "+"<A HREF=\"#\" CLASS=\"fattachpmlink\" onClick=\"DAA('"+t+"', false); return false;\" TITLE=\"Add another person\">+</A>";
+r.innerHTML="<A HREF=\"#\" CLASS=\"fattachpmlink\" onClick=\"DDA("+EH(i)+"); return false;\" TITLE=\""+_h("Detach this person")+"\""+(f?"STYLE=\"visibility:hidden;\" ":"")+">&minus;</A> "+"<A HREF=\"#\" CLASS=\"fattachpmlink\" onClick=\"DAA('"+t+"', false); return false;\" TITLE=\""+_h("Attach another person")+"\">+</A>";
 w.appendChild(r);
 GE(t).appendChild(w);
 var ra=[];
@@ -6923,7 +7156,7 @@ SV("uploadname","");
 SV("uploaddesc","");
 SRR("uploadattachrows");
 DAA("uploadattachrows",true,a);
-SH("uploadmax",DMH(DMU()));
+ST("uploadmax",DMT(DMU()));
 if(c){
 GE("uploadfile").click();
 }
@@ -6936,7 +7169,7 @@ return Math.min(Edm,Edc-(Eda||Edt||0));
 function DUC(){
 var fnt=DUI();
 if(fnt.s>DMU()){
-alert("This file is "+DSH(fnt.s)+" in size, which is larger than the maximum of "+DSH(DMU())+".");
+alert(_t("This file is $1 in size, which is larger than the maximum of $2.",DST(fnt.s),DST(DMU())));
 SV("uploadfile",null);
 }else{
 SV("uploadname",fnt.n);
@@ -6946,6 +7179,7 @@ function DUI(){
 var f=GE("uploadfile").files.item(0);
 var n="";
 var t="";
+var s=null;
 if(f){
 n=new String(f.name);
 var p=n.lastIndexOf(".");
@@ -6953,8 +7187,9 @@ if(p>0){
 t=n.substring(p+1).toLowerCase();
 n=n.substring(0,p);
 }
+s=f.size;
 }
-return {f:f,n:n,t:t,s:f.size};
+return {f:f,n:n,t:t,s:s};
 }
 function DCU(){
 var ii=DRA("uploadattachrows");
@@ -6962,24 +7197,24 @@ var fnt=DUI();
 if(fnt.f){
 AP("file_upload",{f:GV("familyid"),p:GV("personid"),c:GV("checksum"),t:fnt.t},fnt.f,DUR,{n:GV("uploadname")||fnt.n,t:fnt.t,d:GV("uploaddesc"),ii:ii});
 }else{
-RE("Please select a file first");
+RE(_t("Please select a file to upload it."));
 }
 }
-function DUR(_79,_7a,_7b){
-if(_7b.r){
+function DUR(_7c,_7d,_7e){
+if(_7e.r){
 var ai=null;
-EDC(_7b.r,{n:_7a.n,t:_7a.t,u:_7b.d,s:_7b.s,d:_7a.d});
-for(var i in _7a.ii){
-EDC(_7b.r,{"+":i});
+EDC(_7e.r,{n:_7d.n,t:_7d.t,u:_7e.d,s:_7e.s,d:_7d.d});
+for(var i in _7d.ii){
+EDC(_7e.r,{"+":i});
 if((i==Spe)||(ai===null)){
 ai=i;
 }
 }
-var ds=parseInt(_7b.ds);
+var ds=parseInt(_7e.ds);
 if(!isNaN(ds)){
 Edt=ds;
 }
-var da=parseInt(_7b.da);
+var da=parseInt(_7e.da);
 if(!isNaN(da)){
 Eda=da;
 }
@@ -6994,7 +7229,7 @@ ETF();
 }
 GE("uploaddiv").style.display="none";
 }else{
-RE(_7b.er||"The file could not be uploaded - please try again");
+RE(_7e.er||_t("The file could not be uploaded - please try again."));
 }
 }
 function DAD(){
@@ -7003,19 +7238,19 @@ GE("main").addEventListener("dragover",DDE);
 GE("main").addEventListener("dragleave",DDL);
 GE("main").addEventListener("drop",DDD);
 }
-var showUploadTemp=false;
-var hideUploadTimeout=null;
+var Dut=false;
+var Dht=null;
 function DDE(e){
 e=e||window.event;
 if(e.preventDefault){
 e.preventDefault();
 }
-if(hideUploadTimeout){
-clearTimeout(hideUploadTimeout);
-hideUploadTimeout=null;
+if(Dht){
+clearTimeout(Dht);
+Dht=null;
 }
 if(!GS("uploaddiv")){
-showUploadTemp=true;
+Dut=true;
 DTU("",false);
 }
 return false;
@@ -7025,13 +7260,13 @@ e=e||window.event;
 if(e.preventDefault){
 e.preventDefault();
 }
-if(showUploadTemp&&!hideUploadTimeout){
-hideUploadTimeout=setTimeout(function(){
+if(Dut&&!Dht){
+Dht=setTimeout(function(){
 if(GS("uploaddiv")){
 DTU();
 }
-showUploadTemp=false;
-hideUploadTimeout=null;
+Dut=false;
+Dht=null;
 },100);
 }
 return false;
@@ -7044,7 +7279,7 @@ GE("uploadfile").files=f;
 DUC();
 FS("uploadname");
 }
-showUploadTemp=false;
+Dut=false;
 return false;
 }
 </script>
@@ -7064,7 +7299,7 @@ return false;
 		
 		<IFRAME ID="backframe" WIDTH="1" HEIGHT="1" FRAMEBORDER="0" SCROLLING="no"></IFRAME>
 </FONT></TD>
-<TD NOWRAP ALIGN="right" WIDTH="5%">
+<TD NOWRAP STYLE="text-align:right;" WIDTH="5%">
 
 		<INPUT TYPE="hidden" ID="newscript" NAME="newscript" VALUE="
 
@@ -7080,7 +7315,7 @@ iD4HPJ	^XV7TQ	gm	lNelson	sUJ4WH	pForrest Rudolph	qNelson	b19220905	mBHBD1	fF18L9
 iUJ4WH	^XV7TQ	gf	sD4HPJ	lNelson	pNaomi June	qLoughmiller	b19250623	z1	d20151104	mQ0V3C	fK7MX9	vDenison, Texas	yJoplin, Missouri	UHillcrest Cemetery, Galena, Kansas	F20151107	oNaomi “June” Loughmiller Nelson, age 90 of Riverton, Kansas went to be with the Lord on Wednesday, November 4, 2015 at Freeman Hospital. June was born June 23, 1925 in Denison, Texas, the fourth of seven children born to Sam Houston Loughmiller, Sr. and Clara Ellen Clement Loughmiller. Her childhood home was in Parsons, Kansas. She married Forrest R. Nelson on July 1, 1951 in Parsons.\nJune is survived by her husband Forrest R. Nelson; and their children; David F. Nelson (Barbara); Sara Davis (Jeff); Scott Nelson, of Riverton; Steven Nelson (Pam), Tulsa, OK; Jennifer Schenker (Kent), Oswego, KS. Grandchildren Benjamin Davis (Nicolette); Bethany Davis; Anthony Nelson; Ryan, Travis and Rachel Schenker; and Alex Nelson.\nAdditional survivors, sisters Algene Hackett of Apple Valley, California; Clara “Patty” Jordan (Richard) of Holly Springs, Mississippi; and Kay Ranjbar (Manucher) of Indianapolis, Indiana. She had 51 nieces and nephews. She was preceded in death by her brothers Sam H. Loughmiller, Jr., Dr. Owen Loughmiller, Isabel Eisler and her parents.\nServices for June will be held on Saturday, Nov. 7th at 2:00 p.m. at the Spring River Assembly of God, Riverton, Kansas. Final resting place, Hillcrest Cemetery, Galena, KS. Visitation will be Friday, Nov. 6th from 6:00 to 8:00 P.M. at Thornhill-Dillon Mortuary 602 S. Byers Ave., Joplin, MO. The family will be receiving friends at the home of Sara and Jeff Davis in Riverton, KS.\nArrangements are under the direction of Thornhill-Dillion Mortuary, Joplin, MO. 417-623-4567	r572844789 120 120
 iD1Q5R	^V6FQ6	gm	lDavis	sIO12X	pRussell	qDavis	z1	mEPTJP	fNHGM5	b19140222	d19790716	r516586632 92 120
 iIO12X	^V6FQ6	gf	sD1Q5R	lDavis	pJacqueline	qLaws	b19220825	z1	d20090505	mU10SO	fN3XQW	r671252558 160 119
-iG46JK	^XV7TQ	mUJ4WH	fD4HPJ	lNelson	qNelson	pDavid Forrest	gm	b19521031	sBQKQI	r341478504 120 120
+iG46JK	^XV7TQ	mUJ4WH	fD4HPJ	lNelson	qNelson	pDavid Forrest	gm	b19521031	sBQKQI	r341478504 120 120	z1	d20241216	vJoplin, MO	yGalena, KS	UHillcrest Cemetery - Galena, KS	F20241221	jEngineer	ED1 Resources, Inc	ZHeart Attack
 iET5V7	^V6FQ6	mIO12X	fD1Q5R	lGreen	qDavis	pJanet Rae	gf	z1	sXI1X9	b19490811	d20140603	r214748380 66 119
 iPSQ7E	^V6FQ6	mIO12X	fD1Q5R	lDavis	qDavis	pJill Ann	gf	b19570702	r389511714 120 120
 iVIM3Y	^XV7TQ	mUJ4WH	fD4HPJ	lNelson	qNelson	pSteven	gm	b00000411	sYX9SI	r834273769 73 120
@@ -7792,7 +8027,7 @@ pLVSW7 NB1ZH	gm
 1 SOUR Family Echo
 2 WWW https://www.familyecho.com/
 1 FILE My Family
-1 DATE 5 APR 2024
+1 DATE 17 DEC 2024
 1 DEST ANSTFILE
 1 GEDC
 2 VERS 5.5.1
@@ -7951,6 +8186,16 @@ pLVSW7 NB1ZH	gm
 1 SEX M
 1 BIRT
 2 DATE 31 OCT 1952
+2 PLAC Joplin, MO
+1 DEAT Y
+2 DATE 16 DEC 2024
+2 PLAC Galena, KS
+2 CAUS Heart Attack
+1 BURI
+2 DATE 21 DEC 2024
+2 PLAC Hillcrest Cemetery - Galena, KS
+1 OCCU Engineer
+2 PLAC D1 Resources, Inc
 1 FAMS @F12@
 1 FAMC @F5@
 0 @I12@ INDI
@@ -15065,7 +15310,7 @@ ARVY0,Angie Nelson,Angie,,,,Nelson,,Female,Y,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,VI
 WLUJO,Anna Maria Nelson,Anna Maria,,,,Nelson,Olsson AKA Olafson,Female,Y,,,,,,,,,,,,,,,,Known,1829,2,27,,Known,1904,6,29,,I9FXW,Andrew (Anders Nilsson) Nelson,Husband,Known,1852,6,3,,,,,,,,,,,,,,&quot;Ankersta, Orebo, Sweden&quot;,&quot;Chanute, Kansas&quot;,,,,,,,,,,,,,
 F7T2D,Anthony David Nelson,Anthony David,,,,Nelson,Nelson,Male,,BQKQI,Barbara Nelson,G46JK,David Forrest Nelson,,,,,,,,,,,,Known,1990,12,5,,,,,,,,,,,,,,,,,,,,,,,,,,,&quot;Joplin, Missouri&quot;,,,,,,,,,,,,,,
 CHAYG,Aspen Nelson,Aspen,,,,Nelson,Nelson,,,VO0LL,Vanessa Nelson,GKCGH,Rodney Nelson,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-BQKQI,Barbara Nelson,Barbara,,,,Nelson,Bendure,Female,,,,,,,,,,,,,,,,,Known,1950,12,14,,,,,,,G46JK,David Forrest Nelson,Husband,Known,1988,9,10,,,,,,,,,,,,,,&quot;Waco, Missouri&quot;,,,,,,,,,Teacher,,,,,
+BQKQI,Barbara Nelson,Barbara,,,,Nelson,Bendure,Female,,,,,,,,,,,,,,,,,Known,1950,12,14,,,,,,,G46JK,David Forrest Nelson,Late husband,Known,1988,9,10,,,,,,,,,,,,,,&quot;Waco, Missouri&quot;,,,,,,,,,Teacher,,,,,
 YNW2F,Barry Nelson,Barry,,,,Nelson,Nelson,Male,,,,,,,,,,,,,,,,,,,,,,,,,,,O8748,Lynn Nelson,Partner,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 WI4Q7,Bethany Ellen Nelson,Bethany Ellen,,,,Nelson,Davis,Female,,XV7TQ,Sara Ellen Davis,V6FQ6,Jeffrey Lee Davis,,,,,,,,,,,,Known,1989,5,3,,,,,,,PY1BI,Kevin Nelson,Husband,Known,2016,10,1,,,,,,,,,,,,,,&quot;Joplin, Missouri&quot;,,,,,,,,,,,,,,
 HDI3R,Betty Agnes Nelson,Betty Agnes,,,,Nelson,Graham,Female,Y,,,,,,,,,,,,,,,,Known,,,,,Known,2012,10,17,,CQ3HH,Allan F. Nelson,Husband,Known,1955,4,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -15085,7 +15330,7 @@ K8ZAQ,Christine Nelson,Christine,,,,Nelson,Lance,Female,Y,,,,,,,,,,,,,,,,Known,1
 DPI3P,Christopher Stuart Nelson,Christopher Stuart,,,,Nelson,Nelson,Male,,JJH2Z,Jean Nelson,WNWA3,Stuart Nelson,,,,,,,,,,,,Known,1985,7,19,,,,,,,RTJHH,Charity Nelson,Wife,Known,2015,7,18,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 PEK7D,Clara Agnes Nelson,Clara Agnes,,,,Nelson,Cox,Female,Y,,,,,,,,,,,,,,,,Known,1906,3,15,,Known,1994,,,,C0YJF,Carl Andrew Nelson,Husband,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 T1SAP,Dan Nelson,Dan,,,,Nelson,Nelson,Male,,BOCKZ,Ivy Nelson,RHVA2,Louis D. Nelson,,,,,,,,,,,,,,,,,,,,,,B9PR9,Chipper Nelson,Partner,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-G46JK,David Forrest Nelson,David Forrest,,,,Nelson,Nelson,Male,,UJ4WH,Naomi June Nelson,D4HPJ,Forrest Rudolph Nelson,,,,,,,,,,,,Known,1952,10,31,,,,,,,BQKQI,Barbara Nelson,Wife,Known,1988,9,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+G46JK,David Forrest Nelson,David Forrest,,,,Nelson,Nelson,Male,Y,UJ4WH,Naomi June Nelson,D4HPJ,Forrest Rudolph Nelson,,,,,,,,,,,,Known,1952,10,31,,Known,2024,12,16,,BQKQI,Barbara Nelson,Widow,Known,1988,9,10,,,,,,,,,,,,,,&quot;Joplin, MO&quot;,&quot;Galena, KS&quot;,Heart Attack,&quot;Hillcrest Cemetery - Galena, KS&quot;,Known,2024,12,21,,Engineer,&quot;D1 Resources, Inc&quot;,,,,
 R1193,Denise Nelson,Denise,,,,Nelson,Nelson,Female,,RSN8Y,Rhonda Nelson,Y5TTJ,Robert Nelson,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 KI7GA,Ellis W. Nelson,Ellis W.,,,,Nelson,Nelson,Male,Y,BHBD1,Eunice Nelson,F18L9,Oscar Daniel Nelson,,,,,,,,,,,,,,,,,,,,,,WOP2E,Helen Nelson,Wife,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 CKIRW,Eric Alfred Nelson,Eric Alfred,,,,Nelson,Nelson,Male,Y,WLUJO,Anna Maria Nelson,I9FXW,Andrew (Anders Nilsson) Nelson,,,,,,,,,,,,Known,1862,12,17,,Known,1939,6,16,,TR8YR,Ida Nelson,Wife,,,,,,,,,,,,,,,,,,Sweden,Brazil,,&quot;Manaus, Brazil&quot;,,,,,,Missionary,,,,&quot;https://www.imb.org/175/missionary-profiles/erik-nelson/https://vimeo.com/397350806&quot;,
@@ -15332,7 +15577,7 @@ VSD4J,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,EE9IK,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 My Family
 
-Plain text downloaded by Benjamin Davis on 5 Apr 2024.
+Plain text downloaded by Benjamin Davis on 17 Dec 2024.
 
 This file should be viewed as Unicode (UTF-8) character encoding.
 
@@ -18054,7 +18299,7 @@ Father:             Rodney Nelson
 Full name:          Barbara Nelson
 Surname at birth:   Bendure
 Gender:             Female
-Husband:            David Forrest Nelson (married 10 Sep 1988 in Waco, Missouri)
+Late husband:       David Forrest Nelson (married 10 Sep 1988 in Waco, Missouri)
 Birth date:         14 Dec 1950
 
 Birth place:        Waco, Missouri
@@ -18221,11 +18466,20 @@ Partner:            Chipper Nelson
 ----------------------------------------------------------------------------
 
 Full name:          David Forrest Nelson
-Gender:             Male
+Gender:             Male (deceased)
 Mother:             Naomi June Nelson
 Father:             Forrest Rudolph Nelson
-Wife:               Barbara Nelson (married 10 Sep 1988 in Waco, Missouri)
+Widow:              Barbara Nelson (married 10 Sep 1988 in Waco, Missouri)
 Birth date:         31 Oct 1952
+Death date:         16 Dec 2024
+
+Birth place:        Joplin, MO
+Death place:        Galena, KS
+Cause of death:     Heart Attack
+Burial place:       Hillcrest Cemetery - Galena, KS
+Burial date:        21 Dec 2024
+Profession:         Engineer
+Company:            D1 Resources, Inc
 
 ----------------------------------------------------------------------------
 
@@ -20450,7 +20704,7 @@ Birth date:         30 Mar 1877
 				<DIV ID="navdiv" CLASS="dright" STYLE="bottom:0px; height:33px; overflow:hidden; "><DIV ID="navmargin" CLASS="marginon">
 					<DIV ID="navbg" CLASS="rbody" STYLE="height:33px; position:relative;">
 						
-						<DIV CLASS="" STYLE="position: absolute; height:33px; line-height:33px; bottom:0; left:0; right:0; text-align:center; white-space: nowrap;">
+						<DIV ID="navrow" STYLE="position: absolute; height:33px; line-height:33px; bottom:0; left:0; right:0; text-align:center; white-space: nowrap; margin:0 32px;">
 							<A HREF="#" onClick="ETO(); return false;" TITLE="Show/hide options"><IMG SRC="data:;base64,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" CLASS="icon" ALIGN="ABSMIDDLE"><SPAN ID="optionslinktext">Options</SPAN></A>
 							<SPAN ID="printbutton">
 								<SPAN CLASS="buttondash">&ndash;</SPAN>
@@ -20492,11 +20746,10 @@ Birth date:         30 Mar 1877
 							<IMG SRC="data:;base64,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" CLASS="icon" STYLE="cursor:pointer;" ALIGN="ABSMIDDLE" TITLE="Zoom in" onClick="ECZ(true);">
 							&ndash;
 							<SPAN ID="backto">
-								<A HREF="#" onClick="EBS(); return false;">Back to <SPAN ID="backtotext">start</SPAN></A>
+								<A HREF="#" onClick="EBS(); return false;"><SPAN ID="backtotext">Back to start</SPAN></A>
 								&ndash;
 							</SPAN>
-							Find:
-							<INPUT ID="findfield" STYLE="width:8em;" onFocus="NFF();" onInput="NIF();" onClick="NIF();" autocomplete="off">
+							Find:							<INPUT ID="findfield" STYLE="width:8em;" onFocus="NFF();" onInput="NIF();" onClick="NIF();" autocomplete="off">
 						</DIV>
 
 						<DIV STYLE="position: absolute; bottom:0; left:0;">
@@ -20511,7 +20764,7 @@ Birth date:         30 Mar 1877
 					</DIV>
 				</DIV></DIV>
 				
-				<DIV ID="optionsdiv" CLASS="dright rbody" STYLE="bottom:32px; display:none; border-top:solid #666666 1px; border-bottom:solid #666666 1px; text-align:center;"><DIV ID="optionsmargin" CLASS="marginon">
+				<DIV ID="optionsdiv" CLASS="dright rbody" STYLE="bottom:32px; display:none; border-top:solid #666666 1px; border-bottom:solid #666666 1px; text-align:center; overflow-x:auto;"><DIV ID="optionsmargin" CLASS="marginon">
 					<TABLE STYLE="margin:4px auto;" CELLPADDING="4"><TR VALIGN="top">
 						<TD NOWRAP>
 							<INPUT ID="detail_0p" TYPE="checkbox" onChange="ECD(this);"> <LABEL FOR="detail_0p">Name</LABEL>
@@ -20549,7 +20802,7 @@ Birth date:         30 Mar 1877
 							<br/><INPUT ID="detail_A" TYPE="checkbox" onChange="ECD(this);"> <LABEL FOR="detail_A">Activities</LABEL>
 						</TD>
 						
-						<TD STYLE="padding-left:16px; padding-bottom:0; padding-right:16px; text-align:right;" NOWRAP>
+						<TD STYLE="padding-left:16px; padding-bottom:0; padding-right:16px; text-align:end;" NOWRAP>
 							<SPAN ID="backspan"><SPAN CLASS="cleft">Background:</SPAN> <INPUT ID="colorback" CLASS="cright" TYPE="color" onInput="ECR(this);">
 								<a href="#" class="creset" onClick="ERC('back', '#FFFFFF'); return false;">reset</a>
 							<br/></SPAN><SPAN CLASS="cleft">Male box:</SPAN> <INPUT ID="colormale" CLASS="cright" TYPE="color" onInput="ECR(this);">
@@ -20568,7 +20821,7 @@ Birth date:         30 Mar 1877
 								<a href="#" class="creset" onClick="ERT(); return false;">reset</a>
 						</TD>
 						
-						<TD STYLE="text-align:right; padding-right:16px;" NOWRAP>
+						<TD STYLE="text-align:end; padding-right:16px;" NOWRAP>
 							<SPAN CLASS="oleft">Surnames:</SPAN>
 							<SELECT ID="showbirthname" CLASS="oright" onChange="ESN();" TITLE="Which surname to display">
 								<OPTION VALUE="0">Now</OPTION>
@@ -20583,61 +20836,13 @@ Birth date:         30 Mar 1877
 								<OPTION VALUE="0">Female</OPTION>
 								<OPTION VALUE="1">Male</OPTION>
 							</SELECT><br/><LABEL CLASS="oleft">Parents:</LABEL>
-							<SELECT ID="showparents" CLASS="oright" onChange="ECP();" TITLE="Generations of ancestors to display">
-								<OPTION VALUE="1">1 gen</OPTION>
-								<OPTION VALUE="2">2 gens</OPTION>
-								<OPTION VALUE="3">3 gens</OPTION>
-								<OPTION VALUE="4">4 gens</OPTION>
-								<OPTION VALUE="5">5 gens</OPTION>
-								<OPTION VALUE="6">6 gens</OPTION>
-								<OPTION VALUE="8">8 gens</OPTION>
-								<OPTION VALUE="10">10 gens</OPTION>
-								<OPTION VALUE="12">12 gens</OPTION>
-								<OPTION VALUE="15">15 gens</OPTION>
-								<OPTION VALUE="20">20 gens</OPTION>
-								<OPTION VALUE="25">25 gens</OPTION>
-								<OPTION VALUE="30">30 gens</OPTION>
-								<OPTION VALUE="40">40 gens</OPTION>
-								<OPTION VALUE="50">50 gens</OPTION>
-							</SELECT><br/><SPAN CLASS="oleft">Children:</SPAN>
-							<SELECT ID="showchildren" CLASS="oright" onChange="ECH();" TITLE="Generations of descendants to display">
-								<OPTION VALUE="1">1 gen</OPTION>
-								<OPTION VALUE="2">2 gens</OPTION>
-								<OPTION VALUE="3">3 gens</OPTION>
-								<OPTION VALUE="4">4 gens</OPTION>
-								<OPTION VALUE="5">5 gens</OPTION>
-								<OPTION VALUE="6">6 gens</OPTION>
-								<OPTION VALUE="8">8 gens</OPTION>
-								<OPTION VALUE="10">10 gens</OPTION>
-								<OPTION VALUE="12">12 gens</OPTION>
-								<OPTION VALUE="15">15 gens</OPTION>
-								<OPTION VALUE="20">20 gens</OPTION>
-								<OPTION VALUE="25">25 gens</OPTION>
-								<OPTION VALUE="30">30 gens</OPTION>
-								<OPTION VALUE="40">40 gens</OPTION>
-								<OPTION VALUE="50">50 gens</OPTION>
-							</SELECT><br/><SPAN CLASS="oleft">Others:</SPAN>
+							<SELECT ID="showparents" CLASS="oright" onChange="ECP();" TITLE="Generations of ancestors to display"><OPTION VALUE="1">1 gen</OPTION><OPTION VALUE="2">2 gens</OPTION><OPTION VALUE="3">3 gens</OPTION><OPTION VALUE="4">4 gens</OPTION><OPTION VALUE="5">5 gens</OPTION><OPTION VALUE="6">6 gens</OPTION><OPTION VALUE="8">8 gens</OPTION><OPTION VALUE="10">10 gens</OPTION><OPTION VALUE="12">12 gens</OPTION><OPTION VALUE="15">15 gens</OPTION><OPTION VALUE="20">20 gens</OPTION><OPTION VALUE="25">25 gens</OPTION><OPTION VALUE="30">30 gens</OPTION><OPTION VALUE="40">40 gens</OPTION><OPTION VALUE="50">50 gens</OPTION></SELECT><br/><SPAN CLASS="oleft">Children:</SPAN>
+							<SELECT ID="showchildren" CLASS="oright" onChange="ECH();" TITLE="Generations of descendants to display"><OPTION VALUE="1">1 gen</OPTION><OPTION VALUE="2">2 gens</OPTION><OPTION VALUE="3">3 gens</OPTION><OPTION VALUE="4">4 gens</OPTION><OPTION VALUE="5">5 gens</OPTION><OPTION VALUE="6">6 gens</OPTION><OPTION VALUE="8">8 gens</OPTION><OPTION VALUE="10">10 gens</OPTION><OPTION VALUE="12">12 gens</OPTION><OPTION VALUE="15">15 gens</OPTION><OPTION VALUE="20">20 gens</OPTION><OPTION VALUE="25">25 gens</OPTION><OPTION VALUE="30">30 gens</OPTION><OPTION VALUE="40">40 gens</OPTION><OPTION VALUE="50">50 gens</OPTION></SELECT><br/><SPAN CLASS="oleft">Others:</SPAN>
 							<SELECT ID="showcousins" CLASS="oright" onChange="ECO();" TITLE="Generations of aunts, uncles, cousins, nephews and nieces">
-								<OPTION VALUE="0">None</OPTION>
-								<OPTION VALUE="1">1 gen</OPTION>
-								<OPTION VALUE="2">2 gens</OPTION>
-								<OPTION VALUE="3">3 gens</OPTION>
-								<OPTION VALUE="4">4 gens</OPTION>
-								<OPTION VALUE="5">5 gens</OPTION>
-								<OPTION VALUE="6">6 gens</OPTION>
-								<OPTION VALUE="8">8 gens</OPTION>
-								<OPTION VALUE="10">10 gens</OPTION>
-								<OPTION VALUE="12">12 gens</OPTION>
-								<OPTION VALUE="15">15 gens</OPTION>
-								<OPTION VALUE="20">20 gens</OPTION>
-								<OPTION VALUE="25">25 gens</OPTION>
-								<OPTION VALUE="30">30 gens</OPTION>
-								<OPTION VALUE="40">40 gens</OPTION>
-								<OPTION VALUE="50">50 gens</OPTION>
-							</SELECT>
+								<OPTION VALUE="0">None</OPTION><OPTION VALUE="1">1 gen</OPTION><OPTION VALUE="2">2 gens</OPTION><OPTION VALUE="3">3 gens</OPTION><OPTION VALUE="4">4 gens</OPTION><OPTION VALUE="5">5 gens</OPTION><OPTION VALUE="6">6 gens</OPTION><OPTION VALUE="8">8 gens</OPTION><OPTION VALUE="10">10 gens</OPTION><OPTION VALUE="12">12 gens</OPTION><OPTION VALUE="15">15 gens</OPTION><OPTION VALUE="20">20 gens</OPTION><OPTION VALUE="25">25 gens</OPTION><OPTION VALUE="30">30 gens</OPTION><OPTION VALUE="40">40 gens</OPTION><OPTION VALUE="50">50 gens</OPTION></SELECT>
 						</TD>
 
-						<TD STYLE="text-align:right;" NOWRAP>
+						<TD STYLE="text-align:end;" NOWRAP>
 							<P CLASS="lright" STYLE="text-align:center; margin-bottom:0.5em;">Connecting lines</P><SPAN CLASS="lleft">Current partners:</SPAN>
 							<SELECT ID="linecurrent" CLASS="lright" onChange="ECE(this);">
 								<OPTION VALUE="thin">Thin</OPTION>
@@ -20688,12 +20893,12 @@ Birth date:         30 Mar 1877
 					<DIV STYLE="position:absolute; top:32px; bottom:24px; left:0; right:0; overflow-y:auto;">
 						<TABLE ID="filestable" WIDTH="100%">
 							<TR ID="filesheader">
-								<TH CLASS="fname"><A HREF="#" onclick="DCT('n', false); return false;" TITLE="Sort by Name">Name</A> <SPAN ID="filessortn"></SPAN></TH>
+								<TH CLASS="fname"><A HREF="#" onclick="DCT('n', false); return false;" TITLE="Sort by name">Name</A> <SPAN ID="filessortn"></SPAN></TH>
 								<TH CLASS="fdesc">Description</TH>
-								<TH CLASS="fattach"><A HREF="#" onclick="DCT('a', false); return false;" TITLE="Sort by Attached">Attached to</A> <SPAN ID="filessorta"></SPAN></TH>
-								<TH CLASS="ftype"><A HREF="#" onclick="DCT('t', false); return false;" TITLE="Sort by Type">Type</A> <SPAN ID="filessortt"></SPAN></TH>
-								<TH CLASS="fsize"><A HREF="#" onclick="DCT('s', true); return false;" TITLE="Sort by Size">Size</A> <SPAN ID="filessorts"></SPAN></TH>
-								<TH CLASS="fuploaded"><A HREF="#" onclick="DCT('u', true); return false;" TITLE="Sort by Uploaded Date">Uploaded</A> <SPAN ID="filessortu"></SPAN></TH>
+								<TH CLASS="fattach"><A HREF="#" onclick="DCT('a', false); return false;" TITLE="Sort by attached person">Attached to</A> <SPAN ID="filessorta"></SPAN></TH>
+								<TH CLASS="ftype"><A HREF="#" onclick="DCT('t', false); return false;" TITLE="Sort by type">Type</A> <SPAN ID="filessortt"></SPAN></TH>
+								<TH CLASS="fsize"><A HREF="#" onclick="DCT('s', true); return false;" TITLE="Sort by size">Size</A> <SPAN ID="filessorts"></SPAN></TH>
+								<TH CLASS="fuploaded"><A HREF="#" onclick="DCT('u', true); return false;" TITLE="Sort by uploaded date">Uploaded</A> <SPAN ID="filessortu"></SPAN></TH>
 								<TH CLASS="fbuttons"></TH>
 							</TR>
 							<TBODY ID="filesrows">
@@ -20720,7 +20925,7 @@ Birth date:         30 Mar 1877
 							&ndash;
 							<SPAN ID="fileviewdate"></SPAN>
 						</DIV>
-						<DIV STYLE="position:absolute; right:0; top:0; height:35px; padding:0 8px; line-height:36px; text-align:right;">
+						<DIV STYLE="position:absolute; inset-inline-end:0; top:0; height:35px; padding:0 8px; line-height:36px; text-align:end;">
 							&nbsp;<INPUT TYPE="submit" VALUE="Close" onClick="DHV(); return false;">
 						</DIV>
 						<DIV STYLE="position:absolute; left:0; right:0; top:36px; bottom:0;">
@@ -20742,7 +20947,7 @@ Birth date:         30 Mar 1877
 						<SPAN ID="nametitle" CLASS="sdefname">Loading...</SPAN><BR>
 						<IMG CLASS="blankpixel" WIDTH="1" HEIGHT="6"><BR>
 			
-						<IMG ID="personimage" CLASS="simage" STYLE="display:none; margin-bottom:6px;" onClick="SIC(); return false;">
+						<IMG ID="personimage" CLASS="simage" STYLE="display:none; margin-bottom:6px;" onClick="SIC(); return false;"><br>
 
 						<DIV ID="nonrelations" STYLE="display:none; margin-top:6px;">
 			
@@ -20808,7 +21013,7 @@ Birth date:         30 Mar 1877
 									</TD>
 									<TD CLASS="sright">
 										<INPUT ID="title" CLASS="sfield" STYLE="width:64px;" onChange="SCV('title');">
-										<SPAN STYLE="float:right">Suffix:
+										<SPAN STYLE="float:end;">Suffix:
 										<INPUT ID="suffix" CLASS="sfield" STYLE="width:64px;" onChange="SCV('suffix');"></SPAN>
 									</TD>
 								</TR>
@@ -20883,7 +21088,7 @@ Birth date:         30 Mar 1877
 										Email:
 									</TD>
 									<TD CLASS="sright">
-										<INPUT ID="c_email" CLASS="sfield" onChange="SCV('c_email');">
+										<INPUT ID="c_email" CLASS="sfield" onChange="SCV('c_email');" DIR="ltr">
 									</TD>
 								</TR>
 								<TR>
@@ -20891,7 +21096,7 @@ Birth date:         30 Mar 1877
 										Website:
 									</TD>
 									<TD CLASS="sright">
-										<INPUT ID="website" CLASS="sfield" onChange="SCV('website');">
+										<INPUT ID="website" CLASS="sfield" onChange="SCV('website');" DIR="ltr">
 									</TD>
 								</TR>
 								<TR>
@@ -20899,7 +21104,7 @@ Birth date:         30 Mar 1877
 										Blog:
 									</TD>
 									<TD CLASS="sright">
-										<INPUT ID="blog" CLASS="sfield" onChange="SCV('blog');">
+										<INPUT ID="blog" CLASS="sfield" onChange="SCV('blog');" DIR="ltr">
 									</TD>
 								</TR>
 								<TR>
@@ -20907,7 +21112,7 @@ Birth date:         30 Mar 1877
 										Photo site:
 									</TD>
 									<TD CLASS="sright">
-										<INPUT ID="photosite" CLASS="sfield" onChange="SCV('photosite');">
+										<INPUT ID="photosite" CLASS="sfield" onChange="SCV('photosite');" DIR="ltr">
 									</TD>
 								</TR>
 								<TR>
@@ -20915,7 +21120,7 @@ Birth date:         30 Mar 1877
 										Home tel:
 									</TD>
 									<TD CLASS="sright">
-										<INPUT ID="hometel" CLASS="sfield" onChange="SCV('hometel');">
+										<INPUT ID="hometel" CLASS="sfield" onChange="SCV('hometel');" DIR="ltr">
 									</TD>
 								</TR>
 								<TR>
@@ -20923,7 +21128,7 @@ Birth date:         30 Mar 1877
 										Work tel:
 									</TD>
 									<TD CLASS="sright">
-										<INPUT ID="worktel" CLASS="sfield" onChange="SCV('worktel');">
+										<INPUT ID="worktel" CLASS="sfield" onChange="SCV('worktel');" DIR="ltr">
 									</TD>
 								</TR>
 								<TR>
@@ -20931,7 +21136,7 @@ Birth date:         30 Mar 1877
 										Mobile:
 									</TD>
 									<TD CLASS="sright">
-										<INPUT ID="mobile" CLASS="sfield" onChange="SCV('mobile');">
+										<INPUT ID="mobile" CLASS="sfield" onChange="SCV('mobile');" DIR="ltr">
 									</TD>
 								</TR>
 								<TR>
@@ -21085,8 +21290,7 @@ Birth date:         30 Mar 1877
 								<TR><TD><IMG CLASS="blankpixel" WIDTH="1" HEIGHT="12"></TD></TR>
 								<TR>
 									<TD CLASS="sboth" COLSPAN="2">
-										You can also add or change details later.
-									</TD>
+										You can also add or change details later.									</TD>
 								</TR>
 								<TR><TD><IMG CLASS="blankpixel" WIDTH="1" HEIGHT="6"></TD></TR>
 								<TR>
@@ -21109,8 +21313,7 @@ Birth date:         30 Mar 1877
 							<TBODY ID="readonlyfooter" CLASS="hiderows">
 								<TR>
 									<TD CLASS="sboth" COLSPAN="2">
-										You are not currently permitted to edit this family.
-									</TD>
+										You are not currently permitted to edit this family.									</TD>
 								</TR>
 								<TR><TD><IMG CLASS="blankpixel" WIDTH="1" HEIGHT="12"></TD></TR>
 							</TBODY>
@@ -21118,9 +21321,7 @@ Birth date:         30 Mar 1877
 							<TBODY ID="writemefooter" CLASS="hiderows">
 								<TR>
 									<TD CLASS="sboth" COLSPAN="2">
-										<A HREF="#" onClick="GE('do_signin').click(); return false;">Sign in</A>
-										to add more people to this family.
-									</TD>
+										<a href="#" onClick="GE('do_signin').click(); return false;">Sign in</a> to add more people to this family.									</TD>
 								</TR>
 								<TR><TD><IMG CLASS="blankpixel" WIDTH="1" HEIGHT="12"></TD></TR>
 							</TBODY>
@@ -21128,9 +21329,7 @@ Birth date:         30 Mar 1877
 							<TBODY ID="writenotfooter" CLASS="hiderows">
 								<TR>
 									<TD CLASS="sboth" COLSPAN="2">
-										<A HREF="#" onClick="GE('do_signin').click(); return false;">Sign in</A>
-										to edit these details or add new people.
-									</TD>
+										<a href="#" onClick="GE('do_signin').click(); return false;">Sign in</a> to edit these details or add new people.									</TD>
 								</TR>
 								<TR><TD><IMG CLASS="blankpixel" WIDTH="1" HEIGHT="12"></TD></TR>
 							</TBODY>
@@ -21176,12 +21375,12 @@ Birth date:         30 Mar 1877
 				</DIV>
 				
 				<DIV ID="caltimediv" CLASS="dleft lbody" STYLE="display:none;">
-						<INPUT TYPE="submit" VALUE="Done" STYLE="position:absolute; right:6px; top:6px;" onClick="ESM('view'); return false;">
-						<h2 style="margin:6px; text-align:center;">
-							<SPAN ID="showcalendar">Calendar / <a href="#" onClick="ESM('timeline'); return false;">Timeline</A></SPAN>
-							<SPAN ID="showtimeline"><a href="#" onClick="ESM('calendar'); return false;">Calendar</A> / Timeline</SPAN>
-						</h2>
-						<DIV ID="caltimecontent" CLASS="bordertop" STYLE="position:absolute; top:32px; bottom:8px; left:0; right:0; overflow:scroll;"></DIV>
+					<INPUT TYPE="submit" VALUE="Done" STYLE="position:absolute; right:6px; top:6px;" onClick="ESM('view'); return false;">
+					<h2 style="margin:6px; text-align:center;">
+						<SPAN ID="showcalendar">Calendar / <a href="#" onClick="ESM('timeline'); return false;">Timeline</A></SPAN>
+						<SPAN ID="showtimeline"><a href="#" onClick="ESM('calendar'); return false;">Calendar</A> / Timeline</SPAN>
+					</h2>
+					<DIV ID="caltimecontent" CLASS="bordertop" STYLE="position:absolute; top:32px; bottom:8px; left:0; right:0; overflow:scroll;"></DIV>
 				</DIV>
 				
 				<DIV ID="extradiv" CLASS="dleft lbody" STYLE="visibility:hidden;"><IFRAME ID="extraframe" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
@@ -21194,7 +21393,7 @@ Birth date:         30 Mar 1877
 							</TR>
 							<TR>
 								<TD CLASS="uleft">File:</TD>
-								<TD STYLE="width:320px; display:flex; align-items:center;"><input id="uploadfile" type="file" style="flex:1;" onchange="DUC();"><SPAN style="flex:0; white-space:nowrap; font-size:11px;">(max <SPAN ID="uploadmax">12345</SPAN>)</SPAN></TD>
+								<TD STYLE="width:320px; display:flex; align-items:center;"><input id="uploadfile" type="file" style="flex:1;" onchange="DUC();"><SPAN style="flex:0; white-space:nowrap; font-size:11px;">(maximum <SPAN ID="uploadmax">12345</SPAN>)</SPAN></TD>
 							</TR>
 							<TR>
 								<TD CLASS="uleft">Name:</TD>
@@ -21234,7 +21433,7 @@ Birth date:         30 Mar 1877
 			<TR HEIGHT="8">
 				<TD STYLE="border-top:solid #666666 1px; padding:8px;" VALIGN="middle">
 					<DIV STYLE="float:left;">
-Read-only HTML downloaded by Benjamin Davis on 5 Apr 2024 &ndash; <a href="#" id="export_show_" class="selbold" onclick="return EES('');">View Tree</a> &ndash; <a href="#" id="export_show_gedcom" onclick="return EES('gedcom');">GEDCOM</a> &ndash; <a href="#" id="export_show_newscript" onclick="return EES('newscript');">FamilyScript</a> &ndash; <a href="#" id="export_show_csv" onclick="return EES('csv');">CSV</a> &ndash; <a href="#" id="export_show_text" onclick="return EES('text');">Plain Text</a>					</DIV>
+<SPAN>Read-only HTML downloaded by Benjamin Davis on 17 Dec 2024 &ndash; <a href="#" id="export_show_" class="selbold" onclick="return EES('');">View Tree</a> &ndash; <a href="#" id="export_show_gedcom" onclick="return EES('gedcom');">GEDCOM</a> &ndash; <a href="#" id="export_show_newscript" onclick="return EES('newscript');">FamilyScript</a> &ndash; <a href="#" id="export_show_csv" onclick="return EES('csv');">CSV</a> &ndash; <a href="#" id="export_show_text" onclick="return EES('text');">Plain Text</a></SPAN>					</DIV>
 					<DIV STYLE="float:right;">
 <A HREF="http://www.familyecho.com/" TITLE="Family Echo - Free Online Family Tree Maker"><IMG SRC="data:;base64,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" CLASS="felogo" WIDTH="80" HEIGHT="16" BORDER="0" ALT="Family Echo" ALIGN="ABSBOTTOM"></A> &copy; Familiality 2007-2024 - All rights reserved					</DIV>
 				</TD>
