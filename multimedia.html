@@ -1629,10 +1629,16 @@ Date: Wednesday, October 7, 2020
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; 2018&ndash;<script>document.write(new Date().getFullYear())</script> Benjamin Lee Davis.<br>All rights reserved.<br><a href="PDFs/terms.pdf" target="_blank" rel="noopener noreferrer">Terms of Use</a>.<br><a href="https://www.privacypolicytemplate.net/live.php?token=3eURR97RCLd4cHs4f0NXIG1XkD1Xi5oH" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.<br><a href="cookies.html" target="_blank" rel="noopener noreferrer">Cookie Declaration</a>.<br>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>. <i class="fas fa-external-link-alt"></i></p>
+									<p class="copyright">&copy; 2018&ndash;<span id="year"></span>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script> Benjamin Lee Davis.<br>All rights reserved.<br><a href="PDFs/terms.pdf" target="_blank" rel="noopener noreferrer">Terms of Use</a>.<br><a href="https://www.privacypolicytemplate.net/live.php?token=3eURR97RCLd4cHs4f0NXIG1XkD1Xi5oH" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.<br><a href="cookies.html" target="_blank" rel="noopener noreferrer">Cookie Declaration</a>.<br>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>. <i class="fas fa-external-link-alt"></i></p>
 									<b>Last Modified:</b>
-									<script>document.write( document.lastModified );</script>
-									<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0j5k8wpcarj&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+									<span id="lastModified"></span>
+<script>
+  document.getElementById("lastModified").textContent = document.lastModified;
+</script>
+									<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=bDnZ8ex8QyZ7Iwc9wqZOh17-sVe9bFe7gUvWf7UT7yA&cl=ffffff&w=a"></script>
 								</footer>
 
 							</section>		</div>
