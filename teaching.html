@@ -684,5 +684,32 @@ Date: Wednesday, October 7, 2020
 </script>
 -->
 		
+		<script>
+  // Fix Chrome scroll jump after clicking anchor link
+  document.addEventListener('DOMContentLoaded', function () {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const target = document.getElementById(id);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 1); // slight delay to override Chrome's default behavior
+      }
+    }
+
+    // Optional: smooth scrolling for all in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.pushState(null, null, this.getAttribute('href'));
+        }
+      });
+    });
+  });
+</script>
+		
 	</body>
 </html>
