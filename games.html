@@ -566,9 +566,9 @@ Date: Wednesday, October 7, 2020
 		
 		<script>
   document.addEventListener('DOMContentLoaded', function () {
+    // Handle smooth scroll on initial load if URL has a hash
     if (location.hash) {
-      const id = location.hash.replace('#', '');
-      const target = document.getElementById(id);
+      const target = document.querySelector(location.hash);
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -576,16 +576,27 @@ Date: Wednesday, October 7, 2020
       }
     }
 
+    // Smooth scroll for in-page anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        const target = document.querySelector(href);
+        const hash = this.getAttribute('href');
+        const target = document.querySelector(hash);
         if (target) {
           e.preventDefault();
+          // Update the hash manually
+          history.pushState(null, null, hash);
+          // Scroll smoothly
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          history.pushState(null, null, href);
         }
       });
+    });
+
+    // Optional: handle hashchange (e.g., if triggered externally)
+    window.addEventListener('hashchange', () => {
+      const target = document.querySelector(location.hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 </script>
