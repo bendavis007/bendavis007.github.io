@@ -47,6 +47,7 @@
 	</head>
 	<!-- <body class="is-preload"> -->
 	<body>
+  <div id="top"></div>
 		
 		<!-- <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="H1e8pHfT"></script> -->
@@ -1083,6 +1084,32 @@ Date: Wednesday, October 7, 2020
   });
 </script>
 -->
+		
+		<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const target = document.getElementById(id);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 1);
+      }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.pushState(null, null, href);
+        }
+      });
+    });
+  });
+</script>
 		
 	</body>
 </html>
