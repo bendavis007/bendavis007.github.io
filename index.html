@@ -1086,36 +1086,40 @@ Date: Wednesday, October 7, 2020
 -->
 		
 		<script>
+  // Disable automatic scroll restoration in Chrome
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     function smoothScrollToTarget(hash) {
       const target = document.querySelector(hash);
       if (target) {
-        requestAnimationFrame(() => {
+        setTimeout(() => {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
+        }, 100); // Delay ensures Chrome's auto-scroll is overridden
       }
     }
 
-    // Scroll on initial page load with hash
+    // Initial hash scroll
     if (location.hash) {
       smoothScrollToTarget(location.hash);
     }
 
-    // Intercept clicks on all internal links
+    // Handle clicks on internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const hash = this.getAttribute('href');
         const target = document.querySelector(hash);
         if (target) {
           e.preventDefault();
-          // Let the hash update happen naturally
-          history.replaceState(null, null, hash);  // Optional: update URL without jumping
           smoothScrollToTarget(hash);
+          history.replaceState(null, null, hash);
         }
       });
     });
 
-    // Handle manual hash changes (e.g. browser back button)
+    // React to hashchange (e.g., browser back/forward)
     window.addEventListener('hashchange', function () {
       smoothScrollToTarget(location.hash);
     });
