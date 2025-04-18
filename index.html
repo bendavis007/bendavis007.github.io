@@ -1087,37 +1087,37 @@ Date: Wednesday, October 7, 2020
 		
 		<script>
   document.addEventListener('DOMContentLoaded', function () {
-    // Handle smooth scroll on initial load if URL has a hash
-    if (location.hash) {
-      const target = document.querySelector(location.hash);
+    function smoothScrollToTarget(hash) {
+      const target = document.querySelector(hash);
       if (target) {
-        setTimeout(() => {
+        requestAnimationFrame(() => {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 1);
+        });
       }
     }
 
-    // Smooth scroll for in-page anchor links
+    // Scroll on initial page load with hash
+    if (location.hash) {
+      smoothScrollToTarget(location.hash);
+    }
+
+    // Intercept clicks on all internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const hash = this.getAttribute('href');
         const target = document.querySelector(hash);
         if (target) {
           e.preventDefault();
-          // Update the hash manually
-          history.pushState(null, null, hash);
-          // Scroll smoothly
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Let the hash update happen naturally
+          history.replaceState(null, null, hash);  // Optional: update URL without jumping
+          smoothScrollToTarget(hash);
         }
       });
     });
 
-    // Optional: handle hashchange (e.g., if triggered externally)
-    window.addEventListener('hashchange', () => {
-      const target = document.querySelector(location.hash);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+    // Handle manual hash changes (e.g. browser back button)
+    window.addEventListener('hashchange', function () {
+      smoothScrollToTarget(location.hash);
     });
   });
 </script>
