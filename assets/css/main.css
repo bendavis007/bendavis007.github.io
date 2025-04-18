@@ -86,6 +86,9 @@ input, select, textarea {
 
 		html, body {
 			min-width: 320px;
+			scroll-behavior: smooth;
+  			height: 100%;
+  			overflow: auto;
 		}
 
 	}
@@ -205,6 +208,10 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.25em;
+	}
+
+	h3[id] {
+  		scroll-margin-top: 3em;
 	}
 
 	h4 {
