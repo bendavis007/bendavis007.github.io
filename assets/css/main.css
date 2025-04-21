@@ -94,6 +94,10 @@ input, select, textarea {
 	}
 
 	html {
+ 		 overflow-anchor: none;
+	}
+
+	html {
 		box-sizing: border-box;
 	}
 
