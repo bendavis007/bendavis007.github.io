@@ -86,7 +86,7 @@ input, select, textarea {
 
 		html, body {
 			min-width: 320px;
-			scroll-behavior: smooth;
+			/* scroll-behavior: smooth; */
   			height: 100%;
   			overflow: auto;
 		}
